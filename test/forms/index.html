@@ -1,0 +1,235 @@
+<!doctype html><html lang="fr" data-rf-theme><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><title>Formulaire - Design System</title><link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/themes/prism.min.css" rel="stylesheet"/><link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/toolbar/prism-toolbar.min.css" rel="stylesheet"/><link href="../css/forms.css" rel="stylesheet"></head><body class="rf-mb-12w" style="margin:0; padding:0;"><div class="test-controls"><div class="rf-form-group"><div class="rf-fieldset rf-fieldset--inline"><div class="rf-fieldset__content"><div class="rf-checkbox-group"><input type="checkbox" id="theme-checkbox" name="checkboxes-inline-1"> <label class="rf-label" for="theme-checkbox">Thème clair / sombre</label></div><div class="rf-checkbox-group"><input type="checkbox" id="reset-checkbox" name="checkboxes-inline-2" checked="checked"> <label class="rf-label" for="reset-checkbox">reset</label></div></div></div></div></div><div class="rf-container"><h1 class="rf-h1">Formulaire - Design System</h1></div><div class="rf-container"><div class="rf-grid-row rf-grid-row--center"><div class="rf-col-md-8 rf-col-12"><script>function preventSubmit(e) {
+                            e.preventDefault();
+                            return false;
+                        }</script><form onsubmit="return preventSubmit(event)"><h4 class="rf-h4">Ensemble de champs de saisie</h4><div class="rf-form-group"><fieldset class="rf-fieldset"><legend class="rf-fieldset__legend">Légende pour l’ensemble de champs</legend><div class="rf-fieldset__content"><div class="rf-input-group"><label class="rf-label" for="text-1">Label champs de saisie</label> <input class="rf-input" id="text-1" name="text-1"></div><div class="rf-input-group"><label class="rf-label" for="text-2">Label champs de saisie</label> <input class="rf-input" id="text-2" name="text-2"></div><div class="rf-input-group"><label class="rf-label" for="text-3">Label champs de saisie</label> <input class="rf-input" id="text-3" name="text-3"></div></div></fieldset></div><div class="rf-mt-3w rf-pb-6w"><section class="rf-accordion"><h3 class="rf-accordion__title"><button class="rf-accordion__btn" aria-expanded="false" aria-controls="snippet~258">Snippet de code</button></h3><div class="rf-collapse" id="snippet~258"><pre class="language-html"><code>&lt;div class="rf-form-group"&gt;
+    &lt;fieldset class="rf-fieldset"&gt;
+        &lt;legend class="rf-fieldset__legend"&gt;Légende pour l’ensemble de champs&lt;/legend&gt;
+        &lt;div class="rf-fieldset__content"&gt;
+            &lt;div class="rf-input-group"&gt;
+                &lt;label class="rf-label" for="text-1"&gt;Label champs de saisie
+                &lt;/label&gt;
+                &lt;input class="rf-input" type="text" id="text-1" name="text-1"&gt;
+            &lt;/div&gt;
+            &lt;div class="rf-input-group"&gt;
+                &lt;label class="rf-label" for="text-2"&gt;Label champs de saisie
+                &lt;/label&gt;
+                &lt;input class="rf-input" type="text" id="text-2" name="text-2"&gt;
+            &lt;/div&gt;
+            &lt;div class="rf-input-group"&gt;
+                &lt;label class="rf-label" for="text-3"&gt;Label champs de saisie
+                &lt;/label&gt;
+                &lt;input class="rf-input" type="text" id="text-3" name="text-3"&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/fieldset&gt;
+&lt;/div&gt;
+</code></pre></div></section></div><h4 class="rf-h4">Ensemble de boutons radio</h4><div class="rf-form-group"><fieldset class="rf-fieldset"><legend class="rf-fieldset__legend">Légende pour l’ensemble de champs</legend><div class="rf-fieldset__content"><div class="rf-radio-group"><input type="radio" id="radio-1" name="radio"> <label class="rf-label" for="radio-1">Label radio</label></div><div class="rf-radio-group"><input type="radio" id="radio-2" name="radio"> <label class="rf-label" for="radio-2">Label radio</label></div><div class="rf-radio-group"><input type="radio" id="radio-3" name="radio"> <label class="rf-label" for="radio-3">Label radio</label></div></div></fieldset></div><div class="rf-mt-3w rf-pb-6w"><section class="rf-accordion"><h3 class="rf-accordion__title"><button class="rf-accordion__btn" aria-expanded="false" aria-controls="snippet~259">Snippet de code</button></h3><div class="rf-collapse" id="snippet~259"><pre class="language-html"><code>&lt;div class="rf-form-group"&gt;
+    &lt;fieldset class="rf-fieldset"&gt;
+        &lt;legend class="rf-fieldset__legend"&gt;Légende pour l’ensemble de champs&lt;/legend&gt;
+        &lt;div class="rf-fieldset__content"&gt;
+            &lt;div class="rf-radio-group"&gt;
+                &lt;input type="radio" id="radio-1" name="radio"&gt;
+                &lt;label class="rf-label" for="radio-1"&gt;Label radio
+                &lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class="rf-radio-group"&gt;
+                &lt;input type="radio" id="radio-2" name="radio"&gt;
+                &lt;label class="rf-label" for="radio-2"&gt;Label radio
+                &lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class="rf-radio-group"&gt;
+                &lt;input type="radio" id="radio-3" name="radio"&gt;
+                &lt;label class="rf-label" for="radio-3"&gt;Label radio
+                &lt;/label&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/fieldset&gt;
+&lt;/div&gt;
+</code></pre></div></section></div><h4 class="rf-h4">Ensemble de cases à cocher</h4><div class="rf-form-group"><fieldset class="rf-fieldset"><legend class="rf-fieldset__legend">Légende pour l’ensemble de champs</legend><div class="rf-fieldset__content"><div class="rf-checkbox-group"><input type="checkbox" id="checkbox-1" name="checkbox-1"> <label class="rf-label" for="checkbox-1">Label checkbox</label></div><div class="rf-checkbox-group"><input type="checkbox" id="checkbox-2" name="checkbox-2"> <label class="rf-label" for="checkbox-2">Label checkbox</label></div><div class="rf-checkbox-group"><input type="checkbox" id="checkbox-3" name="checkbox-3"> <label class="rf-label" for="checkbox-3">Label checkbox</label></div></div></fieldset></div><div class="rf-mt-3w rf-pb-6w"><section class="rf-accordion"><h3 class="rf-accordion__title"><button class="rf-accordion__btn" aria-expanded="false" aria-controls="snippet~260">Snippet de code</button></h3><div class="rf-collapse" id="snippet~260"><pre class="language-html"><code>&lt;div class="rf-form-group"&gt;
+    &lt;fieldset class="rf-fieldset"&gt;
+        &lt;legend class="rf-fieldset__legend"&gt;Légende pour l’ensemble de champs&lt;/legend&gt;
+        &lt;div class="rf-fieldset__content"&gt;
+            &lt;div class="rf-checkbox-group"&gt;
+                &lt;input type="checkbox" id="checkbox-1" name="checkbox-1"&gt;
+                &lt;label class="rf-label" for="checkbox-1"&gt;Label checkbox
+                &lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class="rf-checkbox-group"&gt;
+                &lt;input type="checkbox" id="checkbox-2" name="checkbox-2"&gt;
+                &lt;label class="rf-label" for="checkbox-2"&gt;Label checkbox
+                &lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class="rf-checkbox-group"&gt;
+                &lt;input type="checkbox" id="checkbox-3" name="checkbox-3"&gt;
+                &lt;label class="rf-label" for="checkbox-3"&gt;Label checkbox
+                &lt;/label&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/fieldset&gt;
+&lt;/div&gt;
+</code></pre></div></section></div><h4 class="rf-h4">Ensemble de boutons radio, en ligne</h4><div class="rf-form-group"><fieldset class="rf-fieldset rf-fieldset--inline"><legend class="rf-fieldset__legend">Légende pour l’ensemble de champs</legend><div class="rf-fieldset__content"><div class="rf-radio-group"><input type="radio" id="radio-inline-1" name="radio-inline"> <label class="rf-label" for="radio-inline-1">Label radio</label></div><div class="rf-radio-group"><input type="radio" id="radio-inline-2" name="radio-inline"> <label class="rf-label" for="radio-inline-2">Label radio</label></div><div class="rf-radio-group"><input type="radio" id="radio-inline-3" name="radio-inline"> <label class="rf-label" for="radio-inline-3">Label radio</label></div></div></fieldset></div><div class="rf-mt-3w rf-pb-6w"><section class="rf-accordion"><h3 class="rf-accordion__title"><button class="rf-accordion__btn" aria-expanded="false" aria-controls="snippet~261">Snippet de code</button></h3><div class="rf-collapse" id="snippet~261"><pre class="language-html"><code>&lt;div class="rf-form-group"&gt;
+    &lt;fieldset class="rf-fieldset rf-fieldset--inline"&gt;
+        &lt;legend class="rf-fieldset__legend"&gt;Légende pour l’ensemble de champs&lt;/legend&gt;
+        &lt;div class="rf-fieldset__content"&gt;
+            &lt;div class="rf-radio-group"&gt;
+                &lt;input type="radio" id="radio-inline-1" name="radio-inline"&gt;
+                &lt;label class="rf-label" for="radio-inline-1"&gt;Label radio
+                &lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class="rf-radio-group"&gt;
+                &lt;input type="radio" id="radio-inline-2" name="radio-inline"&gt;
+                &lt;label class="rf-label" for="radio-inline-2"&gt;Label radio
+                &lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class="rf-radio-group"&gt;
+                &lt;input type="radio" id="radio-inline-3" name="radio-inline"&gt;
+                &lt;label class="rf-label" for="radio-inline-3"&gt;Label radio
+                &lt;/label&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/fieldset&gt;
+&lt;/div&gt;
+</code></pre></div></section></div><h4 class="rf-h4">Ensemble de cases à cocher, en ligne</h4><div class="rf-form-group"><fieldset class="rf-fieldset rf-fieldset--inline"><legend class="rf-fieldset__legend">Légende pour l’ensemble de champs</legend><div class="rf-fieldset__content"><div class="rf-checkbox-group"><input type="checkbox" id="checkbox-inline-1" name="checkbox-inline-1"> <label class="rf-label" for="checkbox-inline-1">Label checkbox</label></div><div class="rf-checkbox-group"><input type="checkbox" id="checkbox-inline-2" name="checkbox-inline-2"> <label class="rf-label" for="checkbox-inline-2">Label checkbox</label></div><div class="rf-checkbox-group"><input type="checkbox" id="checkbox-inline-3" name="checkbox-inline-3"> <label class="rf-label" for="checkbox-inline-3">Label checkbox</label></div></div></fieldset></div><div class="rf-mt-3w rf-pb-6w"><section class="rf-accordion"><h3 class="rf-accordion__title"><button class="rf-accordion__btn" aria-expanded="false" aria-controls="snippet~262">Snippet de code</button></h3><div class="rf-collapse" id="snippet~262"><pre class="language-html"><code>&lt;div class="rf-form-group"&gt;
+    &lt;fieldset class="rf-fieldset rf-fieldset--inline"&gt;
+        &lt;legend class="rf-fieldset__legend"&gt;Légende pour l’ensemble de champs&lt;/legend&gt;
+        &lt;div class="rf-fieldset__content"&gt;
+            &lt;div class="rf-checkbox-group"&gt;
+                &lt;input type="checkbox" id="checkbox-inline-1" name="checkbox-inline-1"&gt;
+                &lt;label class="rf-label" for="checkbox-inline-1"&gt;Label checkbox
+                &lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class="rf-checkbox-group"&gt;
+                &lt;input type="checkbox" id="checkbox-inline-2" name="checkbox-inline-2"&gt;
+                &lt;label class="rf-label" for="checkbox-inline-2"&gt;Label checkbox
+                &lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class="rf-checkbox-group"&gt;
+                &lt;input type="checkbox" id="checkbox-inline-3" name="checkbox-inline-3"&gt;
+                &lt;label class="rf-label" for="checkbox-inline-3"&gt;Label checkbox
+                &lt;/label&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/fieldset&gt;
+&lt;/div&gt;
+</code></pre></div></section></div><h4 class="rf-h4">Ensemble de boutons radio avec erreur</h4><div class="rf-form-group"><fieldset class="rf-fieldset rf-fieldset--error"><legend class="rf-fieldset__legend" aria-describedby="radio-error-desc-hint radio-error-desc-error">Légende pour l’ensemble de champs</legend><span class="rf-hint-text" id="radio-error-desc-hint">Texte de description additionnel</span><div class="rf-fieldset__content"><div class="rf-radio-group"><input type="radio" id="radio-error-1" name="radio-error"> <label class="rf-label" for="radio-error-1">Label radio</label></div><div class="rf-radio-group"><input type="radio" id="radio-error-2" name="radio-error"> <label class="rf-label" for="radio-error-2">Label radio</label></div><div class="rf-radio-group"><input type="radio" id="radio-error-3" name="radio-error"> <label class="rf-label" for="radio-error-3">Label radio</label></div></div><p id="radio-error-desc-error" class="rf-error-text">Texte d’erreur obligatoire</p></fieldset></div><div class="rf-mt-3w rf-pb-6w"><section class="rf-accordion"><h3 class="rf-accordion__title"><button class="rf-accordion__btn" aria-expanded="false" aria-controls="snippet~263">Snippet de code</button></h3><div class="rf-collapse" id="snippet~263"><pre class="language-html"><code>&lt;div class="rf-form-group"&gt;
+    &lt;fieldset class="rf-fieldset rf-fieldset--error"&gt;
+        &lt;legend class="rf-fieldset__legend" aria-describedby="radio-error-desc-hint radio-error-desc-error"&gt;Légende pour l’ensemble de champs&lt;/legend&gt;
+        &lt;span class="rf-hint-text" id="radio-error-desc-hint"&gt;Texte de description additionnel&lt;/span&gt;
+        &lt;div class="rf-fieldset__content"&gt;
+            &lt;div class="rf-radio-group"&gt;
+                &lt;input type="radio" id="radio-error-1" name="radio-error"&gt;
+                &lt;label class="rf-label" for="radio-error-1"&gt;Label radio
+                &lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class="rf-radio-group"&gt;
+                &lt;input type="radio" id="radio-error-2" name="radio-error"&gt;
+                &lt;label class="rf-label" for="radio-error-2"&gt;Label radio
+                &lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class="rf-radio-group"&gt;
+                &lt;input type="radio" id="radio-error-3" name="radio-error"&gt;
+                &lt;label class="rf-label" for="radio-error-3"&gt;Label radio
+                &lt;/label&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;p id="radio-error-desc-error" class="rf-error-text"&gt;
+            Texte d’erreur obligatoire
+        &lt;/p&gt;
+    &lt;/fieldset&gt;
+&lt;/div&gt;
+</code></pre></div></section></div><h4 class="rf-h4">Ensemble de cases à cocher, avec erreur</h4><div class="rf-form-group"><fieldset class="rf-fieldset rf-fieldset--error"><legend class="rf-fieldset__legend" aria-describedby="checkbox-error-desc-hint checkbox-error-desc-error">Légende pour l’ensemble de champs</legend><span class="rf-hint-text" id="checkbox-error-desc-hint">Texte de description additionnel</span><div class="rf-fieldset__content"><div class="rf-checkbox-group"><input type="checkbox" id="checkbox-error-1" name="checkbox-error-1"> <label class="rf-label" for="checkbox-error-1">Label checkbox</label></div><div class="rf-checkbox-group"><input type="checkbox" id="checkbox-error-2" name="checkbox-error-2"> <label class="rf-label" for="checkbox-error-2">Label checkbox</label></div><div class="rf-checkbox-group"><input type="checkbox" id="checkbox-error-3" name="checkbox-error-3"> <label class="rf-label" for="checkbox-error-3">Label checkbox</label></div></div><p id="checkbox-error-desc-error" class="rf-error-text">Texte d’erreur obligatoire</p></fieldset></div><div class="rf-mt-3w rf-pb-6w"><section class="rf-accordion"><h3 class="rf-accordion__title"><button class="rf-accordion__btn" aria-expanded="false" aria-controls="snippet~264">Snippet de code</button></h3><div class="rf-collapse" id="snippet~264"><pre class="language-html"><code>&lt;div class="rf-form-group"&gt;
+    &lt;fieldset class="rf-fieldset rf-fieldset--error"&gt;
+        &lt;legend class="rf-fieldset__legend" aria-describedby="checkbox-error-desc-hint checkbox-error-desc-error"&gt;Légende pour l’ensemble de champs&lt;/legend&gt;
+        &lt;span class="rf-hint-text" id="checkbox-error-desc-hint"&gt;Texte de description additionnel&lt;/span&gt;
+        &lt;div class="rf-fieldset__content"&gt;
+            &lt;div class="rf-checkbox-group"&gt;
+                &lt;input type="checkbox" id="checkbox-error-1" name="checkbox-error-1"&gt;
+                &lt;label class="rf-label" for="checkbox-error-1"&gt;Label checkbox
+                &lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class="rf-checkbox-group"&gt;
+                &lt;input type="checkbox" id="checkbox-error-2" name="checkbox-error-2"&gt;
+                &lt;label class="rf-label" for="checkbox-error-2"&gt;Label checkbox
+                &lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class="rf-checkbox-group"&gt;
+                &lt;input type="checkbox" id="checkbox-error-3" name="checkbox-error-3"&gt;
+                &lt;label class="rf-label" for="checkbox-error-3"&gt;Label checkbox
+                &lt;/label&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;p id="checkbox-error-desc-error" class="rf-error-text"&gt;
+            Texte d’erreur obligatoire
+        &lt;/p&gt;
+    &lt;/fieldset&gt;
+&lt;/div&gt;
+</code></pre></div></section></div><h4 class="rf-h4">Ensemble de champs de saisie désactivés</h4><div class="rf-form-group"><fieldset class="rf-fieldset" disabled="disabled"><legend class="rf-fieldset__legend" aria-describedby="text-disabled-desc-hint">Légende pour l’ensemble de champs</legend><span class="rf-hint-text" id="text-disabled-desc-hint">Texte de description additionnel</span><div class="rf-fieldset__content"><div class="rf-input-group"><label class="rf-label" for="text-disabled-1">Label champs de saisie</label> <input class="rf-input" id="text-disabled-1" name="text-disabled-1"></div><div class="rf-input-group"><label class="rf-label" for="text-disabled-2">Label champs de saisie</label> <input class="rf-input" id="text-disabled-2" name="text-disabled-2"></div><div class="rf-input-group"><label class="rf-label" for="text-disabled-3">Label champs de saisie</label> <input class="rf-input" id="text-disabled-3" name="text-disabled-3"></div></div></fieldset></div><div class="rf-mt-3w rf-pb-6w"><section class="rf-accordion"><h3 class="rf-accordion__title"><button class="rf-accordion__btn" aria-expanded="false" aria-controls="snippet~265">Snippet de code</button></h3><div class="rf-collapse" id="snippet~265"><pre class="language-html"><code>&lt;div class="rf-form-group"&gt;
+    &lt;fieldset class="rf-fieldset" disabled="disabled"&gt;
+        &lt;legend class="rf-fieldset__legend" aria-describedby="text-disabled-desc-hint"&gt;Légende pour l’ensemble de champs&lt;/legend&gt;
+        &lt;span class="rf-hint-text" id="text-disabled-desc-hint"&gt;Texte de description additionnel&lt;/span&gt;
+        &lt;div class="rf-fieldset__content"&gt;
+            &lt;div class="rf-input-group"&gt;
+                &lt;label class="rf-label" for="text-disabled-1"&gt;Label champs de saisie
+                &lt;/label&gt;
+                &lt;input class="rf-input" type="text" id="text-disabled-1" name="text-disabled-1"&gt;
+            &lt;/div&gt;
+            &lt;div class="rf-input-group"&gt;
+                &lt;label class="rf-label" for="text-disabled-2"&gt;Label champs de saisie
+                &lt;/label&gt;
+                &lt;input class="rf-input" type="text" id="text-disabled-2" name="text-disabled-2"&gt;
+            &lt;/div&gt;
+            &lt;div class="rf-input-group"&gt;
+                &lt;label class="rf-label" for="text-disabled-3"&gt;Label champs de saisie
+                &lt;/label&gt;
+                &lt;input class="rf-input" type="text" id="text-disabled-3" name="text-disabled-3"&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/fieldset&gt;
+&lt;/div&gt;
+</code></pre></div></section></div><h4 class="rf-h4">Ensemble de boutons radio désactivés</h4><div class="rf-form-group"><fieldset class="rf-fieldset" disabled="disabled"><legend class="rf-fieldset__legend" aria-describedby="radio-disabled-desc-hint">Légende pour l’ensemble de champs</legend><span class="rf-hint-text" id="radio-disabled-desc-hint">Texte de description additionnel</span><div class="rf-fieldset__content"><div class="rf-radio-group"><input type="radio" id="radio-disabled-1" name="radio-disabled"> <label class="rf-label" for="radio-disabled-1">Label radio</label></div><div class="rf-radio-group"><input type="radio" id="radio-disabled-2" name="radio-disabled"> <label class="rf-label" for="radio-disabled-2">Label radio</label></div><div class="rf-radio-group"><input type="radio" id="radio-disabled-3" name="radio-disabled"> <label class="rf-label" for="radio-disabled-3">Label radio</label></div></div></fieldset></div><div class="rf-mt-3w rf-pb-6w"><section class="rf-accordion"><h3 class="rf-accordion__title"><button class="rf-accordion__btn" aria-expanded="false" aria-controls="snippet~266">Snippet de code</button></h3><div class="rf-collapse" id="snippet~266"><pre class="language-html"><code>&lt;div class="rf-form-group"&gt;
+    &lt;fieldset class="rf-fieldset" disabled="disabled"&gt;
+        &lt;legend class="rf-fieldset__legend" aria-describedby="radio-disabled-desc-hint"&gt;Légende pour l’ensemble de champs&lt;/legend&gt;
+        &lt;span class="rf-hint-text" id="radio-disabled-desc-hint"&gt;Texte de description additionnel&lt;/span&gt;
+        &lt;div class="rf-fieldset__content"&gt;
+            &lt;div class="rf-radio-group"&gt;
+                &lt;input type="radio" id="radio-disabled-1" name="radio-disabled"&gt;
+                &lt;label class="rf-label" for="radio-disabled-1"&gt;Label radio
+                &lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class="rf-radio-group"&gt;
+                &lt;input type="radio" id="radio-disabled-2" name="radio-disabled"&gt;
+                &lt;label class="rf-label" for="radio-disabled-2"&gt;Label radio
+                &lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class="rf-radio-group"&gt;
+                &lt;input type="radio" id="radio-disabled-3" name="radio-disabled"&gt;
+                &lt;label class="rf-label" for="radio-disabled-3"&gt;Label radio
+                &lt;/label&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/fieldset&gt;
+&lt;/div&gt;
+</code></pre></div></section></div><h4 class="rf-h4">Ensemble de cases à cocher désactivés</h4><div class="rf-form-group"><fieldset class="rf-fieldset" disabled="disabled"><legend class="rf-fieldset__legend" aria-describedby="checkbox-disabled-desc-hint">Légende pour l’ensemble de champs</legend><span class="rf-hint-text" id="checkbox-disabled-desc-hint">Texte de description additionnel</span><div class="rf-fieldset__content"><div class="rf-checkbox-group"><input type="checkbox" id="checkbox-disabled-1" name="checkbox-disabled-1"> <label class="rf-label" for="checkbox-disabled-1">Label checkbox</label></div><div class="rf-checkbox-group"><input type="checkbox" id="checkbox-disabled-2" name="checkbox-disabled-2"> <label class="rf-label" for="checkbox-disabled-2">Label checkbox</label></div><div class="rf-checkbox-group"><input type="checkbox" id="checkbox-disabled-3" name="checkbox-disabled-3"> <label class="rf-label" for="checkbox-disabled-3">Label checkbox</label></div></div></fieldset></div><div class="rf-mt-3w rf-pb-6w"><section class="rf-accordion"><h3 class="rf-accordion__title"><button class="rf-accordion__btn" aria-expanded="false" aria-controls="snippet~267">Snippet de code</button></h3><div class="rf-collapse" id="snippet~267"><pre class="language-html"><code>&lt;div class="rf-form-group"&gt;
+    &lt;fieldset class="rf-fieldset" disabled="disabled"&gt;
+        &lt;legend class="rf-fieldset__legend" aria-describedby="checkbox-disabled-desc-hint"&gt;Légende pour l’ensemble de champs&lt;/legend&gt;
+        &lt;span class="rf-hint-text" id="checkbox-disabled-desc-hint"&gt;Texte de description additionnel&lt;/span&gt;
+        &lt;div class="rf-fieldset__content"&gt;
+            &lt;div class="rf-checkbox-group"&gt;
+                &lt;input type="checkbox" id="checkbox-disabled-1" name="checkbox-disabled-1"&gt;
+                &lt;label class="rf-label" for="checkbox-disabled-1"&gt;Label checkbox
+                &lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class="rf-checkbox-group"&gt;
+                &lt;input type="checkbox" id="checkbox-disabled-2" name="checkbox-disabled-2"&gt;
+                &lt;label class="rf-label" for="checkbox-disabled-2"&gt;Label checkbox
+                &lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class="rf-checkbox-group"&gt;
+                &lt;input type="checkbox" id="checkbox-disabled-3" name="checkbox-disabled-3"&gt;
+                &lt;label class="rf-label" for="checkbox-disabled-3"&gt;Label checkbox
+                &lt;/label&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/fieldset&gt;
+&lt;/div&gt;
+</code></pre></div></section></div><button class="rf-btn" title="Label bouton MD" type="submit">Label bouton MD</button></form></div></div></div><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/autoloader/prism-autoloader.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/toolbar/prism-toolbar.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/normalize-whitespace/prism-normalize-whitespace.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script><script src="../js/forms.3691579a.js"></script></body></html>

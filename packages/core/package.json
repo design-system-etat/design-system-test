@@ -1,0 +1,20 @@
+{
+  "name": "@gouvfr/core",
+  "version": "0.5.3",
+  "license": "MIT",
+  "description": "Core",
+  "level": "1.2",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --config ../../webpack/webpack.config.dev.js"
+  },
+  "dependencies": {
+    "@gouvfr/schemes": "^0.5.3"
+  },
+  "devDependencies": {
+    "gently-copy": "^3.2.0",
+    "prompt": "^1.0.0"
+  }
+}

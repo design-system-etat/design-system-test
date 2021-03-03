@@ -1,0 +1,17 @@
+////
+/// Links Module
+/// @group links
+////
+
+#{dse(link)} {
+  @include build-link();
+
+  @include specify(a) {
+    @include scheme-element-text-color(bf500, true);
+  }
+  @include scheme-element-bg-color(t-plain, false, true);
+
+  @include disabled-link(true, false, false);
+}
+
+@import 'modules/close';

@@ -1,0 +1,102 @@
+////
+/// Breadcrumb Module
+/// @group breadcrumb
+////
+
+/**
+un padding de 4px et une marge négative en compensation sont mis en place afin d'éviter de couper le focus.
+ */
+#{dse(breadcrumb)} {
+  @extend %default-text-color;
+  @include margin(2v -2v 6v);
+  @include padding(2v);
+  @include margin-bottom(8v, md);
+  overflow: hidden;
+  @include text-style(xs);
+  position: relative;
+
+  &__button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-family: inherit;
+    font-size: font-size(12);
+    line-height: 1.5;
+    @include margin(0);
+    @include padding(0);
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
+    @include scheme-element-text-color(g600, true);
+    @include scheme-element-bg-color(t-plain);
+    @include scheme-element-focus();
+  }
+
+  @include list() {
+    @extend %list-reset;
+    @include text-style(xs);
+    display: block;
+
+    &[hidden] {
+      display: none;
+    }
+  }
+
+  /**
+  margin-bottom de 1N pour créer cet espace entre chaque ligne
+   */
+  @include group-item() {
+    display: inline;
+
+    &:first-child {
+      @include before() {
+        content: none;
+      }
+    }
+
+    /**
+    flèche séparatrice en svg avec un espace à la suite
+     */
+    @include margin-bottom(2v);
+    vertical-align: middle;
+
+    &:not(:first-child) {
+      @include font-icon(arrow-right-s-line, sm);
+
+      @include before {
+        @include scheme-element-text-color(g600, true);
+        @include margin-right(0);
+        //margin-top: 0.0625rem;
+        //margin-bottom: 0.5625rem;
+        vertical-align: middle;
+      }
+    }
+
+    a {
+      @extend %a;
+      display: inline;
+      vertical-align: middle;
+    }
+
+    /**
+      on place un espace après l'élément de manière à ce qu'il ne soit pas présent devant la flèche au retour à la ligne
+    */
+    &:not(:last-child) {
+      @include after(null, '') {
+        @include margin-right(0);
+      }
+
+      a {
+        @include scheme-element-text-color(g600, true);
+      }
+    }
+
+    &--curent {
+      pointer-events: none;
+
+      a {
+        @include scheme-element-text-color(g800, true);
+      }
+    }
+  }
+}

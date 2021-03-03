@@ -1,0 +1,25 @@
+////
+/// Header Module : navigation
+/// @group header
+////
+
+#{dse(nav)}:not(&__popin) {
+  display: none;
+  @include respond-from(md) {
+    display: block;
+  }
+}
+
+#{dse(nav)} {
+  @include respond-from(md) {
+    @include margin(0 calc(50% - 50vw));
+    @include padding(0 calc(50vw - 50%));
+
+    @include scheme-element-box-shadow-color(g300, true, inset 0 1px 0 0 $COLOR);
+
+    #{dse(menu)}::after,
+    #{dse(mega-menu)} {
+      @include shadow(md);
+    }
+  }
+}

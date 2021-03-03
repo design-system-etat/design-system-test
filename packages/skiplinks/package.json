@@ -1,0 +1,22 @@
+{
+  "name": "@gouvfr/skiplinks",
+  "version": "0.5.3",
+  "license": "MIT",
+  "description": "Liens d'évitement",
+  "level": "4",
+  "publishConfig": {
+    "access": "public"
+  },
+  "config": {
+    "prepend": true
+  },
+  "scripts": {
+    "start": "webpack-dev-server --config ../../webpack/webpack.config.dev.js"
+  },
+  "dependencies": {
+    "@gouvfr/schemes": "^0.5.3",
+    "@gouvfr/core": "^0.5.3",
+    "@gouvfr/links": "^0.5.3",
+    "@gouvfr/buttons": "^0.5.3"
+  }
+}

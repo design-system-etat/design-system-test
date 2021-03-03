@@ -1,0 +1,12 @@
+////
+/// Toggle Module : Group
+/// @group toggle
+////
+
+/*
+ * On surcharge les styles de base (provisoire)
+ */
+
+#{dse(toggle)}-list {
+  @extend %list-reset;
+}

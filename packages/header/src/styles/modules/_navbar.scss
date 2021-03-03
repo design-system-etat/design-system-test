@@ -1,0 +1,83 @@
+////
+/// Header Module : navigation bar
+/// @group header
+////
+
+&__navbar {
+  @include display-flex(row,flex-start);
+  @include margin(4v 1v 0);
+  @include size(100%);
+  @include padding(3v 0 0);
+  @include relative;
+
+  @include respond-from(md) {
+    @include margin(0 1v);
+    flex: 1 1 auto;
+  }
+
+  @include after(block, '') {
+    @include absolute(0, 0, auto, 0, auto, 1px);
+    @include margin(0 2v);
+
+    @include scheme-element-bg-color(g300, true);
+
+    @include respond-from(md) {
+      content: none;
+      display: none;
+    }
+  }
+
+  #{dse(service)} {
+    @include margin(-3v auto -3v -1v);
+    @include margin(-3v, md);
+    @include padding(3v);
+    @include relative;
+
+    @include title {
+      @extend %a-reset;
+      @include override-reset-link-style;
+      position: static;
+      @include title-style(h6);
+      font-weight: bold;
+      @include scheme-element-text-color(g800, true);
+      @include margin(0);
+
+      &:focus {
+        outline-offset: 9999px;
+      }
+
+      @include before(block, '') {
+        @include absolute(0, 0, 0, 0, 100%, 100%);
+        @include scheme-element-focus();
+      }
+    }
+
+    &__tagline {
+      @include text-style(sm);
+      @include margin(0);
+    }
+
+    &__title + &__tagline {
+      @include margin-top(1v);
+    }
+  }
+
+  @include nest-btn(md, only) {
+    @include scheme-element-bg-color(t-plain, false, override);
+    @include scheme-element-text-color(bf500);
+    flex: 0 0 auto;
+
+    &--menu,
+    &#{dse(fi-menu-fill)} {
+      @include scheme-element-text-color(g700);
+    }
+
+    &:first-child {
+      @include margin-left(auto);
+    }
+
+    @include respond-from(md) {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+////
+/// Header Module : search bar
+/// @group header
+////
+
+#{dse(search-bar)} {
+  @include margin-top(5v);
+
+  @include respond-from(md) {
+    @include size(23.667rem);
+    @include margin-top(0);
+    box-shadow: none;
+  }
+}

@@ -1,0 +1,20 @@
+////
+/// Core Settings : Typography
+/// @group core
+////
+
+$base-font-size-px: 16px !default;
+
+$static-font-path: '../core/fonts' !default;
+
+$font-family-sans: 'Marianne', arial, sans-serif;
+$font-family-serif: 'Spectral', georgia, serif;
+
+@import "settings/font-face";
+@import "settings/font-size";
+@import "settings/font-weight";
+@import "settings/headings";
+@import "settings/displays";
+@import "settings/texts";
+@import "settings/text";
+@import "settings/title";

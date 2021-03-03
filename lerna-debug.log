@@ -1,0 +1,11 @@
+0 silly argv {
+0 silly argv   _: [ 'publish' ],
+0 silly argv   composed: 'publish',
+0 silly argv   lernaVersion: '3.21.0',
+0 silly argv   '$0': 'node_modules/.bin/lerna'
+0 silly argv }
+1 notice cli v3.21.0
+2 verbose rootPath /Users/jhourdeaux/workspace/project/ds/composants/code
+3 error JSONError: Unexpected token } in JSON at position 259 while parsing near '...k.config.dev.js",  },  "dependencies":...' in packages/core/package.json
+3 error     at module.exports (/Users/jhourdeaux/workspace/project/ds/composants/code/node_modules/parse-json/index.js:26:19)
+3 error     at parse (/Users/jhourdeaux/workspace/project/ds/composants/code/node_modules/load-json-file/index.js:15:9)

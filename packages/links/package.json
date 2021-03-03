@@ -1,0 +1,20 @@
+{
+  "name": "@gouvfr/links",
+  "version": "0.5.3",
+  "license": "MIT",
+  "description": "Liens",
+  "level": "3",
+  "publishConfig": {
+    "access": "public"
+  },
+  "config": {
+    "wrapper": "col-8"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --config ../../webpack/webpack.config.dev.js"
+  },
+  "dependencies": {
+    "@gouvfr/schemes": "^0.5.3",
+    "@gouvfr/core": "^0.5.3"
+  }
+}

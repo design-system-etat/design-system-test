@@ -1,0 +1,19 @@
+{
+  "name": "@gouvfr/sidemenu",
+  "version": "0.5.3",
+  "license": "MIT",
+  "description": "Menu latéral",
+  "level": "5",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --config ../../webpack/webpack.config.dev.js"
+  },
+  "dependencies": {
+    "@gouvfr/schemes": "^0.5.3",
+    "@gouvfr/core": "^0.5.3",
+    "@gouvfr/links": "^0.5.3",
+    "@gouvfr/buttons": "^0.5.3"
+  }
+}

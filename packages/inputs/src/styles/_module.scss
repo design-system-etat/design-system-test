@@ -1,0 +1,84 @@
+////
+/// Inputs Module
+/// @group inputs
+////
+
+#{dse(input)} {
+  display: block;
+  @include size(100%);
+  border: 0;
+  border-radius: space(1v) space(1v) 0 0;
+  @include text-style(md);
+  @include padding(2v 4v);
+  // -webkit-appearance: none;
+  // -moz-appearance: none;
+  // appearance: none;
+
+  @include scheme-element-text-color(g800, true);
+  @include scheme-element-bg-color(g200, true);
+  @include scheme-element-box-shadow-color(g800, true, inset 0 -2px 0 0 $COLOR);
+  @include scheme-element-focus();
+
+  /**
+   * Style du placeholder
+   */
+  @include placeholder {
+    @include scheme-element-text-color(g600-g400, true);
+    opacity: 1;
+    font-style: italic;
+  }
+
+  /**
+   * Modificateur pour les champs validés
+   */
+  &--valid {
+    @include scheme-element-box-shadow-color(success, false, inset 0 -2px 0 0 $COLOR);
+  }
+
+  /**
+   * Modificateur pour les champs présentant des erreurs
+   */
+  &--error {
+    @include scheme-element-box-shadow-color(error, false, inset 0 -2px 0 0 $COLOR);
+  }
+
+  /**
+   * Style pour l'input désactivé
+   */
+  @include disabled-form-field(input);
+
+  /**
+   * On applique une hauteur maximale si l'élément n'est pas un textarea
+   */
+  &:not(textarea) {
+    max-height: 2.5rem;
+  }
+
+  /**
+   * On applique un style lorsque la valeur est automatiquement remplie par le navigateur
+   * sur les navigateurs webkit.
+   */
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus {
+    @include scheme-element-box-shadow-color(g200, true, inset 0 0 0 100px $COLOR);
+    @include _scheme-element(g800, -webkit-text-fill-color, true);
+  }
+}
+
+/**
+ * Ajout d'un wrapper quand on a besoin de mettre une icône
+ */
+#{dse(input-wrap)} {
+  @include relative;
+  display: block;
+
+  @include custom-icons(sm) {
+    @include absolute(3v, 3v, 3v);
+    @include margin(auto);
+  }
+
+  #{dse(input)} {
+    @include padding-right(10v);
+  }
+}

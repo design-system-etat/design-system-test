@@ -1,0 +1,57 @@
+////
+/// Callouts Module
+/// @group callouts
+////
+
+#{dse(callout)} {
+  @extend %default-text-color;
+  @include relative();
+  @include padding(6v);
+  @include component-as-scheme(light, grey-200, false, 0 0 0 space(1v));
+
+  /**
+   * Inclusion de l'icône (optionnel)
+   */
+  @include custom-icons(md) {
+    display: block;
+    @include margin(-2v 0 2v);
+
+    @include respond-from(md) {
+      @include absolute(4v, null, null, 4v);
+      @include margin(0);
+    }
+  }
+
+  /**
+   * Si une icône est présente, on rajoute du padding à partir du breakpoint md
+   */
+  @include has-icon {
+    @include padding(14v 12v 10v, md);
+  }
+
+  @include title() {
+    @include force-over-reset() {
+      @include title-style(h4);
+      @include scheme-element-text-color(g800, true);
+      @include margin(0 0 2v);
+    }
+  }
+
+  &__text {
+    @include force-over-reset() {
+      @include text-style(lg);
+      @include margin(0);
+    }
+  }
+
+  @include component-as-scheme-modifiers(soft, 0 0 0 space(1v));
+
+  /**
+   * Ajout de marge quand on inclut un bouton (optionnel)
+   */
+  #{dse(btn)} {
+    @include margin-top(4v);
+  }
+
+  @include padding(8v 12v, md);
+}

@@ -1,0 +1,85 @@
+////
+/// Header Module
+/// @group header
+////
+
+#{dse(header)} {
+  @extend %default-text-color;
+  @include size(100%);
+  @include shadow(md);
+  @include scheme-element-bg-color(w-g750, true);
+
+  @include body {
+    @include display-flex(row, center, flex-start, wrap);
+    @include margin(0 -3v);
+    @include padding(3v 0);
+    @include margin(0 -5v, md);
+    @include padding(6v 0, md);
+
+    @include respond-from(md) {
+      flex-wrap: nowrap;
+    }
+  }
+
+  @import 'modules/popin';
+
+  @import 'modules/navbar';
+
+  &__brand {
+    @include padding(0 3v);
+    @include logo(sm, none) {
+      @include margin(-1em);
+    }
+  }
+
+  &__operator {
+    @include padding(0 3v);
+  }
+
+  &__tools {
+    @include respond-from(md) {
+      flex-direction: column;
+      align-items: flex-end;
+      @include margin(0 0 0 auto);
+      text-align: right;
+
+      #{dse(shortcuts)} + #{dse(search-bar)} {
+        @include margin-top(4v);
+      }
+    }
+  }
+
+  &__brand,
+  &__operator,
+  &__navbar,
+  &__tools {
+    @include respond-from(md) {
+      @include padding(0 5v);
+    }
+  }
+
+  &__brand,
+  &__operator,
+  &__tools {
+    @include respond-from(md) {
+      flex: 1 0 auto;
+    }
+  }
+
+  &__tools:not(&__popin) {
+    display: none;
+    @include respond-from(md) {
+      @include display-flex(null);
+    }
+  }
+
+  @import 'modules/shortcuts';
+  @import 'modules/search';
+  @import 'modules/nav';
+
+  //TODO: rf-link
+  #{dse(btn) + dse(fi-close-line)} {
+    @include scheme-element-bg-color(t-plain, false, override);
+    @include scheme-element-text-color(bf500, false);
+  }
+}

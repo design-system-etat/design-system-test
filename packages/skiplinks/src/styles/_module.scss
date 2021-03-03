@@ -1,0 +1,42 @@
+////
+/// Skiplinks Module
+/// @group skiplinks
+////
+
+#{dse(skiplinks)} {
+  @include absolute;
+  @include padding(4v 0);
+  @include scheme-element-bg-color(g200, true);
+  transform: translateY(-100%);
+
+  &:focus-within {
+    @include relative;
+    transform: translateY(0);
+  }
+
+  @include list {
+    @extend %list-reset;
+    @include display-flex(column);
+    @include margin(0 -4v -6v);
+
+    > li {
+      @include margin(0 4v 6v);
+      @include margin(0 4v, md);
+
+      @include before(null, none);
+
+      @include nest-link(md, null, null, null, true);
+    }
+
+    @include respond-from(md) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      @include margin(0 -4v);
+    }
+
+    &:focus-within {
+      @include relative;
+      transform: translateY(0);
+    }
+  }
+}

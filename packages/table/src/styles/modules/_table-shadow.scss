@@ -1,0 +1,65 @@
+////
+/// Table module : Shadow
+/// @group Table
+////
+
+$shadow-wrapper: #{dse(table__wrapper)};
+
+/*
+* Ombres ajoutées en Js si le contenu est plus grand que le conteneur
+*/
+&--shadow {
+  caption {
+    @include absolute;
+  }
+
+  #{$shadow-wrapper} {
+    overflow: visible;
+    @include relative;
+
+    table {
+      @include before(block, '') {
+        @include absolute(0, 0, 0, 0);
+        @include z-index(over);
+        opacity: 1;
+        pointer-events: none;
+        @include scheme-element-box-shadow-color(scroll-shadow, false, 'inset 0 0 0 transparent, inset 0 0 0 transparent');
+        transition: box-shadow ease-out 0.2s;
+      }
+    }
+  }
+
+  /**
+   * Modifier ombre à gauche
+   **/
+  &-left #{$shadow-wrapper} table {
+    @include before(block, '') {
+      @include scheme-element-box-shadow-color(scroll-shadow, false, (inset space(8v) 0 space(4v) (-(space(6v))) $COLOR, inset 0 0 0 transparent));
+    }
+  }
+
+  /**
+   * Modifier ombre à droite
+   **/
+  &-right #{$shadow-wrapper} table {
+    @include before(block, '') {
+      @include scheme-element-box-shadow-color(scroll-shadow, false, (inset 0 0 0 transparent, inset (-(space(8v))) 0 space(4v) (-(space(6v))) $COLOR));
+    }
+  }
+
+  /**
+   * Modifier combinaison ombre à gauche et ombre à droite
+   **/
+  &-left#{&}-right #{$shadow-wrapper} table {
+    @include before(block, '') {
+      @include scheme-element-box-shadow-color(scroll-shadow, false, (inset space(8v) 0 space(4v) (-(space(6v))) $COLOR, inset (-(space(8v))) 0 space(4v) (-(space(6v))) $COLOR));
+    }
+  }
+
+  table {
+    @include size(100%);
+    display: block;
+    overflow-y: hidden;
+    overflow-x: auto;
+  }
+}

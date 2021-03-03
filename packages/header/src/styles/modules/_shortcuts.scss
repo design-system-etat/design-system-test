@@ -1,0 +1,55 @@
+////
+/// Header Module : shortcuts
+/// @group header
+////
+
+#{dse(shortcuts)} {
+  @include margin(0 -6v, md);
+
+  @include list {
+    @include display-flex(column);
+    @include margin(0);
+    @include padding(0);
+    @include margin(0 0 -2v, md);
+
+    @include respond-from(md) {
+      @include display-flex(row, null, flex-end, wrap);
+    }
+  }
+
+  //TODO: icon dans le link, dépendance sur rf-links
+
+  @include list-item {
+    @include display-flex(row,center);
+    @include padding(0);
+    @include margin(0);
+    @include scheme-element-box-shadow-color(g300, true, inset 0 -1px 0 0 $COLOR);
+
+    @include respond-from(md) {
+      @include padding(0 3v);
+      @include margin(0 0 2v);
+      box-shadow: none;
+
+      &:not(:first-child) {
+        @include scheme-element-border-color(g300, true, left);
+      }
+    }
+
+    @include before(null, none);
+
+    @include nest-link(sm, left, null, true) {
+      border-radius: 0;
+      min-width: 100%;
+      min-height: 3rem;
+      @include padding(3v 0);
+      max-height: none;
+      max-width: none;
+
+      @include before() {
+        @include margin-left(1v);
+      }
+    }
+
+    @include nest-link(sm, left, null, md);
+  }
+}
