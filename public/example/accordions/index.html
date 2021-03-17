@@ -1,0 +1,1952 @@
+<!doctype html>
+<html lang="fr" data-rf-theme>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Accordéon - Design System</title>
+        <link rel="icon" href="../../dist/favicons/favicon.svg" type="image/svg+xml">
+        <link rel="apple-touch-icon" href="../../dist/favicons/apple-touch-icon.png"><!-- 180×180 -->
+        <!-- si favicon.ico peut etre placé à la racine du serveur, retirer la ligne ci-dessous -->
+        <link rel="icon" href="../../dist/favicons/favicon.ico"><!-- 32×32 -->
+        <link rel="manifest" href="../../dist/favicons/manifest.webmanifest">
+        <!-- Modifier les chemins relatifs des favicons en fonction de la structure du projet -->
+        <!-- Dans le fichier manifest.webmanifest aussi, modifier les chemins vers les images -->
+        <link href="../../dist/css/core.css" rel="stylesheet">
+        <link href="../../dist/css/accordions.css" rel="stylesheet">
+        <link href="../../dist/css/forms.css" rel="stylesheet">
+        <link href="../../dist/css/links.css" rel="stylesheet">
+        <link href="../../dist/css/schemes.css" rel="stylesheet">
+        <link href="../../dist/css/tabs.css" rel="stylesheet">
+        <link href="../../dist/css/utilities.css" rel="stylesheet">
+        <link href="../../dist/css/buttons.css" rel="stylesheet">
+        <link href="../../dist/css/checkboxes.css" rel="stylesheet">
+        <style>
+            code[class*="language-"],
+            pre[class*="language-"] {
+                white-space: pre-wrap;
+            }
+
+            .example-controls {
+                z-index: 100000;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                box-shadow: 0 -8px 16px 0 rgba(0, 0, 0, 0.1), 0 -8px 16px -16px rgba(0, 0, 0, 0.32);
+                padding: 4px 32px;
+                background-color: var(--w-g750);
+            }
+
+            .example-controls [class*="-form-group"] {
+                margin-bottom: 0;
+            }
+
+        </style>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/themes/prism.min.css" rel="stylesheet" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/toolbar/prism-toolbar.min.css" rel="stylesheet" />
+    </head>
+
+    <body class="rf-mb-12w" style="margin:0; padding:0;">
+        <div class="example-controls">
+            <div class="rf-form-group">
+                <fieldset class="rf-fieldset rf-fieldset--inline">
+                    <legend class="rf-sr-only">Interface de contrôle des test</legend>
+                    <div class="rf-fieldset__content">
+                        <div class="rf-checkbox-group">
+                            <input type="checkbox" id="theme-checkbox" name="checkboxes-inline-1">
+                            <label class="rf-label" for="theme-checkbox">Thème clair / sombre</label>
+                        </div>
+                        <div class="rf-checkbox-group">
+                            <input type="checkbox" id="mourning-checkbox" name="checkboxes-inline-2">
+                            <label class="rf-label" for="mourning-checkbox">En deuil</label>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+        <div class="rf-container rf-mt-2v">
+            <a class="rf-link rf-fi-arrow-left-line rf-link--icon-left" href="../">Retour</a>
+            <h1>Accordéon - Design System</h1>
+            <p>Les accordéons permettent aux utilisateurs d'afficher et de masquer des sections de contenu présentés dans une page.</p>
+        </div>
+        <div class="rf-container">
+            <div class="rf-grid-row rf-grid-row--center">
+                <div class="rf-col-md-8 rf-col-12">
+                    <h4>Accordéon</h4>
+                    <div class="rf-mb-6v">
+                        <section class="rf-accordion">
+                            <h3 class="rf-accordion__title">
+                                <button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-49">Intitulé accordéon</button>
+                            </h3>
+                            <div class="rf-collapse" id="accordion-49">
+                                <!-- données de test -->
+                                <div>
+                                    <h4 class="rf-h4">Contenu </h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                    <ul>
+                                        <li>list item</li>
+                                        <li>list item</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="rf-mb-12v">
+                        <section class="rf-accordion">
+                            <h3 class="rf-accordion__title">
+                                <button class="rf-accordion__btn" aria-expanded="false" aria-controls="snippet-51">Extrait de code</button>
+                            </h3>
+                            <div class="rf-collapse" id="snippet-51">
+                                <pre class=" language-html"><code>&lt;section class="rf-accordion"&gt;
+    &lt;h3 class="rf-accordion__title"&gt;
+        &lt;button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-50"&gt;Intitulé accordéon&lt;/button&gt;
+    &lt;/h3&gt;
+    &lt;div class="rf-collapse" id="accordion-50"&gt;
+        &lt;!-- données de test --&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
+</code></pre>
+                            </div>
+                        </section>
+                    </div>
+                    <h4>Groupe d‘accordéons</h4>
+                    <div class="rf-mb-6v">
+                        <ul class="rf-accordions-group">
+                            <li>
+                                <section class="rf-accordion">
+                                    <h3 class="rf-accordion__title">
+                                        <button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-52">Intitulé accordéon</button>
+                                    </h3>
+                                    <div class="rf-collapse" id="accordion-52">
+                                        <!-- données de test -->
+                                        <div>
+                                            <h4 class="rf-h4">Contenu </h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                            <ul>
+                                                <li>list item<ul>
+                                                        <li>list item niveau 2</li>
+                                                        <li>list item niveau 2</li>
+                                                    </ul>
+                                                </li>
+                                                <li>list item</li>
+                                                <li>list item<ul>
+                                                        <li>list item niveau 2</li>
+                                                        <li>list item niveau 2</li>
+                                                        <li>list item niveau 2</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </section>
+                            </li>
+                            <li>
+                                <section class="rf-accordion">
+                                    <h3 class="rf-accordion__title">
+                                        <button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-53">Intitulé accordéon</button>
+                                    </h3>
+                                    <div class="rf-collapse" id="accordion-53">
+                                        <!-- données de test -->
+                                        <div>
+                                            <h4 class="rf-h4">Contenu </h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                            <ul>
+                                                <li>list item</li>
+                                                <li>list item</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </section>
+                            </li>
+                            <li>
+                                <section class="rf-accordion">
+                                    <h3 class="rf-accordion__title">
+                                        <button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-54">Intitulé accordéon</button>
+                                    </h3>
+                                    <div class="rf-collapse" id="accordion-54">
+                                        <!-- données de test -->
+                                        <div>
+                                            <h4 class="rf-h4">Contenu </h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                            <ul>
+                                                <li>list item</li>
+                                                <li>list item<ul>
+                                                        <li>list item niveau 2</li>
+                                                        <li>list item niveau 2</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </section>
+                            </li>
+                            <li>
+                                <section class="rf-accordion">
+                                    <h3 class="rf-accordion__title">
+                                        <button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-55">Intitulé accordéon</button>
+                                    </h3>
+                                    <div class="rf-collapse" id="accordion-55">
+                                        <!-- données de test -->
+                                        <div>
+                                            <h4 class="rf-h4">Contenu </h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                            <ul>
+                                                <li>list item</li>
+                                                <li>list item</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </section>
+                            </li>
+                            <li>
+                                <section class="rf-accordion">
+                                    <h3 class="rf-accordion__title">
+                                        <button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-56">Intitulé accordéon</button>
+                                    </h3>
+                                    <div class="rf-collapse" id="accordion-56">
+                                        <!-- données de test -->
+                                        <div>
+                                            <h4 class="rf-h4">Contenu </h4>
+                                            <img src="../img/image.jpg" class="rf-responsive-img" alt="[text alternatif de l’image | à modifier]">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                            <ul>
+                                                <li>list item<ul>
+                                                        <li>list item niveau 2</li>
+                                                        <li>list item niveau 2</li>
+                                                    </ul>
+                                                </li>
+                                                <li>list item</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </section>
+                            </li>
+                            <li>
+                                <section class="rf-accordion">
+                                    <h3 class="rf-accordion__title">
+                                        <button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-57">Intitulé accordéon</button>
+                                    </h3>
+                                    <div class="rf-collapse" id="accordion-57">
+                                        <!-- données de test -->
+                                        <div>
+                                            <h4 class="rf-h4">Contenu </h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                            <ul>
+                                                <li>list item</li>
+                                                <li>list item<ul>
+                                                        <li>list item niveau 2</li>
+                                                        <li>list item niveau 2</li>
+                                                        <li>list item niveau 2</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </section>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="rf-mb-12v">
+                        <section class="rf-accordion">
+                            <h3 class="rf-accordion__title">
+                                <button class="rf-accordion__btn" aria-expanded="false" aria-controls="snippet-64">Extrait de code</button>
+                            </h3>
+                            <div class="rf-collapse" id="snippet-64">
+                                <pre class=" language-html"><code>&lt;ul class="rf-accordions-group"&gt;
+    &lt;li&gt;
+        &lt;section class="rf-accordion"&gt;
+            &lt;h3 class="rf-accordion__title"&gt;
+                &lt;button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-58"&gt;Intitulé accordéon&lt;/button&gt;
+            &lt;/h3&gt;
+            &lt;div class="rf-collapse" id="accordion-58"&gt;
+                &lt;!-- données de test --&gt;
+            &lt;/div&gt;
+        &lt;/section&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;section class="rf-accordion"&gt;
+            &lt;h3 class="rf-accordion__title"&gt;
+                &lt;button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-59"&gt;Intitulé accordéon&lt;/button&gt;
+            &lt;/h3&gt;
+            &lt;div class="rf-collapse" id="accordion-59"&gt;
+                &lt;!-- données de test --&gt;
+            &lt;/div&gt;
+        &lt;/section&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;section class="rf-accordion"&gt;
+            &lt;h3 class="rf-accordion__title"&gt;
+                &lt;button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-60"&gt;Intitulé accordéon&lt;/button&gt;
+            &lt;/h3&gt;
+            &lt;div class="rf-collapse" id="accordion-60"&gt;
+                &lt;!-- données de test --&gt;
+            &lt;/div&gt;
+        &lt;/section&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;section class="rf-accordion"&gt;
+            &lt;h3 class="rf-accordion__title"&gt;
+                &lt;button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-61"&gt;Intitulé accordéon&lt;/button&gt;
+            &lt;/h3&gt;
+            &lt;div class="rf-collapse" id="accordion-61"&gt;
+                &lt;!-- données de test --&gt;
+            &lt;/div&gt;
+        &lt;/section&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;section class="rf-accordion"&gt;
+            &lt;h3 class="rf-accordion__title"&gt;
+                &lt;button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-62"&gt;Intitulé accordéon&lt;/button&gt;
+            &lt;/h3&gt;
+            &lt;div class="rf-collapse" id="accordion-62"&gt;
+                &lt;!-- données de test --&gt;
+            &lt;/div&gt;
+        &lt;/section&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;section class="rf-accordion"&gt;
+            &lt;h3 class="rf-accordion__title"&gt;
+                &lt;button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-63"&gt;Intitulé accordéon&lt;/button&gt;
+            &lt;/h3&gt;
+            &lt;div class="rf-collapse" id="accordion-63"&gt;
+                &lt;!-- données de test --&gt;
+            &lt;/div&gt;
+        &lt;/section&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+                            </div>
+                        </section>
+                    </div>
+                    <h4>Accordéon dans un accordéon</h4>
+                    <div class="rf-mb-6v">
+                        <section class="rf-accordion">
+                            <h3 class="rf-accordion__title">
+                                <button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-66">Intitulé accordéon</button>
+                            </h3>
+                            <div class="rf-collapse" id="accordion-66">
+                                <section class="rf-accordion">
+                                    <h3 class="rf-accordion__title">
+                                        <button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-65">Intitulé accordéon</button>
+                                    </h3>
+                                    <div class="rf-collapse" id="accordion-65">
+                                        <!-- données de test -->
+                                        <div>
+                                            <h4 class="rf-h4">Contenu </h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                            <ul>
+                                                <li>list item<ul>
+                                                        <li>list item niveau 2</li>
+                                                        <li>list item niveau 2</li>
+                                                        <li>list item niveau 2</li>
+                                                    </ul>
+                                                </li>
+                                                <li>list item</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="rf-mb-12v">
+                        <section class="rf-accordion">
+                            <h3 class="rf-accordion__title">
+                                <button class="rf-accordion__btn" aria-expanded="false" aria-controls="snippet-69">Extrait de code</button>
+                            </h3>
+                            <div class="rf-collapse" id="snippet-69">
+                                <pre class=" language-html"><code>&lt;section class="rf-accordion"&gt;
+    &lt;h3 class="rf-accordion__title"&gt;
+        &lt;button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-68"&gt;Intitulé accordéon&lt;/button&gt;
+    &lt;/h3&gt;
+    &lt;div class="rf-collapse" id="accordion-68"&gt;
+        &lt;section class="rf-accordion"&gt;
+            &lt;h3 class="rf-accordion__title"&gt;
+                &lt;button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-67"&gt;Intitulé accordéon&lt;/button&gt;
+            &lt;/h3&gt;
+            &lt;div class="rf-collapse" id="accordion-67"&gt;
+                &lt;!-- données de test --&gt;
+            &lt;/div&gt;
+        &lt;/section&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
+</code></pre>
+                            </div>
+                        </section>
+                    </div>
+                    <h4>Groupes d‘accordéons dans des groupes d‘accordéons</h4>
+                    <div class="rf-mb-6v">
+                        <ul class="rf-accordions-group">
+                            <li>
+                                <section class="rf-accordion">
+                                    <h3 class="rf-accordion__title">
+                                        <button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-76">Intitulé accordéon</button>
+                                    </h3>
+                                    <div class="rf-collapse" id="accordion-76">
+                                        <ul class="rf-accordions-group">
+                                            <li>
+                                                <section class="rf-accordion">
+                                                    <h3 class="rf-accordion__title">
+                                                        <button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-70">Intitulé accordéon</button>
+                                                    </h3>
+                                                    <div class="rf-collapse" id="accordion-70">
+                                                        <!-- données de test -->
+                                                        <div>
+                                                            <h4 class="rf-h4">Contenu </h4>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                            <ul>
+                                                                <li>list item</li>
+                                                                <li>list item<ul>
+                                                                        <li>list item niveau 2</li>
+                                                                        <li>list item niveau 2</li>
+                                                                        <li>list item niveau 2</li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </li>
+                                            <li>
+                                                <section class="rf-accordion">
+                                                    <h3 class="rf-accordion__title">
+                                                        <button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-71">Intitulé accordéon</button>
+                                                    </h3>
+                                                    <div class="rf-collapse" id="accordion-71">
+                                                        <!-- données de test -->
+                                                        <div>
+                                                            <h4 class="rf-h4">Contenu </h4>
+                                                            <img src="../img/image.jpg" class="rf-responsive-img" alt="[text alternatif de l’image | à modifier]">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                            <ul>
+                                                                <li>list item</li>
+                                                                <li>list item<ul>
+                                                                        <li>list item niveau 2</li>
+                                                                        <li>list item niveau 2</li>
+                                                                        <li>list item niveau 2</li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li>list item</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </li>
+                                            <li>
+                                                <section class="rf-accordion">
+                                                    <h3 class="rf-accordion__title">
+                                                        <button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-72">Intitulé accordéon</button>
+                                                    </h3>
+                                                    <div class="rf-collapse" id="accordion-72">
+                                                        <!-- données de test -->
+                                                        <div>
+                                                            <h4 class="rf-h4">Contenu </h4>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                            <ul>
+                                                                <li>list item</li>
+                                                                <li>list item</li>
+                                                                <li>list item</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </li>
+                                            <li>
+                                                <section class="rf-accordion">
+                                                    <h3 class="rf-accordion__title">
+                                                        <button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-73">Intitulé accordéon</button>
+                                                    </h3>
+                                                    <div class="rf-collapse" id="accordion-73">
+                                                        <!-- données de test -->
+                                                        <div>
+                                                            <h4 class="rf-h4">Contenu </h4>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                            <ul>
+                                                                <li>list item<ul>
+                                                                        <li>list item niveau 2</li>
+                                                                        <li>list item niveau 2</li>
+                                                                        <li>list item niveau 2</li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li>list item</li>
+                                                                <li>list item</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </li>
+                                            <li>
+                                                <section class="rf-accordion">
+                                                    <h3 class="rf-accordion__title">
+                                                        <button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-74">Intitulé accordéon</button>
+                                                    </h3>
+                                                    <div class="rf-collapse" id="accordion-74">
+                                                        <!-- données de test -->
+                                                        <div>
+                                                            <h4 class="rf-h4">Contenu </h4>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                            <ul>
+                                                                <li>list item</li>
+                                                                <li>list item</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </li>
+                                            <li>
+                                                <section class="rf-accordion">
+                                                    <h3 class="rf-accordion__title">
+                                                        <button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-75">Intitulé accordéon</button>
+                                                    </h3>
+                                                    <div class="rf-collapse" id="accordion-75">
+                                                        <!-- données de test -->
+                                                        <div>
+                                                            <h4 class="rf-h4">Contenu </h4>
+                                                            <img src="../img/image.jpg" class="rf-responsive-img" alt="[text alternatif de l’image | à modifier]">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                            <ul>
+                                                                <li>list item<ul>
+                                                                        <li>list item niveau 2</li>
+                                                                        <li>list item niveau 2</li>
+                                                                        <li>list item niveau 2</li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li>list item</li>
+                                                                <li>list item</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </section>
+                            </li>
+                            <li>
+                                <section class="rf-accordion">
+                                    <h3 class="rf-accordion__title">
+                                        <button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-83">Intitulé accordéon</button>
+                                    </h3>
+                                    <div class="rf-collapse" id="accordion-83">
+                                        <ul class="rf-accordions-group">
+                                            <li>
+                                                <section class="rf-accordion">
+                                                    <h3 class="rf-accordion__title">
+                                                        <button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-77">Intitulé accordéon</button>
+                                                    </h3>
+                                                    <div class="rf-collapse" id="accordion-77">
+                                                        <!-- données de test -->
+                                                        <div>
+                                                            <h4 class="rf-h4">Contenu </h4>
+                                                            <img src="../img/image.jpg" class="rf-responsive-img" alt="[text alternatif de l’image | à modifier]">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                            <ul>
+                                                                <li>list item</li>
+                                                                <li>list item</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </li>
+                                            <li>
+                                                <section class="rf-accordion">
+                                                    <h3 class="rf-accordion__title">
+                                                        <button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-78">Intitulé accordéon</button>
+                                                    </h3>
+                                                    <div class="rf-collapse" id="accordion-78">
+                                                        <!-- données de test -->
+                                                        <div>
+                                                            <h4 class="rf-h4">Contenu </h4>
+                                                            <img src="../img/image.jpg" class="rf-responsive-img" alt="[text alternatif de l’image | à modifier]">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                            <ul>
+                                                                <li>list item</li>
+                                                                <li>list item</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </li>
+                                            <li>
+                                                <section class="rf-accordion">
+                                                    <h3 class="rf-accordion__title">
+                                                        <button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-79">Intitulé accordéon</button>
+                                                    </h3>
+                                                    <div class="rf-collapse" id="accordion-79">
+                                                        <!-- données de test -->
+                                                        <div>
+                                                            <h4 class="rf-h4">Contenu </h4>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                            <ul>
+                                                                <li>list item</li>
+                                                                <li>list item</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </li>
+                                            <li>
+                                                <section class="rf-accordion">
+                                                    <h3 class="rf-accordion__title">
+                                                        <button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-80">Intitulé accordéon</button>
+                                                    </h3>
+                                                    <div class="rf-collapse" id="accordion-80">
+                                                        <!-- données de test -->
+                                                        <div>
+                                                            <h4 class="rf-h4">Contenu </h4>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                            <ul>
+                                                                <li>list item</li>
+                                                                <li>list item</li>
+                                                                <li>list item<ul>
+                                                                        <li>list item niveau 2</li>
+                                                                        <li>list item niveau 2</li>
+                                                                        <li>list item niveau 2</li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </li>
+                                            <li>
+                                                <section class="rf-accordion">
+                                                    <h3 class="rf-accordion__title">
+                                                        <button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-81">Intitulé accordéon</button>
+                                                    </h3>
+                                                    <div class="rf-collapse" id="accordion-81">
+                                                        <!-- données de test -->
+                                                        <div>
+                                                            <h4 class="rf-h4">Contenu </h4>
+                                                            <img src="../img/image.jpg" class="rf-responsive-img" alt="[text alternatif de l’image | à modifier]">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                            <ul>
+                                                                <li>list item</li>
+                                                                <li>list item</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </li>
+                                            <li>
+                                                <section class="rf-accordion">
+                                                    <h3 class="rf-accordion__title">
+                                                        <button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-82">Intitulé accordéon</button>
+                                                    </h3>
+                                                    <div class="rf-collapse" id="accordion-82">
+                                                        <!-- données de test -->
+                                                        <div>
+                                                            <h4 class="rf-h4">Contenu </h4>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                            <ul>
+                                                                <li>list item</li>
+                                                                <li>list item<ul>
+                                                                        <li>list item niveau 2</li>
+                                                                        <li>list item niveau 2</li>
+                                                                        <li>list item niveau 2</li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </section>
+                            </li>
+                            <li>
+                                <section class="rf-accordion">
+                                    <h3 class="rf-accordion__title">
+                                        <button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-90">Intitulé accordéon</button>
+                                    </h3>
+                                    <div class="rf-collapse" id="accordion-90">
+                                        <ul class="rf-accordions-group">
+                                            <li>
+                                                <section class="rf-accordion">
+                                                    <h3 class="rf-accordion__title">
+                                                        <button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-84">Intitulé accordéon</button>
+                                                    </h3>
+                                                    <div class="rf-collapse" id="accordion-84">
+                                                        <!-- données de test -->
+                                                        <div>
+                                                            <h4 class="rf-h4">Contenu </h4>
+                                                            <img src="../img/image.jpg" class="rf-responsive-img" alt="[text alternatif de l’image | à modifier]">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                            <ul>
+                                                                <li>list item<ul>
+                                                                        <li>list item niveau 2</li>
+                                                                        <li>list item niveau 2</li>
+                                                                        <li>list item niveau 2</li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li>list item<ul>
+                                                                        <li>list item niveau 2</li>
+                                                                        <li>list item niveau 2</li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li>list item</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </li>
+                                            <li>
+                                                <section class="rf-accordion">
+                                                    <h3 class="rf-accordion__title">
+                                                        <button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-85">Intitulé accordéon</button>
+                                                    </h3>
+                                                    <div class="rf-collapse" id="accordion-85">
+                                                        <!-- données de test -->
+                                                        <div>
+                                                            <h4 class="rf-h4">Contenu </h4>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                            <ul>
+                                                                <li>list item</li>
+                                                                <li>list item<ul>
+                                                                        <li>list item niveau 2</li>
+                                                                        <li>list item niveau 2</li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li>list item<ul>
+                                                                        <li>list item niveau 2</li>
+                                                                        <li>list item niveau 2</li>
+                                                                        <li>list item niveau 2</li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </li>
+                                            <li>
+                                                <section class="rf-accordion">
+                                                    <h3 class="rf-accordion__title">
+                                                        <button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-86">Intitulé accordéon</button>
+                                                    </h3>
+                                                    <div class="rf-collapse" id="accordion-86">
+                                                        <!-- données de test -->
+                                                        <div>
+                                                            <h4 class="rf-h4">Contenu </h4>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                            <ul>
+                                                                <li>list item<ul>
+                                                                        <li>list item niveau 2</li>
+                                                                        <li>list item niveau 2</li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li>list item<ul>
+                                                                        <li>list item niveau 2</li>
+                                                                        <li>list item niveau 2</li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li>list item</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </li>
+                                            <li>
+                                                <section class="rf-accordion">
+                                                    <h3 class="rf-accordion__title">
+                                                        <button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-87">Intitulé accordéon</button>
+                                                    </h3>
+                                                    <div class="rf-collapse" id="accordion-87">
+                                                        <!-- données de test -->
+                                                        <div>
+                                                            <h4 class="rf-h4">Contenu </h4>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                            <ul>
+                                                                <li>list item</li>
+                                                                <li>list item</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </li>
+                                            <li>
+                                                <section class="rf-accordion">
+                                                    <h3 class="rf-accordion__title">
+                                                        <button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-88">Intitulé accordéon</button>
+                                                    </h3>
+                                                    <div class="rf-collapse" id="accordion-88">
+                                                        <!-- données de test -->
+                                                        <div>
+                                                            <h4 class="rf-h4">Contenu </h4>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                            <ul>
+                                                                <li>list item<ul>
+                                                                        <li>list item niveau 2</li>
+                                                                        <li>list item niveau 2</li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li>list item</li>
+                                                                <li>list item</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </li>
+                                            <li>
+                                                <section class="rf-accordion">
+                                                    <h3 class="rf-accordion__title">
+                                                        <button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-89">Intitulé accordéon</button>
+                                                    </h3>
+                                                    <div class="rf-collapse" id="accordion-89">
+                                                        <!-- données de test -->
+                                                        <div>
+                                                            <h4 class="rf-h4">Contenu </h4>
+                                                            <img src="../img/image.jpg" class="rf-responsive-img" alt="[text alternatif de l’image | à modifier]">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                            <ul>
+                                                                <li>list item</li>
+                                                                <li>list item</li>
+                                                                <li>list item<ul>
+                                                                        <li>list item niveau 2</li>
+                                                                        <li>list item niveau 2</li>
+                                                                        <li>list item niveau 2</li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </section>
+                            </li>
+                            <li>
+                                <section class="rf-accordion">
+                                    <h3 class="rf-accordion__title">
+                                        <button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-97">Intitulé accordéon</button>
+                                    </h3>
+                                    <div class="rf-collapse" id="accordion-97">
+                                        <ul class="rf-accordions-group">
+                                            <li>
+                                                <section class="rf-accordion">
+                                                    <h3 class="rf-accordion__title">
+                                                        <button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-91">Intitulé accordéon</button>
+                                                    </h3>
+                                                    <div class="rf-collapse" id="accordion-91">
+                                                        <!-- données de test -->
+                                                        <div>
+                                                            <h4 class="rf-h4">Contenu </h4>
+                                                            <img src="../img/image.jpg" class="rf-responsive-img" alt="[text alternatif de l’image | à modifier]">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                            <ul>
+                                                                <li>list item</li>
+                                                                <li>list item</li>
+                                                                <li>list item<ul>
+                                                                        <li>list item niveau 2</li>
+                                                                        <li>list item niveau 2</li>
+                                                                        <li>list item niveau 2</li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </li>
+                                            <li>
+                                                <section class="rf-accordion">
+                                                    <h3 class="rf-accordion__title">
+                                                        <button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-92">Intitulé accordéon</button>
+                                                    </h3>
+                                                    <div class="rf-collapse" id="accordion-92">
+                                                        <!-- données de test -->
+                                                        <div>
+                                                            <h4 class="rf-h4">Contenu </h4>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                            <ul>
+                                                                <li>list item<ul>
+                                                                        <li>list item niveau 2</li>
+                                                                        <li>list item niveau 2</li>
+                                                                        <li>list item niveau 2</li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li>list item<ul>
+                                                                        <li>list item niveau 2</li>
+                                                                        <li>list item niveau 2</li>
+                                                                        <li>list item niveau 2</li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </li>
+                                            <li>
+                                                <section class="rf-accordion">
+                                                    <h3 class="rf-accordion__title">
+                                                        <button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-93">Intitulé accordéon</button>
+                                                    </h3>
+                                                    <div class="rf-collapse" id="accordion-93">
+                                                        <!-- données de test -->
+                                                        <div>
+                                                            <h4 class="rf-h4">Contenu </h4>
+                                                            <img src="../img/image.jpg" class="rf-responsive-img" alt="[text alternatif de l’image | à modifier]">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                            <ul>
+                                                                <li>list item</li>
+                                                                <li>list item</li>
+                                                                <li>list item</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </li>
+                                            <li>
+                                                <section class="rf-accordion">
+                                                    <h3 class="rf-accordion__title">
+                                                        <button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-94">Intitulé accordéon</button>
+                                                    </h3>
+                                                    <div class="rf-collapse" id="accordion-94">
+                                                        <!-- données de test -->
+                                                        <div>
+                                                            <h4 class="rf-h4">Contenu </h4>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                            <ul>
+                                                                <li>list item<ul>
+                                                                        <li>list item niveau 2</li>
+                                                                        <li>list item niveau 2</li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li>list item<ul>
+                                                                        <li>list item niveau 2</li>
+                                                                        <li>list item niveau 2</li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </li>
+                                            <li>
+                                                <section class="rf-accordion">
+                                                    <h3 class="rf-accordion__title">
+                                                        <button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-95">Intitulé accordéon</button>
+                                                    </h3>
+                                                    <div class="rf-collapse" id="accordion-95">
+                                                        <!-- données de test -->
+                                                        <div>
+                                                            <h4 class="rf-h4">Contenu </h4>
+                                                            <img src="../img/image.jpg" class="rf-responsive-img" alt="[text alternatif de l’image | à modifier]">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                            <ul>
+                                                                <li>list item<ul>
+                                                                        <li>list item niveau 2</li>
+                                                                        <li>list item niveau 2</li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li>list item<ul>
+                                                                        <li>list item niveau 2</li>
+                                                                        <li>list item niveau 2</li>
+                                                                        <li>list item niveau 2</li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </li>
+                                            <li>
+                                                <section class="rf-accordion">
+                                                    <h3 class="rf-accordion__title">
+                                                        <button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-96">Intitulé accordéon</button>
+                                                    </h3>
+                                                    <div class="rf-collapse" id="accordion-96">
+                                                        <!-- données de test -->
+                                                        <div>
+                                                            <h4 class="rf-h4">Contenu </h4>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                            <ul>
+                                                                <li>list item</li>
+                                                                <li>list item<ul>
+                                                                        <li>list item niveau 2</li>
+                                                                        <li>list item niveau 2</li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </section>
+                            </li>
+                            <li>
+                                <section class="rf-accordion">
+                                    <h3 class="rf-accordion__title">
+                                        <button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-104">Intitulé accordéon</button>
+                                    </h3>
+                                    <div class="rf-collapse" id="accordion-104">
+                                        <ul class="rf-accordions-group">
+                                            <li>
+                                                <section class="rf-accordion">
+                                                    <h3 class="rf-accordion__title">
+                                                        <button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-98">Intitulé accordéon</button>
+                                                    </h3>
+                                                    <div class="rf-collapse" id="accordion-98">
+                                                        <!-- données de test -->
+                                                        <div>
+                                                            <h4 class="rf-h4">Contenu </h4>
+                                                            <img src="../img/image.jpg" class="rf-responsive-img" alt="[text alternatif de l’image | à modifier]">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                            <ul>
+                                                                <li>list item<ul>
+                                                                        <li>list item niveau 2</li>
+                                                                        <li>list item niveau 2</li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li>list item<ul>
+                                                                        <li>list item niveau 2</li>
+                                                                        <li>list item niveau 2</li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li>list item</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </li>
+                                            <li>
+                                                <section class="rf-accordion">
+                                                    <h3 class="rf-accordion__title">
+                                                        <button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-99">Intitulé accordéon</button>
+                                                    </h3>
+                                                    <div class="rf-collapse" id="accordion-99">
+                                                        <!-- données de test -->
+                                                        <div>
+                                                            <h4 class="rf-h4">Contenu </h4>
+                                                            <img src="../img/image.jpg" class="rf-responsive-img" alt="[text alternatif de l’image | à modifier]">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                            <ul>
+                                                                <li>list item<ul>
+                                                                        <li>list item niveau 2</li>
+                                                                        <li>list item niveau 2</li>
+                                                                        <li>list item niveau 2</li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li>list item</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </li>
+                                            <li>
+                                                <section class="rf-accordion">
+                                                    <h3 class="rf-accordion__title">
+                                                        <button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-100">Intitulé accordéon</button>
+                                                    </h3>
+                                                    <div class="rf-collapse" id="accordion-100">
+                                                        <!-- données de test -->
+                                                        <div>
+                                                            <h4 class="rf-h4">Contenu </h4>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                            <ul>
+                                                                <li>list item</li>
+                                                                <li>list item<ul>
+                                                                        <li>list item niveau 2</li>
+                                                                        <li>list item niveau 2</li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li>list item</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </li>
+                                            <li>
+                                                <section class="rf-accordion">
+                                                    <h3 class="rf-accordion__title">
+                                                        <button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-101">Intitulé accordéon</button>
+                                                    </h3>
+                                                    <div class="rf-collapse" id="accordion-101">
+                                                        <!-- données de test -->
+                                                        <div>
+                                                            <h4 class="rf-h4">Contenu </h4>
+                                                            <img src="../img/image.jpg" class="rf-responsive-img" alt="[text alternatif de l’image | à modifier]">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                            <ul>
+                                                                <li>list item<ul>
+                                                                        <li>list item niveau 2</li>
+                                                                        <li>list item niveau 2</li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li>list item<ul>
+                                                                        <li>list item niveau 2</li>
+                                                                        <li>list item niveau 2</li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </li>
+                                            <li>
+                                                <section class="rf-accordion">
+                                                    <h3 class="rf-accordion__title">
+                                                        <button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-102">Intitulé accordéon</button>
+                                                    </h3>
+                                                    <div class="rf-collapse" id="accordion-102">
+                                                        <!-- données de test -->
+                                                        <div>
+                                                            <h4 class="rf-h4">Contenu </h4>
+                                                            <img src="../img/image.jpg" class="rf-responsive-img" alt="[text alternatif de l’image | à modifier]">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                            <ul>
+                                                                <li>list item<ul>
+                                                                        <li>list item niveau 2</li>
+                                                                        <li>list item niveau 2</li>
+                                                                        <li>list item niveau 2</li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li>list item</li>
+                                                                <li>list item<ul>
+                                                                        <li>list item niveau 2</li>
+                                                                        <li>list item niveau 2</li>
+                                                                        <li>list item niveau 2</li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </li>
+                                            <li>
+                                                <section class="rf-accordion">
+                                                    <h3 class="rf-accordion__title">
+                                                        <button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-103">Intitulé accordéon</button>
+                                                    </h3>
+                                                    <div class="rf-collapse" id="accordion-103">
+                                                        <!-- données de test -->
+                                                        <div>
+                                                            <h4 class="rf-h4">Contenu </h4>
+                                                            <img src="../img/image.jpg" class="rf-responsive-img" alt="[text alternatif de l’image | à modifier]">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                            <ul>
+                                                                <li>list item<ul>
+                                                                        <li>list item niveau 2</li>
+                                                                        <li>list item niveau 2</li>
+                                                                        <li>list item niveau 2</li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li>list item<ul>
+                                                                        <li>list item niveau 2</li>
+                                                                        <li>list item niveau 2</li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </section>
+                            </li>
+                            <li>
+                                <section class="rf-accordion">
+                                    <h3 class="rf-accordion__title">
+                                        <button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-111">Intitulé accordéon</button>
+                                    </h3>
+                                    <div class="rf-collapse" id="accordion-111">
+                                        <ul class="rf-accordions-group">
+                                            <li>
+                                                <section class="rf-accordion">
+                                                    <h3 class="rf-accordion__title">
+                                                        <button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-105">Intitulé accordéon</button>
+                                                    </h3>
+                                                    <div class="rf-collapse" id="accordion-105">
+                                                        <!-- données de test -->
+                                                        <div>
+                                                            <h4 class="rf-h4">Contenu </h4>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                            <ul>
+                                                                <li>list item</li>
+                                                                <li>list item<ul>
+                                                                        <li>list item niveau 2</li>
+                                                                        <li>list item niveau 2</li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li>list item</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </li>
+                                            <li>
+                                                <section class="rf-accordion">
+                                                    <h3 class="rf-accordion__title">
+                                                        <button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-106">Intitulé accordéon</button>
+                                                    </h3>
+                                                    <div class="rf-collapse" id="accordion-106">
+                                                        <!-- données de test -->
+                                                        <div>
+                                                            <h4 class="rf-h4">Contenu </h4>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                            <ul>
+                                                                <li>list item</li>
+                                                                <li>list item<ul>
+                                                                        <li>list item niveau 2</li>
+                                                                        <li>list item niveau 2</li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </li>
+                                            <li>
+                                                <section class="rf-accordion">
+                                                    <h3 class="rf-accordion__title">
+                                                        <button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-107">Intitulé accordéon</button>
+                                                    </h3>
+                                                    <div class="rf-collapse" id="accordion-107">
+                                                        <!-- données de test -->
+                                                        <div>
+                                                            <h4 class="rf-h4">Contenu </h4>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                            <ul>
+                                                                <li>list item<ul>
+                                                                        <li>list item niveau 2</li>
+                                                                        <li>list item niveau 2</li>
+                                                                        <li>list item niveau 2</li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li>list item<ul>
+                                                                        <li>list item niveau 2</li>
+                                                                        <li>list item niveau 2</li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li>list item</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </li>
+                                            <li>
+                                                <section class="rf-accordion">
+                                                    <h3 class="rf-accordion__title">
+                                                        <button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-108">Intitulé accordéon</button>
+                                                    </h3>
+                                                    <div class="rf-collapse" id="accordion-108">
+                                                        <!-- données de test -->
+                                                        <div>
+                                                            <h4 class="rf-h4">Contenu </h4>
+                                                            <img src="../img/image.jpg" class="rf-responsive-img" alt="[text alternatif de l’image | à modifier]">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                            <ul>
+                                                                <li>list item</li>
+                                                                <li>list item</li>
+                                                                <li>list item</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </li>
+                                            <li>
+                                                <section class="rf-accordion">
+                                                    <h3 class="rf-accordion__title">
+                                                        <button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-109">Intitulé accordéon</button>
+                                                    </h3>
+                                                    <div class="rf-collapse" id="accordion-109">
+                                                        <!-- données de test -->
+                                                        <div>
+                                                            <h4 class="rf-h4">Contenu </h4>
+                                                            <img src="../img/image.jpg" class="rf-responsive-img" alt="[text alternatif de l’image | à modifier]">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                            <ul>
+                                                                <li>list item</li>
+                                                                <li>list item</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </li>
+                                            <li>
+                                                <section class="rf-accordion">
+                                                    <h3 class="rf-accordion__title">
+                                                        <button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-110">Intitulé accordéon</button>
+                                                    </h3>
+                                                    <div class="rf-collapse" id="accordion-110">
+                                                        <!-- données de test -->
+                                                        <div>
+                                                            <h4 class="rf-h4">Contenu </h4>
+                                                            <img src="../img/image.jpg" class="rf-responsive-img" alt="[text alternatif de l’image | à modifier]">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                            <ul>
+                                                                <li>list item<ul>
+                                                                        <li>list item niveau 2</li>
+                                                                        <li>list item niveau 2</li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li>list item<ul>
+                                                                        <li>list item niveau 2</li>
+                                                                        <li>list item niveau 2</li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </section>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="rf-mb-12v">
+                        <section class="rf-accordion">
+                            <h3 class="rf-accordion__title">
+                                <button class="rf-accordion__btn" aria-expanded="false" aria-controls="snippet-154">Extrait de code</button>
+                            </h3>
+                            <div class="rf-collapse" id="snippet-154">
+                                <pre class=" language-html"><code>&lt;ul class="rf-accordions-group"&gt;
+    &lt;li&gt;
+        &lt;section class="rf-accordion"&gt;
+            &lt;h3 class="rf-accordion__title"&gt;
+                &lt;button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-118"&gt;Intitulé accordéon&lt;/button&gt;
+            &lt;/h3&gt;
+            &lt;div class="rf-collapse" id="accordion-118"&gt;
+                &lt;ul class="rf-accordions-group"&gt;
+                    &lt;li&gt;
+                        &lt;section class="rf-accordion"&gt;
+                            &lt;h3 class="rf-accordion__title"&gt;
+                                &lt;button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-112"&gt;Intitulé accordéon&lt;/button&gt;
+                            &lt;/h3&gt;
+                            &lt;div class="rf-collapse" id="accordion-112"&gt;
+                                &lt;!-- données de test --&gt;
+                            &lt;/div&gt;
+                        &lt;/section&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;section class="rf-accordion"&gt;
+                            &lt;h3 class="rf-accordion__title"&gt;
+                                &lt;button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-113"&gt;Intitulé accordéon&lt;/button&gt;
+                            &lt;/h3&gt;
+                            &lt;div class="rf-collapse" id="accordion-113"&gt;
+                                &lt;!-- données de test --&gt;
+                            &lt;/div&gt;
+                        &lt;/section&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;section class="rf-accordion"&gt;
+                            &lt;h3 class="rf-accordion__title"&gt;
+                                &lt;button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-114"&gt;Intitulé accordéon&lt;/button&gt;
+                            &lt;/h3&gt;
+                            &lt;div class="rf-collapse" id="accordion-114"&gt;
+                                &lt;!-- données de test --&gt;
+                            &lt;/div&gt;
+                        &lt;/section&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;section class="rf-accordion"&gt;
+                            &lt;h3 class="rf-accordion__title"&gt;
+                                &lt;button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-115"&gt;Intitulé accordéon&lt;/button&gt;
+                            &lt;/h3&gt;
+                            &lt;div class="rf-collapse" id="accordion-115"&gt;
+                                &lt;!-- données de test --&gt;
+                            &lt;/div&gt;
+                        &lt;/section&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;section class="rf-accordion"&gt;
+                            &lt;h3 class="rf-accordion__title"&gt;
+                                &lt;button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-116"&gt;Intitulé accordéon&lt;/button&gt;
+                            &lt;/h3&gt;
+                            &lt;div class="rf-collapse" id="accordion-116"&gt;
+                                &lt;!-- données de test --&gt;
+                            &lt;/div&gt;
+                        &lt;/section&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;section class="rf-accordion"&gt;
+                            &lt;h3 class="rf-accordion__title"&gt;
+                                &lt;button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-117"&gt;Intitulé accordéon&lt;/button&gt;
+                            &lt;/h3&gt;
+                            &lt;div class="rf-collapse" id="accordion-117"&gt;
+                                &lt;!-- données de test --&gt;
+                            &lt;/div&gt;
+                        &lt;/section&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/section&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;section class="rf-accordion"&gt;
+            &lt;h3 class="rf-accordion__title"&gt;
+                &lt;button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-125"&gt;Intitulé accordéon&lt;/button&gt;
+            &lt;/h3&gt;
+            &lt;div class="rf-collapse" id="accordion-125"&gt;
+                &lt;ul class="rf-accordions-group"&gt;
+                    &lt;li&gt;
+                        &lt;section class="rf-accordion"&gt;
+                            &lt;h3 class="rf-accordion__title"&gt;
+                                &lt;button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-119"&gt;Intitulé accordéon&lt;/button&gt;
+                            &lt;/h3&gt;
+                            &lt;div class="rf-collapse" id="accordion-119"&gt;
+                                &lt;!-- données de test --&gt;
+                            &lt;/div&gt;
+                        &lt;/section&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;section class="rf-accordion"&gt;
+                            &lt;h3 class="rf-accordion__title"&gt;
+                                &lt;button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-120"&gt;Intitulé accordéon&lt;/button&gt;
+                            &lt;/h3&gt;
+                            &lt;div class="rf-collapse" id="accordion-120"&gt;
+                                &lt;!-- données de test --&gt;
+                            &lt;/div&gt;
+                        &lt;/section&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;section class="rf-accordion"&gt;
+                            &lt;h3 class="rf-accordion__title"&gt;
+                                &lt;button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-121"&gt;Intitulé accordéon&lt;/button&gt;
+                            &lt;/h3&gt;
+                            &lt;div class="rf-collapse" id="accordion-121"&gt;
+                                &lt;!-- données de test --&gt;
+                            &lt;/div&gt;
+                        &lt;/section&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;section class="rf-accordion"&gt;
+                            &lt;h3 class="rf-accordion__title"&gt;
+                                &lt;button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-122"&gt;Intitulé accordéon&lt;/button&gt;
+                            &lt;/h3&gt;
+                            &lt;div class="rf-collapse" id="accordion-122"&gt;
+                                &lt;!-- données de test --&gt;
+                            &lt;/div&gt;
+                        &lt;/section&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;section class="rf-accordion"&gt;
+                            &lt;h3 class="rf-accordion__title"&gt;
+                                &lt;button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-123"&gt;Intitulé accordéon&lt;/button&gt;
+                            &lt;/h3&gt;
+                            &lt;div class="rf-collapse" id="accordion-123"&gt;
+                                &lt;!-- données de test --&gt;
+                            &lt;/div&gt;
+                        &lt;/section&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;section class="rf-accordion"&gt;
+                            &lt;h3 class="rf-accordion__title"&gt;
+                                &lt;button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-124"&gt;Intitulé accordéon&lt;/button&gt;
+                            &lt;/h3&gt;
+                            &lt;div class="rf-collapse" id="accordion-124"&gt;
+                                &lt;!-- données de test --&gt;
+                            &lt;/div&gt;
+                        &lt;/section&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/section&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;section class="rf-accordion"&gt;
+            &lt;h3 class="rf-accordion__title"&gt;
+                &lt;button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-132"&gt;Intitulé accordéon&lt;/button&gt;
+            &lt;/h3&gt;
+            &lt;div class="rf-collapse" id="accordion-132"&gt;
+                &lt;ul class="rf-accordions-group"&gt;
+                    &lt;li&gt;
+                        &lt;section class="rf-accordion"&gt;
+                            &lt;h3 class="rf-accordion__title"&gt;
+                                &lt;button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-126"&gt;Intitulé accordéon&lt;/button&gt;
+                            &lt;/h3&gt;
+                            &lt;div class="rf-collapse" id="accordion-126"&gt;
+                                &lt;!-- données de test --&gt;
+                            &lt;/div&gt;
+                        &lt;/section&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;section class="rf-accordion"&gt;
+                            &lt;h3 class="rf-accordion__title"&gt;
+                                &lt;button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-127"&gt;Intitulé accordéon&lt;/button&gt;
+                            &lt;/h3&gt;
+                            &lt;div class="rf-collapse" id="accordion-127"&gt;
+                                &lt;!-- données de test --&gt;
+                            &lt;/div&gt;
+                        &lt;/section&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;section class="rf-accordion"&gt;
+                            &lt;h3 class="rf-accordion__title"&gt;
+                                &lt;button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-128"&gt;Intitulé accordéon&lt;/button&gt;
+                            &lt;/h3&gt;
+                            &lt;div class="rf-collapse" id="accordion-128"&gt;
+                                &lt;!-- données de test --&gt;
+                            &lt;/div&gt;
+                        &lt;/section&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;section class="rf-accordion"&gt;
+                            &lt;h3 class="rf-accordion__title"&gt;
+                                &lt;button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-129"&gt;Intitulé accordéon&lt;/button&gt;
+                            &lt;/h3&gt;
+                            &lt;div class="rf-collapse" id="accordion-129"&gt;
+                                &lt;!-- données de test --&gt;
+                            &lt;/div&gt;
+                        &lt;/section&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;section class="rf-accordion"&gt;
+                            &lt;h3 class="rf-accordion__title"&gt;
+                                &lt;button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-130"&gt;Intitulé accordéon&lt;/button&gt;
+                            &lt;/h3&gt;
+                            &lt;div class="rf-collapse" id="accordion-130"&gt;
+                                &lt;!-- données de test --&gt;
+                            &lt;/div&gt;
+                        &lt;/section&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;section class="rf-accordion"&gt;
+                            &lt;h3 class="rf-accordion__title"&gt;
+                                &lt;button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-131"&gt;Intitulé accordéon&lt;/button&gt;
+                            &lt;/h3&gt;
+                            &lt;div class="rf-collapse" id="accordion-131"&gt;
+                                &lt;!-- données de test --&gt;
+                            &lt;/div&gt;
+                        &lt;/section&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/section&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;section class="rf-accordion"&gt;
+            &lt;h3 class="rf-accordion__title"&gt;
+                &lt;button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-139"&gt;Intitulé accordéon&lt;/button&gt;
+            &lt;/h3&gt;
+            &lt;div class="rf-collapse" id="accordion-139"&gt;
+                &lt;ul class="rf-accordions-group"&gt;
+                    &lt;li&gt;
+                        &lt;section class="rf-accordion"&gt;
+                            &lt;h3 class="rf-accordion__title"&gt;
+                                &lt;button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-133"&gt;Intitulé accordéon&lt;/button&gt;
+                            &lt;/h3&gt;
+                            &lt;div class="rf-collapse" id="accordion-133"&gt;
+                                &lt;!-- données de test --&gt;
+                            &lt;/div&gt;
+                        &lt;/section&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;section class="rf-accordion"&gt;
+                            &lt;h3 class="rf-accordion__title"&gt;
+                                &lt;button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-134"&gt;Intitulé accordéon&lt;/button&gt;
+                            &lt;/h3&gt;
+                            &lt;div class="rf-collapse" id="accordion-134"&gt;
+                                &lt;!-- données de test --&gt;
+                            &lt;/div&gt;
+                        &lt;/section&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;section class="rf-accordion"&gt;
+                            &lt;h3 class="rf-accordion__title"&gt;
+                                &lt;button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-135"&gt;Intitulé accordéon&lt;/button&gt;
+                            &lt;/h3&gt;
+                            &lt;div class="rf-collapse" id="accordion-135"&gt;
+                                &lt;!-- données de test --&gt;
+                            &lt;/div&gt;
+                        &lt;/section&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;section class="rf-accordion"&gt;
+                            &lt;h3 class="rf-accordion__title"&gt;
+                                &lt;button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-136"&gt;Intitulé accordéon&lt;/button&gt;
+                            &lt;/h3&gt;
+                            &lt;div class="rf-collapse" id="accordion-136"&gt;
+                                &lt;!-- données de test --&gt;
+                            &lt;/div&gt;
+                        &lt;/section&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;section class="rf-accordion"&gt;
+                            &lt;h3 class="rf-accordion__title"&gt;
+                                &lt;button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-137"&gt;Intitulé accordéon&lt;/button&gt;
+                            &lt;/h3&gt;
+                            &lt;div class="rf-collapse" id="accordion-137"&gt;
+                                &lt;!-- données de test --&gt;
+                            &lt;/div&gt;
+                        &lt;/section&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;section class="rf-accordion"&gt;
+                            &lt;h3 class="rf-accordion__title"&gt;
+                                &lt;button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-138"&gt;Intitulé accordéon&lt;/button&gt;
+                            &lt;/h3&gt;
+                            &lt;div class="rf-collapse" id="accordion-138"&gt;
+                                &lt;!-- données de test --&gt;
+                            &lt;/div&gt;
+                        &lt;/section&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/section&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;section class="rf-accordion"&gt;
+            &lt;h3 class="rf-accordion__title"&gt;
+                &lt;button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-146"&gt;Intitulé accordéon&lt;/button&gt;
+            &lt;/h3&gt;
+            &lt;div class="rf-collapse" id="accordion-146"&gt;
+                &lt;ul class="rf-accordions-group"&gt;
+                    &lt;li&gt;
+                        &lt;section class="rf-accordion"&gt;
+                            &lt;h3 class="rf-accordion__title"&gt;
+                                &lt;button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-140"&gt;Intitulé accordéon&lt;/button&gt;
+                            &lt;/h3&gt;
+                            &lt;div class="rf-collapse" id="accordion-140"&gt;
+                                &lt;!-- données de test --&gt;
+                            &lt;/div&gt;
+                        &lt;/section&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;section class="rf-accordion"&gt;
+                            &lt;h3 class="rf-accordion__title"&gt;
+                                &lt;button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-141"&gt;Intitulé accordéon&lt;/button&gt;
+                            &lt;/h3&gt;
+                            &lt;div class="rf-collapse" id="accordion-141"&gt;
+                                &lt;!-- données de test --&gt;
+                            &lt;/div&gt;
+                        &lt;/section&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;section class="rf-accordion"&gt;
+                            &lt;h3 class="rf-accordion__title"&gt;
+                                &lt;button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-142"&gt;Intitulé accordéon&lt;/button&gt;
+                            &lt;/h3&gt;
+                            &lt;div class="rf-collapse" id="accordion-142"&gt;
+                                &lt;!-- données de test --&gt;
+                            &lt;/div&gt;
+                        &lt;/section&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;section class="rf-accordion"&gt;
+                            &lt;h3 class="rf-accordion__title"&gt;
+                                &lt;button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-143"&gt;Intitulé accordéon&lt;/button&gt;
+                            &lt;/h3&gt;
+                            &lt;div class="rf-collapse" id="accordion-143"&gt;
+                                &lt;!-- données de test --&gt;
+                            &lt;/div&gt;
+                        &lt;/section&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;section class="rf-accordion"&gt;
+                            &lt;h3 class="rf-accordion__title"&gt;
+                                &lt;button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-144"&gt;Intitulé accordéon&lt;/button&gt;
+                            &lt;/h3&gt;
+                            &lt;div class="rf-collapse" id="accordion-144"&gt;
+                                &lt;!-- données de test --&gt;
+                            &lt;/div&gt;
+                        &lt;/section&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;section class="rf-accordion"&gt;
+                            &lt;h3 class="rf-accordion__title"&gt;
+                                &lt;button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-145"&gt;Intitulé accordéon&lt;/button&gt;
+                            &lt;/h3&gt;
+                            &lt;div class="rf-collapse" id="accordion-145"&gt;
+                                &lt;!-- données de test --&gt;
+                            &lt;/div&gt;
+                        &lt;/section&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/section&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;section class="rf-accordion"&gt;
+            &lt;h3 class="rf-accordion__title"&gt;
+                &lt;button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-153"&gt;Intitulé accordéon&lt;/button&gt;
+            &lt;/h3&gt;
+            &lt;div class="rf-collapse" id="accordion-153"&gt;
+                &lt;ul class="rf-accordions-group"&gt;
+                    &lt;li&gt;
+                        &lt;section class="rf-accordion"&gt;
+                            &lt;h3 class="rf-accordion__title"&gt;
+                                &lt;button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-147"&gt;Intitulé accordéon&lt;/button&gt;
+                            &lt;/h3&gt;
+                            &lt;div class="rf-collapse" id="accordion-147"&gt;
+                                &lt;!-- données de test --&gt;
+                            &lt;/div&gt;
+                        &lt;/section&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;section class="rf-accordion"&gt;
+                            &lt;h3 class="rf-accordion__title"&gt;
+                                &lt;button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-148"&gt;Intitulé accordéon&lt;/button&gt;
+                            &lt;/h3&gt;
+                            &lt;div class="rf-collapse" id="accordion-148"&gt;
+                                &lt;!-- données de test --&gt;
+                            &lt;/div&gt;
+                        &lt;/section&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;section class="rf-accordion"&gt;
+                            &lt;h3 class="rf-accordion__title"&gt;
+                                &lt;button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-149"&gt;Intitulé accordéon&lt;/button&gt;
+                            &lt;/h3&gt;
+                            &lt;div class="rf-collapse" id="accordion-149"&gt;
+                                &lt;!-- données de test --&gt;
+                            &lt;/div&gt;
+                        &lt;/section&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;section class="rf-accordion"&gt;
+                            &lt;h3 class="rf-accordion__title"&gt;
+                                &lt;button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-150"&gt;Intitulé accordéon&lt;/button&gt;
+                            &lt;/h3&gt;
+                            &lt;div class="rf-collapse" id="accordion-150"&gt;
+                                &lt;!-- données de test --&gt;
+                            &lt;/div&gt;
+                        &lt;/section&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;section class="rf-accordion"&gt;
+                            &lt;h3 class="rf-accordion__title"&gt;
+                                &lt;button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-151"&gt;Intitulé accordéon&lt;/button&gt;
+                            &lt;/h3&gt;
+                            &lt;div class="rf-collapse" id="accordion-151"&gt;
+                                &lt;!-- données de test --&gt;
+                            &lt;/div&gt;
+                        &lt;/section&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;section class="rf-accordion"&gt;
+                            &lt;h3 class="rf-accordion__title"&gt;
+                                &lt;button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-152"&gt;Intitulé accordéon&lt;/button&gt;
+                            &lt;/h3&gt;
+                            &lt;div class="rf-collapse" id="accordion-152"&gt;
+                                &lt;!-- données de test --&gt;
+                            &lt;/div&gt;
+                        &lt;/section&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/section&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+                            </div>
+                        </section>
+                    </div>
+                    <h4>Système d’onglets dans un accordéon</h4>
+                    <div class="rf-mb-6v">
+                        <section class="rf-accordion">
+                            <h3 class="rf-accordion__title">
+                                <button class="rf-accordion__btn" aria-expanded="false" aria-controls="tabs-157">Intitulé accordéon</button>
+                            </h3>
+                            <div class="rf-collapse" id="tabs-157">
+                                <div class="rf-tabs">
+                                    <ul class="rf-tabs__list" role="tablist">
+                                        <li>
+                                            <button class="rf-tabs__tab" tabindex="0" role="tab" aria-selected="true" aria-controls="tabpanel-155">Label Tab 1</button>
+                                            <div id="tabpanel-155" class="rf-tabs__panel" role="tabpanel" tabindex="0">
+                                                <!-- données de test -->
+                                                <div>
+                                                    <h4 class="rf-h4">Contenu 1</h4>
+                                                    <img src="../img/image.jpg" class="rf-responsive-img" alt="[text alternatif de l’image | à modifier]">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                    <ul>
+                                                        <li>list item</li>
+                                                        <li>list item</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <button class="rf-tabs__tab" tabindex="-1" role="tab" aria-selected="false" aria-controls="tabpanel-156">Label Tab 2</button>
+                                            <div id="tabpanel-156" class="rf-tabs__panel" role="tabpanel" tabindex="0">
+                                                <!-- données de test -->
+                                                <div>
+                                                    <h4 class="rf-h4">Contenu 2</h4>
+                                                    <img src="../img/image.jpg" class="rf-responsive-img" alt="[text alternatif de l’image | à modifier]">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                    <ul>
+                                                        <li>list item<ul>
+                                                                <li>list item niveau 2</li>
+                                                                <li>list item niveau 2</li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>list item<ul>
+                                                                <li>list item niveau 2</li>
+                                                                <li>list item niveau 2</li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="rf-mb-12v">
+                        <section class="rf-accordion">
+                            <h3 class="rf-accordion__title">
+                                <button class="rf-accordion__btn" aria-expanded="false" aria-controls="snippet-161">Extrait de code</button>
+                            </h3>
+                            <div class="rf-collapse" id="snippet-161">
+                                <pre class=" language-html"><code>&lt;section class="rf-accordion"&gt;
+    &lt;h3 class="rf-accordion__title"&gt;
+        &lt;button class="rf-accordion__btn" aria-expanded="false" aria-controls="tabs-160"&gt;Intitulé accordéon&lt;/button&gt;
+    &lt;/h3&gt;
+    &lt;div class="rf-collapse" id="tabs-160"&gt;
+        &lt;div class="rf-tabs"&gt;
+            &lt;ul class="rf-tabs__list" role="tablist"&gt;
+                &lt;li&gt;
+                    &lt;button class="rf-tabs__tab" tabindex="0" role="tab" aria-selected="true" aria-controls="tabpanel-158"&gt;Label Tab 1&lt;/button&gt;
+                    &lt;div id="tabpanel-158" class="rf-tabs__panel" role="tabpanel" tabindex="0"&gt;
+                        &lt;!-- données de test --&gt;
+                    &lt;/div&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;button class="rf-tabs__tab" tabindex="-1" role="tab" aria-selected="false" aria-controls="tabpanel-159"&gt;Label Tab 2&lt;/button&gt;
+                    &lt;div id="tabpanel-159" class="rf-tabs__panel" role="tabpanel" tabindex="0"&gt;
+                        &lt;!-- données de test --&gt;
+                    &lt;/div&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
+</code></pre>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="module" src="../../dist/js/core.module.js"></script>
+        <script type="text/javascript" nomodule src="../../dist/js/core.nomodule.js"></script>
+        <script type="module" src="../../dist/js/accordions.module.js"></script>
+        <script type="text/javascript" nomodule src="../../dist/js/accordions.nomodule.js"></script>
+        <script type="module" src="../../dist/js/schemes.module.js"></script>
+        <script type="text/javascript" nomodule src="../../dist/js/schemes.nomodule.js"></script>
+        <script type="module" src="../../dist/js/tabs.module.js"></script>
+        <script type="text/javascript" nomodule src="../../dist/js/tabs.nomodule.js"></script>
+        <script>
+            const schemeAttr = 'data-rf-theme';
+            const mourningAttr = 'data-rf-mourning';
+
+            class DemoCheckbox {
+                constructor(id) {
+                    this.checkbox = document.getElementById(id);
+                    this.init();
+                    this.checkbox.addEventListener('change', this.change.bind(this));
+                    window.requestAnimationFrame(this.change.bind(this));
+                }
+
+                init() {}
+
+                change() {}
+            }
+
+            class AttributeDemoCheckbox extends DemoCheckbox {
+                constructor(id, attributeName, checkedValue, uncheckedValue) {
+                    super(id);
+                    this.attributeName = attributeName;
+                    this.checkedValue = checkedValue;
+                    this.uncheckedValue = uncheckedValue;
+                }
+
+                init() {
+                    this.observer = new MutationObserver(this.mutate.bind(this));
+                    this.observer.observe(document.documentElement, {
+                        attributes: true
+                    });
+                }
+
+                get state() {
+                    const value = document.documentElement.getAttribute(this.attributeName);
+                    const has = document.documentElement.hasAttribute(this.attributeName);
+
+                    switch (true) {
+                        case this.checkedValue === value:
+                            return true;
+
+                        case this.uncheckedValue === value:
+                            return false;
+
+                        case this.checkedValue === true && has:
+                            return true;
+
+                        case this.uncheckedValue === true && has:
+                            return true;
+                    }
+                    return false;
+                }
+
+                mutate(mutations) {
+                    mutations.forEach((mutation) => {
+                        if (mutation.type === 'attributes' && mutation.attributeName === this.attributeName) this.checkbox.checked = this.state;
+                    });
+                }
+
+                change() {
+                    const value = this.checkbox.checked ? this.checkedValue : this.uncheckedValue;
+
+                    switch (value) {
+                        case null:
+                            document.documentElement.removeAttribute(this.attributeName);
+                            break;
+
+                        case true:
+                            document.documentElement.setAttribute(this.attributeName, '');
+                            break;
+
+                        default:
+                            document.documentElement.setAttribute(this.attributeName, value);
+                    }
+                }
+            }
+
+            new AttributeDemoCheckbox('theme-checkbox', schemeAttr, 'dark', 'light');
+            new AttributeDemoCheckbox('mourning-checkbox', mourningAttr, true, null);
+
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/components/prism-core.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/autoloader/prism-autoloader.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/toolbar/prism-toolbar.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/normalize-whitespace/prism-normalize-whitespace.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+    </body>
+
+</html>

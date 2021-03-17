@@ -1,0 +1,117 @@
+////
+/// Navigation Module : Nav
+/// @group navigation
+////
+
+#{ns(nav)} {
+  @include disable-link-style;
+  @include disable-list-style;
+  @include z-index(nav, true);
+
+  @include list {
+    @include display-flex(column);
+    @include margin(0);
+    @include padding(0);
+    @include relative;
+
+    @include respond-from(lg) {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      @include margin(0 -4v);
+    }
+  }
+
+  @include list-item {
+    @include margin(0);
+    @include display-flex(column, flex-start);
+    flex: 0 1 auto;
+
+    @include respond-from(lg) {
+      box-shadow: none;
+
+      &--align-right {
+        align-items: flex-end;
+      }
+    }
+
+    @include before(null, none);
+
+    @include respond-from(lg) {
+      &:first-child:nth-last-child(2) ~ &,
+      &:first-child:nth-last-child(3) ~ &,
+      &:first-child:nth-last-child(4) ~ & {
+        @include margin-left(5v);
+      }
+    }
+
+    & > #{ns(link)},
+    & > #{ns(btn)} {
+      @include display-flex(null, center, space-between);
+      @include size(100%);
+      @include padding(3v 0);
+      @include text-style(md);
+      text-align: left;
+      font-weight: bold;
+
+      @include before() {
+        @include margin-right(0);
+      }
+
+      @include respond-from(lg) {
+        @include padding(4v);
+        @include margin(0);
+        @include size(auto, 100%);
+        justify-content: flex-start;
+        font-weight: normal;
+        min-height: space(14v);
+        @include text-style(sm);
+      }
+    }
+
+    & > #{ns(link)} {
+      flex-direction: row;
+      box-shadow: none;
+      border-radius: 0;
+
+      @include before(null, none);
+    }
+
+    & > #{ns(btn)} {
+      flex-direction: row-reverse;
+
+      @include scheme-element-bg-color(t-plain, false, override);
+      @include padding(4v 3v 4v 4v, lg);
+
+      @include font-icon(arrow-down-s-line, sm) {
+        @include margin-left(2v);
+        @include margin-right(0);
+        transition: transform 0.3s;
+      }
+
+      &[aria-expanded="true" i] {
+        @include before {
+          transform: rotate(-180deg);
+        }
+
+        @include after(null, none);
+      }
+    }
+
+    &--active {
+      @include relative;
+
+      @include before(block, '') {
+        @include absolute(3v, null, null, -4v, 2px, 6v);
+      }
+
+      @include respond-from(lg) {
+        @include before(null, none);
+      }
+
+      & > #{ns(link)} {
+        pointer-events: none;
+        cursor: default;
+      }
+    }
+  }
+}

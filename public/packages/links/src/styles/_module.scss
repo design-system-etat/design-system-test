@@ -1,0 +1,10 @@
+////
+/// Links Module
+/// @group links
+////
+
+#{ns(link)} {
+  @include build-link();
+}
+
+@import 'modules/close';

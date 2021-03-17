@@ -1,0 +1,43 @@
+/*
+ * DSFR v0.5.5 | licence MIT
+ */
+/* ------------------------------------ *\
+  HIGHLIGHTS
+\* ------------------------------------ */
+
+.rf-highlight {
+  padding-left: 1rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  /**
+   * Modificateur pour la taille du texte lg
+   *//**
+   * Modificateur pour la taille du texte sm
+   */
+}
+
+.rf-highlight--lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.rf-highlight--sm {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}
+
+.rf-highlight {
+  border-left: 0.25rem solid var(--bf500);
+}
+
+@media (min-width: 48em) {
+  .rf-highlight {
+    padding-left: 2rem;
+    margin-left: 2rem;
+  }
+
+  .rf-highlight--lg {
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+}

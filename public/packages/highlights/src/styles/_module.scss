@@ -1,0 +1,28 @@
+////
+/// Highlights Module
+/// @group Highlights
+////
+
+#{ns(highlight)} {
+  @include padding-left(4v);
+  @include text-style(md);
+
+  @include respond-from(md) {
+    @include padding-left(8v);
+    @include margin-left(8v);
+  }
+
+  /**
+   * Modificateur pour la taille du texte lg
+   */
+  &--lg {
+    @include text-style(lg);
+  }
+
+  /**
+   * Modificateur pour la taille du texte sm
+   */
+  &--sm {
+    @include text-style(sm);
+  }
+}

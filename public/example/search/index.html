@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="fr" data-rf-theme>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Barre de recherche - Design System</title>
+        <link rel="icon" href="../../dist/favicons/favicon.svg" type="image/svg+xml">
+        <link rel="apple-touch-icon" href="../../dist/favicons/apple-touch-icon.png"><!-- 180×180 -->
+        <!-- si favicon.ico peut etre placé à la racine du serveur, retirer la ligne ci-dessous -->
+        <link rel="icon" href="../../dist/favicons/favicon.ico"><!-- 32×32 -->
+        <link rel="manifest" href="../../dist/favicons/manifest.webmanifest">
+        <!-- Modifier les chemins relatifs des favicons en fonction de la structure du projet -->
+        <!-- Dans le fichier manifest.webmanifest aussi, modifier les chemins vers les images -->
+        <link href="../../dist/css/core.css" rel="stylesheet">
+        <link href="../../dist/css/accordions.css" rel="stylesheet">
+        <link href="../../dist/css/forms.css" rel="stylesheet">
+        <link href="../../dist/css/links.css" rel="stylesheet">
+        <link href="../../dist/css/schemes.css" rel="stylesheet">
+        <link href="../../dist/css/utilities.css" rel="stylesheet">
+        <link href="../../dist/css/buttons.css" rel="stylesheet">
+        <link href="../../dist/css/checkboxes.css" rel="stylesheet">
+        <link href="../../dist/css/inputs.css" rel="stylesheet">
+        <link href="../../dist/css/search.css" rel="stylesheet">
+        <style>
+            code[class*="language-"],
+            pre[class*="language-"] {
+                white-space: pre-wrap;
+            }
+
+            .example-controls {
+                z-index: 100000;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                box-shadow: 0 -8px 16px 0 rgba(0, 0, 0, 0.1), 0 -8px 16px -16px rgba(0, 0, 0, 0.32);
+                padding: 4px 32px;
+                background-color: var(--w-g750);
+            }
+
+            .example-controls [class*="-form-group"] {
+                margin-bottom: 0;
+            }
+
+        </style>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/themes/prism.min.css" rel="stylesheet" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/toolbar/prism-toolbar.min.css" rel="stylesheet" />
+    </head>
+
+    <body class="rf-mb-12w" style="margin:0; padding:0;">
+        <div class="example-controls">
+            <div class="rf-form-group">
+                <fieldset class="rf-fieldset rf-fieldset--inline">
+                    <legend class="rf-sr-only">Interface de contrôle des test</legend>
+                    <div class="rf-fieldset__content">
+                        <div class="rf-checkbox-group">
+                            <input type="checkbox" id="theme-checkbox" name="checkboxes-inline-1">
+                            <label class="rf-label" for="theme-checkbox">Thème clair / sombre</label>
+                        </div>
+                        <div class="rf-checkbox-group">
+                            <input type="checkbox" id="mourning-checkbox" name="checkboxes-inline-2">
+                            <label class="rf-label" for="mourning-checkbox">En deuil</label>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+        <div class="rf-container rf-mt-2v">
+            <a class="rf-link rf-fi-arrow-left-line rf-link--icon-left" href="../">Retour</a>
+            <h1>Barre de recherche - Design System</h1>
+            <p>La barre de recherche est un système de navigation qui permet à l'utilisateur d’accéder rapidement à un contenu en lançant une recherche sur un mot clé ou une expression.</p>
+        </div>
+        <div class="rf-container">
+            <div class="rf-grid-row rf-grid-row--center">
+                <div class="rf-col-md-8 rf-col-12">
+                    <h4>Barre de recherche MD (par défaut)</h4>
+                    <div class="rf-mb-6v">
+                        <div class="rf-search-bar" id="search-666">
+                            <label class="rf-label" for="search-666-input">Label de la barre de recherche
+                            </label>
+                            <input class="rf-input" placeholder="Rechercher" type="search" id="search-666-input" name="search-666-input">
+                            <button class="rf-btn" title="Rechercher">
+                                Rechercher
+                            </button>
+                        </div>
+                    </div>
+                    <div class="rf-mb-12v">
+                        <section class="rf-accordion">
+                            <h3 class="rf-accordion__title">
+                                <button class="rf-accordion__btn" aria-expanded="false" aria-controls="snippet-668">Extrait de code</button>
+                            </h3>
+                            <div class="rf-collapse" id="snippet-668">
+                                <pre class=" language-html"><code>&lt;div class="rf-search-bar" id="search-667"&gt;
+    &lt;label class="rf-label" for="search-667-input"&gt;Label de la barre de recherche
+    &lt;/label&gt;
+    &lt;input class="rf-input" placeholder="Rechercher" type="search" id="search-667-input" name="search-667-input"&gt;
+    &lt;button class="rf-btn" title="Rechercher"&gt;
+        Rechercher
+    &lt;/button&gt;
+&lt;/div&gt;
+</code></pre>
+                            </div>
+                        </section>
+                    </div>
+                    <h4>Barre de recherche LG</h4>
+                    <div class="rf-mb-6v">
+                        <div class="rf-search-bar rf-search-bar--lg" id="search-669">
+                            <label class="rf-label" for="search-669-input">Label de la barre de recherche
+                            </label>
+                            <input class="rf-input" placeholder="Rechercher" type="search" id="search-669-input" name="search-669-input">
+                            <button class="rf-btn" title="Rechercher">
+                                Rechercher
+                            </button>
+                        </div>
+                    </div>
+                    <div class="rf-mb-12v">
+                        <section class="rf-accordion">
+                            <h3 class="rf-accordion__title">
+                                <button class="rf-accordion__btn" aria-expanded="false" aria-controls="snippet-671">Extrait de code</button>
+                            </h3>
+                            <div class="rf-collapse" id="snippet-671">
+                                <pre class=" language-html"><code>&lt;div class="rf-search-bar rf-search-bar--lg" id="search-670"&gt;
+    &lt;label class="rf-label" for="search-670-input"&gt;Label de la barre de recherche
+    &lt;/label&gt;
+    &lt;input class="rf-input" placeholder="Rechercher" type="search" id="search-670-input" name="search-670-input"&gt;
+    &lt;button class="rf-btn" title="Rechercher"&gt;
+        Rechercher
+    &lt;/button&gt;
+&lt;/div&gt;
+</code></pre>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="module" src="../../dist/js/core.module.js"></script>
+        <script type="text/javascript" nomodule src="../../dist/js/core.nomodule.js"></script>
+        <script type="module" src="../../dist/js/accordions.module.js"></script>
+        <script type="text/javascript" nomodule src="../../dist/js/accordions.nomodule.js"></script>
+        <script type="module" src="../../dist/js/schemes.module.js"></script>
+        <script type="text/javascript" nomodule src="../../dist/js/schemes.nomodule.js"></script>
+        <script>
+            const schemeAttr = 'data-rf-theme';
+            const mourningAttr = 'data-rf-mourning';
+
+            class DemoCheckbox {
+                constructor(id) {
+                    this.checkbox = document.getElementById(id);
+                    this.init();
+                    this.checkbox.addEventListener('change', this.change.bind(this));
+                    window.requestAnimationFrame(this.change.bind(this));
+                }
+
+                init() {}
+
+                change() {}
+            }
+
+            class AttributeDemoCheckbox extends DemoCheckbox {
+                constructor(id, attributeName, checkedValue, uncheckedValue) {
+                    super(id);
+                    this.attributeName = attributeName;
+                    this.checkedValue = checkedValue;
+                    this.uncheckedValue = uncheckedValue;
+                }
+
+                init() {
+                    this.observer = new MutationObserver(this.mutate.bind(this));
+                    this.observer.observe(document.documentElement, {
+                        attributes: true
+                    });
+                }
+
+                get state() {
+                    const value = document.documentElement.getAttribute(this.attributeName);
+                    const has = document.documentElement.hasAttribute(this.attributeName);
+
+                    switch (true) {
+                        case this.checkedValue === value:
+                            return true;
+
+                        case this.uncheckedValue === value:
+                            return false;
+
+                        case this.checkedValue === true && has:
+                            return true;
+
+                        case this.uncheckedValue === true && has:
+                            return true;
+                    }
+                    return false;
+                }
+
+                mutate(mutations) {
+                    mutations.forEach((mutation) => {
+                        if (mutation.type === 'attributes' && mutation.attributeName === this.attributeName) this.checkbox.checked = this.state;
+                    });
+                }
+
+                change() {
+                    const value = this.checkbox.checked ? this.checkedValue : this.uncheckedValue;
+
+                    switch (value) {
+                        case null:
+                            document.documentElement.removeAttribute(this.attributeName);
+                            break;
+
+                        case true:
+                            document.documentElement.setAttribute(this.attributeName, '');
+                            break;
+
+                        default:
+                            document.documentElement.setAttribute(this.attributeName, value);
+                    }
+                }
+            }
+
+            new AttributeDemoCheckbox('theme-checkbox', schemeAttr, 'dark', 'light');
+            new AttributeDemoCheckbox('mourning-checkbox', mourningAttr, true, null);
+
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/components/prism-core.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/autoloader/prism-autoloader.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/toolbar/prism-toolbar.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/normalize-whitespace/prism-normalize-whitespace.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+    </body>
+
+</html>

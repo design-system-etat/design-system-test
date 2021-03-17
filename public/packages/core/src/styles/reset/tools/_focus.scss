@@ -1,0 +1,90 @@
+////
+/// Core Tools : Reset focus
+/// @group core
+////
+
+@mixin _build-focusable($settings) {
+  $focus: '&';
+  $hover: '&';
+
+  @if map-has-key($settings, focus) {
+    $focus: map-get($settings, focus);
+  }
+
+  @if map-has-key($settings, hover) {
+    $hover: map-get($settings, hover);
+  }
+
+  @at-root #{map-get($settings, selector)} {
+    #{$focus} {
+      outline-offset: 2px;
+      outline-width: 2px;
+    }
+
+    &:focus {
+      #{$focus} {
+        outline-style: solid;
+      }
+    }
+
+    &:focus:not(:focus-visible) {
+      #{$focus} {
+        outline-style: none;
+      }
+    }
+
+    &:focus-visible {
+      #{$focus} {
+        outline-style: solid;
+      }
+    }
+
+    @if map-has-key($settings, cursor) {
+      #{$hover} {
+        cursor: #{map-get($settings, cursor)};
+      }
+    }
+
+    @if map-has-key($settings, disabled) {
+      $disabled: map-get($settings, disabled);
+
+      #{map-get($disabled, selector)} {
+        #{$focus} {
+          outline-style: none;
+        }
+
+        @if map-has-key($disabled, cursor) {
+          #{$hover} {
+            cursor: #{map-get($disabled, cursor)};
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin _build-focusable-schemes($settings) {
+  $focus: '&';
+
+  @if map-has-key($settings, focus) {
+    $focus: map-get($settings, focus);
+  }
+
+  @at-root #{map-get($settings, selector)} {
+    #{$focus} {
+      @include _scheme-element(focus, outline-color, true, false);
+    }
+  }
+}
+
+@mixin build-focus($settings: $focus-settings) {
+  @each $focusable, $focusable-settings in $settings {
+    @include _build-focusable($focusable-settings);
+  }
+}
+
+@mixin build-focus-schemes($settings: $focus-settings) {
+  @each $focusable, $focusable-settings in $settings {
+    @include _build-focusable-schemes($focusable-settings);
+  }
+}

@@ -1,0 +1,69 @@
+////
+/// Navigation Module : Menu
+/// @group navigation
+////
+
+#{ns(menu)} {
+  @include z-index(menu, true);
+  @include margin(0 -4v);
+  @include padding(0 4v);
+  @include size(auto);
+  box-sizing: content-box;
+
+  @include respond-from(lg) {
+    @include absolute(100%);
+    @include margin-top(-1v);
+    @include padding-top(1v);
+    box-sizing: content-box;
+
+    @include after(block, '') {
+      @include absolute(0,0,0,0);
+      @include margin(1v 4v 8v);
+      @include z-index(under);
+    }
+  }
+
+  @include list {
+    @include margin(0);
+    @include padding(2v 0 6v);
+    @include padding(0 0 8v, lg);
+    @include size(20rem);
+  }
+
+  @include list-item {
+    @include relative;
+    @include margin(0);
+
+    &,
+    & > #{ns(link)} {
+      @include text-style(sm);
+      @include padding(3v 4v);
+      text-align: left;
+      box-shadow: none;
+
+      @include before(null,none);
+    }
+
+    & > #{ns(link)} {
+      display: block;
+      @include margin(-3v -4v);
+      border-radius: 0;
+    }
+
+    @include respond-from(lg) {
+      &:not(:last-child) {
+        @include after(null, '') {
+          @include absolute(null,0,0,0,null,1px);
+          @include margin(0 4v);
+        }
+      }
+    }
+
+    &--active {
+      @include before(null, '') {
+        @include absolute(0,null,0,0,2px);
+        @include margin(4v 0);
+      }
+    }
+  }
+}

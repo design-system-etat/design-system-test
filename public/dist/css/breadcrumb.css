@@ -1,0 +1,136 @@
+/*
+ * DSFR v0.5.5 | licence MIT
+ */
+@charset "UTF-8";
+
+/* ------------------------------------ *\
+  BREADCRUMB
+\* ------------------------------------ */
+
+/**
+un padding de 4px et une marge négative en compensation sont mis en place afin d'éviter de couper le focus.
+ */
+
+.rf-breadcrumb {
+  margin: 0.5rem -0.5rem 1.5rem;
+  padding: 0.5rem;
+  overflow: hidden;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  position: relative;
+  /**
+  margin-bottom de 1N pour créer cet espace entre chaque ligne
+   */
+}
+
+.rf-breadcrumb__button {
+  box-shadow: 0 1px 0 0 currentColor;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  margin: 0;
+  padding: 0;
+}
+
+.rf-breadcrumb__button[aria-expanded="true" i] {
+  display: none;
+}
+
+.rf-breadcrumb__list {
+  --is-list: false;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  display: block;
+}
+
+.rf-breadcrumb__item {
+  display: inline;
+  /**
+    flèche séparatrice en svg avec un espace à la suite
+     */
+  margin-bottom: 0.5rem;
+  vertical-align: middle;
+  /**
+      on place un espace après l'élément de manière à ce qu'il ne soit pas présent devant la flèche au retour à la ligne
+    */
+}
+
+.rf-breadcrumb__item:first-child::before {
+  content: none;
+}
+
+.rf-breadcrumb__item:not(:first-child)::before {
+  font-family: icons !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+}
+
+.rf-breadcrumb__item:not(:first-child)::before {
+  font-size: 1rem;
+  content: "";
+}
+
+.rf-breadcrumb__item:not(:first-child)::before {
+  margin-right: 0;
+  vertical-align: middle;
+}
+
+.rf-breadcrumb__item a {
+  display: inline;
+  vertical-align: middle;
+}
+
+.rf-breadcrumb__item:not(:last-child)::after {
+  content: "";
+  margin-right: 0;
+}
+
+.rf-breadcrumb__item:last-child a {
+  cursor: default;
+}
+
+.rf-breadcrumb {
+  /**
+  margin-bottom de 1N pour créer cet espace entre chaque ligne
+   */
+}
+
+.rf-breadcrumb__button {
+  color: var(--g600);
+  background-color: var(--t-plain);
+}
+
+.rf-breadcrumb__item:not(:first-child)::before {
+  color: var(--g600);
+}
+
+.rf-breadcrumb__item:not(:last-child) a {
+  color: var(--g600);
+}
+
+.rf-breadcrumb__item--curent a {
+  color: var(--g800);
+}
+
+@media (min-width: 48em) {
+  .rf-breadcrumb {
+    margin-bottom: 2rem;
+  }
+
+  .rf-breadcrumb__button {
+    display: none;
+  }
+
+  .rf-breadcrumb__list:not(.rf-collapse--expanded) {
+    visibility: visible;
+    overflow: visible;
+    max-height: initial;
+    display: inline-block;
+  }
+
+  .rf-breadcrumb__list:not(.rf-collapse--expanded)::before {
+    display: none;
+  }
+}

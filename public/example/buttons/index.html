@@ -1,0 +1,1244 @@
+<!doctype html>
+<html lang="fr" data-rf-theme>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Boutons - Design System</title>
+        <link rel="icon" href="../../dist/favicons/favicon.svg" type="image/svg+xml">
+        <link rel="apple-touch-icon" href="../../dist/favicons/apple-touch-icon.png"><!-- 180×180 -->
+        <!-- si favicon.ico peut etre placé à la racine du serveur, retirer la ligne ci-dessous -->
+        <link rel="icon" href="../../dist/favicons/favicon.ico"><!-- 32×32 -->
+        <link rel="manifest" href="../../dist/favicons/manifest.webmanifest">
+        <!-- Modifier les chemins relatifs des favicons en fonction de la structure du projet -->
+        <!-- Dans le fichier manifest.webmanifest aussi, modifier les chemins vers les images -->
+        <link href="../../dist/css/core.css" rel="stylesheet">
+        <link href="../../dist/css/accordions.css" rel="stylesheet">
+        <link href="../../dist/css/forms.css" rel="stylesheet">
+        <link href="../../dist/css/links.css" rel="stylesheet">
+        <link href="../../dist/css/schemes.css" rel="stylesheet">
+        <link href="../../dist/css/utilities.css" rel="stylesheet">
+        <link href="../../dist/css/buttons.css" rel="stylesheet">
+        <link href="../../dist/css/checkboxes.css" rel="stylesheet">
+        <style>
+            code[class*="language-"],
+            pre[class*="language-"] {
+                white-space: pre-wrap;
+            }
+
+            .example-controls {
+                z-index: 100000;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                box-shadow: 0 -8px 16px 0 rgba(0, 0, 0, 0.1), 0 -8px 16px -16px rgba(0, 0, 0, 0.32);
+                padding: 4px 32px;
+                background-color: var(--w-g750);
+            }
+
+            .example-controls [class*="-form-group"] {
+                margin-bottom: 0;
+            }
+
+        </style>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/themes/prism.min.css" rel="stylesheet" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/toolbar/prism-toolbar.min.css" rel="stylesheet" />
+    </head>
+
+    <body class="rf-mb-12w" style="margin:0; padding:0;">
+        <div class="example-controls">
+            <div class="rf-form-group">
+                <fieldset class="rf-fieldset rf-fieldset--inline">
+                    <legend class="rf-sr-only">Interface de contrôle des test</legend>
+                    <div class="rf-fieldset__content">
+                        <div class="rf-checkbox-group">
+                            <input type="checkbox" id="theme-checkbox" name="checkboxes-inline-1">
+                            <label class="rf-label" for="theme-checkbox">Thème clair / sombre</label>
+                        </div>
+                        <div class="rf-checkbox-group">
+                            <input type="checkbox" id="mourning-checkbox" name="checkboxes-inline-2">
+                            <label class="rf-label" for="mourning-checkbox">En deuil</label>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+        <div class="rf-container rf-mt-2v">
+            <a class="rf-link rf-fi-arrow-left-line rf-link--icon-left" href="../">Retour</a>
+            <h1>Boutons - Design System</h1>
+            <p>Le bouton est un élément d’interaction avec l’interface permettant à l’utilisateur d’effectuer une action.</p>
+        </div>
+        <div class="rf-container">
+            <div class="rf-grid-row rf-grid-row--center">
+                <div class="rf-col-md-8 rf-col-12">
+                    <h4>Bouton simple</h4>
+                    <div class="rf-mb-6v">
+                        <button class="rf-btn" title="Label bouton">
+                            Label bouton
+                        </button>
+                    </div>
+                    <div class="rf-mb-12v">
+                        <section class="rf-accordion">
+                            <h3 class="rf-accordion__title">
+                                <button class="rf-accordion__btn" aria-expanded="false" aria-controls="snippet-447">Extrait de code</button>
+                            </h3>
+                            <div class="rf-collapse" id="snippet-447">
+                                <pre class=" language-html"><code>&lt;button class="rf-btn" title="Label bouton"&gt;
+    Label bouton
+&lt;/button&gt;
+</code></pre>
+                            </div>
+                        </section>
+                    </div>
+                    <h4>Bouton simple SM</h4>
+                    <div class="rf-mb-6v">
+                        <button class="rf-btn rf-btn--sm" title="Label bouton SM">
+                            Label bouton SM
+                        </button>
+                    </div>
+                    <div class="rf-mb-12v">
+                        <section class="rf-accordion">
+                            <h3 class="rf-accordion__title">
+                                <button class="rf-accordion__btn" aria-expanded="false" aria-controls="snippet-448">Extrait de code</button>
+                            </h3>
+                            <div class="rf-collapse" id="snippet-448">
+                                <pre class=" language-html"><code>&lt;button class="rf-btn rf-btn--sm" title="Label bouton SM"&gt;
+    Label bouton SM
+&lt;/button&gt;
+</code></pre>
+                            </div>
+                        </section>
+                    </div>
+                    <h4>Bouton simple LG</h4>
+                    <div class="rf-mb-6v">
+                        <button class="rf-btn rf-btn--lg" title="Label bouton LG">
+                            Label bouton LG
+                        </button>
+                    </div>
+                    <div class="rf-mb-12v">
+                        <section class="rf-accordion">
+                            <h3 class="rf-accordion__title">
+                                <button class="rf-accordion__btn" aria-expanded="false" aria-controls="snippet-449">Extrait de code</button>
+                            </h3>
+                            <div class="rf-collapse" id="snippet-449">
+                                <pre class=" language-html"><code>&lt;button class="rf-btn rf-btn--lg" title="Label bouton LG"&gt;
+    Label bouton LG
+&lt;/button&gt;
+</code></pre>
+                            </div>
+                        </section>
+                    </div>
+                    <h4>Bouton désactivé</h4>
+                    <div class="rf-mb-6v">
+                        <button class="rf-btn" title="Label bouton" disabled="">
+                            Label bouton
+                        </button>
+                    </div>
+                    <div class="rf-mb-12v">
+                        <section class="rf-accordion">
+                            <h3 class="rf-accordion__title">
+                                <button class="rf-accordion__btn" aria-expanded="false" aria-controls="snippet-450">Extrait de code</button>
+                            </h3>
+                            <div class="rf-collapse" id="snippet-450">
+                                <pre class=" language-html"><code>&lt;button class="rf-btn" title="Label bouton" disabled=""&gt;
+    Label bouton
+&lt;/button&gt;
+</code></pre>
+                            </div>
+                        </section>
+                    </div>
+                    <h4>Bouton icon à gauche</h4>
+                    <div class="rf-mb-6v">
+                        <button class="rf-btn rf-fi-checkbox-line rf-btn--icon-left" title="Label bouton">
+                            Label bouton
+                        </button>
+                    </div>
+                    <div class="rf-mb-12v">
+                        <section class="rf-accordion">
+                            <h3 class="rf-accordion__title">
+                                <button class="rf-accordion__btn" aria-expanded="false" aria-controls="snippet-451">Extrait de code</button>
+                            </h3>
+                            <div class="rf-collapse" id="snippet-451">
+                                <pre class=" language-html"><code>&lt;button class="rf-btn rf-fi-checkbox-line rf-btn--icon-left" title="Label bouton"&gt;
+    Label bouton
+&lt;/button&gt;
+</code></pre>
+                            </div>
+                        </section>
+                    </div>
+                    <h4>Bouton icon à droite</h4>
+                    <div class="rf-mb-6v">
+                        <button class="rf-btn rf-fi-checkbox-line rf-btn--icon-right" title="Label bouton">
+                            Label bouton
+                        </button>
+                    </div>
+                    <div class="rf-mb-12v">
+                        <section class="rf-accordion">
+                            <h3 class="rf-accordion__title">
+                                <button class="rf-accordion__btn" aria-expanded="false" aria-controls="snippet-452">Extrait de code</button>
+                            </h3>
+                            <div class="rf-collapse" id="snippet-452">
+                                <pre class=" language-html"><code>&lt;button class="rf-btn rf-fi-checkbox-line rf-btn--icon-right" title="Label bouton"&gt;
+    Label bouton
+&lt;/button&gt;
+</code></pre>
+                            </div>
+                        </section>
+                    </div>
+                    <h4>Bouton icon seule</h4>
+                    <div class="rf-mb-6v">
+                        <button class="rf-btn rf-fi-checkbox-line" title="Label bouton">
+                            Label bouton
+                        </button>
+                    </div>
+                    <div class="rf-mb-12v">
+                        <section class="rf-accordion">
+                            <h3 class="rf-accordion__title">
+                                <button class="rf-accordion__btn" aria-expanded="false" aria-controls="snippet-453">Extrait de code</button>
+                            </h3>
+                            <div class="rf-collapse" id="snippet-453">
+                                <pre class=" language-html"><code>&lt;button class="rf-btn rf-fi-checkbox-line" title="Label bouton"&gt;
+    Label bouton
+&lt;/button&gt;
+</code></pre>
+                            </div>
+                        </section>
+                    </div>
+                    <h4>Bouton tag a href</h4>
+                    <div class="rf-mb-6v">
+                        <a class="rf-btn" title="Label bouton" href="#">
+                            Label bouton
+                        </a>
+                    </div>
+                    <div class="rf-mb-12v">
+                        <section class="rf-accordion">
+                            <h3 class="rf-accordion__title">
+                                <button class="rf-accordion__btn" aria-expanded="false" aria-controls="snippet-454">Extrait de code</button>
+                            </h3>
+                            <div class="rf-collapse" id="snippet-454">
+                                <pre class=" language-html"><code>&lt;a class="rf-btn" title="Label bouton" href="#"&gt;
+    Label bouton
+&lt;/a&gt;
+</code></pre>
+                            </div>
+                        </section>
+                    </div>
+                    <h4>Bouton tag div</h4>
+                    <div class="rf-mb-6v">
+                        <div class="rf-btn" title="Label bouton">
+                            Label bouton
+                        </div>
+                    </div>
+                    <div class="rf-mb-12v">
+                        <section class="rf-accordion">
+                            <h3 class="rf-accordion__title">
+                                <button class="rf-accordion__btn" aria-expanded="false" aria-controls="snippet-455">Extrait de code</button>
+                            </h3>
+                            <div class="rf-collapse" id="snippet-455">
+                                <pre class=" language-html"><code>&lt;div class="rf-btn" title="Label bouton"&gt;
+    Label bouton
+&lt;/div&gt;
+</code></pre>
+                            </div>
+                        </section>
+                    </div>
+                    <h4>Bouton secondaire</h4>
+                    <div class="rf-mb-6v">
+                        <button class="rf-btn rf-btn--secondary" title="Label bouton">
+                            Label bouton
+                        </button>
+                    </div>
+                    <div class="rf-mb-12v">
+                        <section class="rf-accordion">
+                            <h3 class="rf-accordion__title">
+                                <button class="rf-accordion__btn" aria-expanded="false" aria-controls="snippet-456">Extrait de code</button>
+                            </h3>
+                            <div class="rf-collapse" id="snippet-456">
+                                <pre class=" language-html"><code>&lt;button class="rf-btn rf-btn--secondary" title="Label bouton"&gt;
+    Label bouton
+&lt;/button&gt;
+</code></pre>
+                            </div>
+                        </section>
+                    </div>
+                    <h4>Bouton secondaire désactivé</h4>
+                    <div class="rf-mb-6v">
+                        <button class="rf-btn rf-btn--secondary" title="Label bouton" disabled="">
+                            Label bouton
+                        </button>
+                    </div>
+                    <div class="rf-mb-12v">
+                        <section class="rf-accordion">
+                            <h3 class="rf-accordion__title">
+                                <button class="rf-accordion__btn" aria-expanded="false" aria-controls="snippet-457">Extrait de code</button>
+                            </h3>
+                            <div class="rf-collapse" id="snippet-457">
+                                <pre class=" language-html"><code>&lt;button class="rf-btn rf-btn--secondary" title="Label bouton" disabled=""&gt;
+    Label bouton
+&lt;/button&gt;
+</code></pre>
+                            </div>
+                        </section>
+                    </div>
+                    <h4>Bouton secondaire icon à gauche</h4>
+                    <div class="rf-mb-6v">
+                        <button class="rf-btn rf-fi-checkbox-line rf-btn--icon-left rf-btn--secondary" title="Label bouton">
+                            Label bouton
+                        </button>
+                    </div>
+                    <div class="rf-mb-12v">
+                        <section class="rf-accordion">
+                            <h3 class="rf-accordion__title">
+                                <button class="rf-accordion__btn" aria-expanded="false" aria-controls="snippet-458">Extrait de code</button>
+                            </h3>
+                            <div class="rf-collapse" id="snippet-458">
+                                <pre class=" language-html"><code>&lt;button class="rf-btn rf-fi-checkbox-line rf-btn--icon-left rf-btn--secondary" title="Label bouton"&gt;
+    Label bouton
+&lt;/button&gt;
+</code></pre>
+                            </div>
+                        </section>
+                    </div>
+                    <h4>Bouton secondaire icon à droite</h4>
+                    <div class="rf-mb-6v">
+                        <button class="rf-btn rf-fi-checkbox-line rf-btn--icon-right rf-btn--secondary" title="Label bouton">
+                            Label bouton
+                        </button>
+                    </div>
+                    <div class="rf-mb-12v">
+                        <section class="rf-accordion">
+                            <h3 class="rf-accordion__title">
+                                <button class="rf-accordion__btn" aria-expanded="false" aria-controls="snippet-459">Extrait de code</button>
+                            </h3>
+                            <div class="rf-collapse" id="snippet-459">
+                                <pre class=" language-html"><code>&lt;button class="rf-btn rf-fi-checkbox-line rf-btn--icon-right rf-btn--secondary" title="Label bouton"&gt;
+    Label bouton
+&lt;/button&gt;
+</code></pre>
+                            </div>
+                        </section>
+                    </div>
+                    <h4>Bouton secondaire icon seule</h4>
+                    <div class="rf-mb-6v">
+                        <button class="rf-btn rf-fi-checkbox-line rf-btn--secondary" title="Label bouton">
+                            Label bouton
+                        </button>
+                    </div>
+                    <div class="rf-mb-12v">
+                        <section class="rf-accordion">
+                            <h3 class="rf-accordion__title">
+                                <button class="rf-accordion__btn" aria-expanded="false" aria-controls="snippet-460">Extrait de code</button>
+                            </h3>
+                            <div class="rf-collapse" id="snippet-460">
+                                <pre class=" language-html"><code>&lt;button class="rf-btn rf-fi-checkbox-line rf-btn--secondary" title="Label bouton"&gt;
+    Label bouton
+&lt;/button&gt;
+</code></pre>
+                            </div>
+                        </section>
+                    </div>
+                    <h4>Bouton secondaire tag a href</h4>
+                    <div class="rf-mb-6v">
+                        <a class="rf-btn rf-btn--secondary" title="Label bouton" href="#">
+                            Label bouton
+                        </a>
+                    </div>
+                    <div class="rf-mb-12v">
+                        <section class="rf-accordion">
+                            <h3 class="rf-accordion__title">
+                                <button class="rf-accordion__btn" aria-expanded="false" aria-controls="snippet-461">Extrait de code</button>
+                            </h3>
+                            <div class="rf-collapse" id="snippet-461">
+                                <pre class=" language-html"><code>&lt;a class="rf-btn rf-btn--secondary" title="Label bouton" href="#"&gt;
+    Label bouton
+&lt;/a&gt;
+</code></pre>
+                            </div>
+                        </section>
+                    </div>
+                    <h4>Groupe de bouton</h4>
+                    <div class="rf-mb-6v">
+                        <ul class="rf-btns-group">
+                            <li>
+                                <button class="rf-btn rf-btn--secondary" title="Label bouton">
+                                    Label bouton
+                                </button>
+                            </li>
+                            <li>
+                                <button class="rf-btn rf-btn--secondary" title="Label bouton">
+                                    Label bouton
+                                </button>
+                            </li>
+                            <li>
+                                <button class="rf-btn rf-btn--secondary" title="Label bouton">
+                                    Label bouton
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="rf-mb-12v">
+                        <section class="rf-accordion">
+                            <h3 class="rf-accordion__title">
+                                <button class="rf-accordion__btn" aria-expanded="false" aria-controls="snippet-462">Extrait de code</button>
+                            </h3>
+                            <div class="rf-collapse" id="snippet-462">
+                                <pre class=" language-html"><code>&lt;ul class="rf-btns-group"&gt;
+    &lt;li&gt;
+        &lt;button class="rf-btn rf-btn--secondary" title="Label bouton"&gt;
+            Label bouton
+        &lt;/button&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;button class="rf-btn rf-btn--secondary" title="Label bouton"&gt;
+            Label bouton
+        &lt;/button&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;button class="rf-btn rf-btn--secondary" title="Label bouton"&gt;
+            Label bouton
+        &lt;/button&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+                            </div>
+                        </section>
+                    </div>
+                    <h4>Groupe de bouton SM</h4>
+                    <div class="rf-mb-6v">
+                        <ul class="rf-btns-group rf-btns-group--sm">
+                            <li>
+                                <button class="rf-btn rf-btn--secondary" title="Label bouton SM">
+                                    Label bouton SM
+                                </button>
+                            </li>
+                            <li>
+                                <button class="rf-btn rf-btn--secondary" title="Label bouton SM">
+                                    Label bouton SM
+                                </button>
+                            </li>
+                            <li>
+                                <button class="rf-btn rf-btn--secondary" title="Label bouton SM">
+                                    Label bouton SM
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="rf-mb-12v">
+                        <section class="rf-accordion">
+                            <h3 class="rf-accordion__title">
+                                <button class="rf-accordion__btn" aria-expanded="false" aria-controls="snippet-463">Extrait de code</button>
+                            </h3>
+                            <div class="rf-collapse" id="snippet-463">
+                                <pre class=" language-html"><code>&lt;ul class="rf-btns-group rf-btns-group--sm"&gt;
+    &lt;li&gt;
+        &lt;button class="rf-btn rf-btn--secondary" title="Label bouton SM"&gt;
+            Label bouton SM
+        &lt;/button&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;button class="rf-btn rf-btn--secondary" title="Label bouton SM"&gt;
+            Label bouton SM
+        &lt;/button&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;button class="rf-btn rf-btn--secondary" title="Label bouton SM"&gt;
+            Label bouton SM
+        &lt;/button&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+                            </div>
+                        </section>
+                    </div>
+                    <h4>Groupe de bouton LG</h4>
+                    <div class="rf-mb-6v">
+                        <ul class="rf-btns-group rf-btns-group--lg">
+                            <li>
+                                <button class="rf-btn rf-btn--secondary" title="Label bouton LG">
+                                    Label bouton LG
+                                </button>
+                            </li>
+                            <li>
+                                <button class="rf-btn rf-btn--secondary" title="Label bouton LG">
+                                    Label bouton LG
+                                </button>
+                            </li>
+                            <li>
+                                <button class="rf-btn rf-btn--secondary" title="Label bouton LG">
+                                    Label bouton LG
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="rf-mb-12v">
+                        <section class="rf-accordion">
+                            <h3 class="rf-accordion__title">
+                                <button class="rf-accordion__btn" aria-expanded="false" aria-controls="snippet-464">Extrait de code</button>
+                            </h3>
+                            <div class="rf-collapse" id="snippet-464">
+                                <pre class=" language-html"><code>&lt;ul class="rf-btns-group rf-btns-group--lg"&gt;
+    &lt;li&gt;
+        &lt;button class="rf-btn rf-btn--secondary" title="Label bouton LG"&gt;
+            Label bouton LG
+        &lt;/button&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;button class="rf-btn rf-btn--secondary" title="Label bouton LG"&gt;
+            Label bouton LG
+        &lt;/button&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;button class="rf-btn rf-btn--secondary" title="Label bouton LG"&gt;
+            Label bouton LG
+        &lt;/button&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+                            </div>
+                        </section>
+                    </div>
+                    <h4>Groupe de boutons verticaux hiérarchisés avec icones</h4>
+                    <div class="rf-mb-6v">
+                        <ul class="rf-btns-group rf-btns-group--icon-left">
+                            <li>
+                                <button class="rf-btn rf-fi-checkbox-line" title="Label bouton">
+                                    Label bouton
+                                </button>
+                            </li>
+                            <li>
+                                <button class="rf-btn rf-fi-checkbox-line rf-btn--secondary" title="Label bouton">
+                                    Label bouton
+                                </button>
+                            </li>
+                            <li>
+                                <button class="rf-btn rf-fi-checkbox-line rf-btn--secondary" title="Label bouton">
+                                    Label bouton
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="rf-mb-12v">
+                        <section class="rf-accordion">
+                            <h3 class="rf-accordion__title">
+                                <button class="rf-accordion__btn" aria-expanded="false" aria-controls="snippet-465">Extrait de code</button>
+                            </h3>
+                            <div class="rf-collapse" id="snippet-465">
+                                <pre class=" language-html"><code>&lt;ul class="rf-btns-group rf-btns-group--icon-left"&gt;
+    &lt;li&gt;
+        &lt;button class="rf-btn rf-fi-checkbox-line" title="Label bouton"&gt;
+            Label bouton
+        &lt;/button&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;button class="rf-btn rf-fi-checkbox-line rf-btn--secondary" title="Label bouton"&gt;
+            Label bouton
+        &lt;/button&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;button class="rf-btn rf-fi-checkbox-line rf-btn--secondary" title="Label bouton"&gt;
+            Label bouton
+        &lt;/button&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+                            </div>
+                        </section>
+                    </div>
+                    <h4>Groupe de boutons inline</h4>
+                    <div class="rf-mb-6v">
+                        <ul class="rf-btns-group rf-btns-group--inline">
+                            <li>
+                                <button class="rf-btn" title="Label bouton">
+                                    Label bouton
+                                </button>
+                            </li>
+                            <li>
+                                <button class="rf-btn rf-btn--secondary" title="Label bouton">
+                                    Label bouton
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="rf-mb-12v">
+                        <section class="rf-accordion">
+                            <h3 class="rf-accordion__title">
+                                <button class="rf-accordion__btn" aria-expanded="false" aria-controls="snippet-466">Extrait de code</button>
+                            </h3>
+                            <div class="rf-collapse" id="snippet-466">
+                                <pre class=" language-html"><code>&lt;ul class="rf-btns-group rf-btns-group--inline"&gt;
+    &lt;li&gt;
+        &lt;button class="rf-btn" title="Label bouton"&gt;
+            Label bouton
+        &lt;/button&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;button class="rf-btn rf-btn--secondary" title="Label bouton"&gt;
+            Label bouton
+        &lt;/button&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+                            </div>
+                        </section>
+                    </div>
+                    <h4>Groupe de boutons inline non hiérarchisés</h4>
+                    <div class="rf-mb-6v">
+                        <ul class="rf-btns-group rf-btns-group--inline">
+                            <li>
+                                <button class="rf-btn rf-btn--secondary" title="Label bouton">
+                                    Label bouton
+                                </button>
+                            </li>
+                            <li>
+                                <button class="rf-btn rf-btn--secondary" title="Label bouton">
+                                    Label bouton
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="rf-mb-12v">
+                        <section class="rf-accordion">
+                            <h3 class="rf-accordion__title">
+                                <button class="rf-accordion__btn" aria-expanded="false" aria-controls="snippet-467">Extrait de code</button>
+                            </h3>
+                            <div class="rf-collapse" id="snippet-467">
+                                <pre class=" language-html"><code>&lt;ul class="rf-btns-group rf-btns-group--inline"&gt;
+    &lt;li&gt;
+        &lt;button class="rf-btn rf-btn--secondary" title="Label bouton"&gt;
+            Label bouton
+        &lt;/button&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;button class="rf-btn rf-btn--secondary" title="Label bouton"&gt;
+            Label bouton
+        &lt;/button&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+                            </div>
+                        </section>
+                    </div>
+                    <h4>Groupe de boutons inline à partir du breakpoint SM</h4>
+                    <div class="rf-mb-6v">
+                        <ul class="rf-btns-group rf-btns-group--inline-sm">
+                            <li>
+                                <button class="rf-btn" title="Label bouton">
+                                    Label bouton
+                                </button>
+                            </li>
+                            <li>
+                                <button class="rf-btn rf-btn--secondary" title="Label bouton">
+                                    Label bouton
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="rf-mb-12v">
+                        <section class="rf-accordion">
+                            <h3 class="rf-accordion__title">
+                                <button class="rf-accordion__btn" aria-expanded="false" aria-controls="snippet-468">Extrait de code</button>
+                            </h3>
+                            <div class="rf-collapse" id="snippet-468">
+                                <pre class=" language-html"><code>&lt;ul class="rf-btns-group rf-btns-group--inline-sm"&gt;
+    &lt;li&gt;
+        &lt;button class="rf-btn" title="Label bouton"&gt;
+            Label bouton
+        &lt;/button&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;button class="rf-btn rf-btn--secondary" title="Label bouton"&gt;
+            Label bouton
+        &lt;/button&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+                            </div>
+                        </section>
+                    </div>
+                    <h4>Groupe de boutons inline à partir du breakpoint MD</h4>
+                    <div class="rf-mb-6v">
+                        <ul class="rf-btns-group rf-btns-group--inline-md">
+                            <li>
+                                <button class="rf-btn" title="Label bouton">
+                                    Label bouton
+                                </button>
+                            </li>
+                            <li>
+                                <button class="rf-btn rf-btn--secondary" title="Label bouton">
+                                    Label bouton
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="rf-mb-12v">
+                        <section class="rf-accordion">
+                            <h3 class="rf-accordion__title">
+                                <button class="rf-accordion__btn" aria-expanded="false" aria-controls="snippet-469">Extrait de code</button>
+                            </h3>
+                            <div class="rf-collapse" id="snippet-469">
+                                <pre class=" language-html"><code>&lt;ul class="rf-btns-group rf-btns-group--inline-md"&gt;
+    &lt;li&gt;
+        &lt;button class="rf-btn" title="Label bouton"&gt;
+            Label bouton
+        &lt;/button&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;button class="rf-btn rf-btn--secondary" title="Label bouton"&gt;
+            Label bouton
+        &lt;/button&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+                            </div>
+                        </section>
+                    </div>
+                    <h4>Groupe de boutons inline à partir du breakpoint LG</h4>
+                    <div class="rf-mb-6v">
+                        <ul class="rf-btns-group rf-btns-group--inline-lg">
+                            <li>
+                                <button class="rf-btn" title="Label bouton">
+                                    Label bouton
+                                </button>
+                            </li>
+                            <li>
+                                <button class="rf-btn rf-btn--secondary" title="Label bouton">
+                                    Label bouton
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="rf-mb-12v">
+                        <section class="rf-accordion">
+                            <h3 class="rf-accordion__title">
+                                <button class="rf-accordion__btn" aria-expanded="false" aria-controls="snippet-470">Extrait de code</button>
+                            </h3>
+                            <div class="rf-collapse" id="snippet-470">
+                                <pre class=" language-html"><code>&lt;ul class="rf-btns-group rf-btns-group--inline-lg"&gt;
+    &lt;li&gt;
+        &lt;button class="rf-btn" title="Label bouton"&gt;
+            Label bouton
+        &lt;/button&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;button class="rf-btn rf-btn--secondary" title="Label bouton"&gt;
+            Label bouton
+        &lt;/button&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+                            </div>
+                        </section>
+                    </div>
+                    <h4>Groupe de boutons inversés en inline à partir du breakpoint SM</h4>
+                    <div class="rf-mb-6v">
+                        <ul class="rf-btns-group rf-btns-group--right rf-btns-group--inline-reverse rf-btns-group--inline-sm">
+                            <li>
+                                <button class="rf-btn" title="Label bouton">
+                                    Label bouton
+                                </button>
+                            </li>
+                            <li>
+                                <button class="rf-btn rf-btn--secondary" title="Label bouton">
+                                    Label bouton
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="rf-mb-12v">
+                        <section class="rf-accordion">
+                            <h3 class="rf-accordion__title">
+                                <button class="rf-accordion__btn" aria-expanded="false" aria-controls="snippet-471">Extrait de code</button>
+                            </h3>
+                            <div class="rf-collapse" id="snippet-471">
+                                <pre class=" language-html"><code>&lt;ul class="rf-btns-group rf-btns-group--right rf-btns-group--inline-reverse rf-btns-group--inline-sm"&gt;
+    &lt;li&gt;
+        &lt;button class="rf-btn" title="Label bouton"&gt;
+            Label bouton
+        &lt;/button&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;button class="rf-btn rf-btn--secondary" title="Label bouton"&gt;
+            Label bouton
+        &lt;/button&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+                            </div>
+                        </section>
+                    </div>
+                    <h4>Groupe de boutons inline même taille (equisized)</h4>
+                    <div class="rf-mb-6v">
+                        <ul class="rf-btns-group rf-btns-group--equisized rf-btns-group--inline">
+                            <li>
+                                <button class="rf-btn" title="Label bouton">
+                                    Label bouton
+                                </button>
+                            </li>
+                            <li>
+                                <button class="rf-btn rf-btn--secondary" title="Label bouton plus">
+                                    Label bouton plus
+                                </button>
+                            </li>
+                            <li>
+                                <button class="rf-btn rf-btn--secondary" title="Label bouton plus long">
+                                    Label bouton plus long
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="rf-mb-12v">
+                        <section class="rf-accordion">
+                            <h3 class="rf-accordion__title">
+                                <button class="rf-accordion__btn" aria-expanded="false" aria-controls="snippet-472">Extrait de code</button>
+                            </h3>
+                            <div class="rf-collapse" id="snippet-472">
+                                <pre class=" language-html"><code>&lt;ul class="rf-btns-group rf-btns-group--equisized rf-btns-group--inline"&gt;
+    &lt;li&gt;
+        &lt;button class="rf-btn" title="Label bouton"&gt;
+            Label bouton
+        &lt;/button&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;button class="rf-btn rf-btn--secondary" title="Label bouton plus"&gt;
+            Label bouton plus
+        &lt;/button&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;button class="rf-btn rf-btn--secondary" title="Label bouton plus long"&gt;
+            Label bouton plus long
+        &lt;/button&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+                            </div>
+                        </section>
+                    </div>
+                    <h4>Groupe de boutons inline alignés a droite (equisized)</h4>
+                    <div class="rf-mb-6v">
+                        <ul class="rf-btns-group rf-btns-group--right rf-btns-group--equisized rf-btns-group--inline">
+                            <li>
+                                <button class="rf-btn" title="Label bouton">
+                                    Label bouton
+                                </button>
+                            </li>
+                            <li>
+                                <button class="rf-btn rf-btn--secondary" title="Label bouton plus">
+                                    Label bouton plus
+                                </button>
+                            </li>
+                            <li>
+                                <button class="rf-btn rf-btn--secondary" title="Label bouton plus long">
+                                    Label bouton plus long
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="rf-mb-12v">
+                        <section class="rf-accordion">
+                            <h3 class="rf-accordion__title">
+                                <button class="rf-accordion__btn" aria-expanded="false" aria-controls="snippet-473">Extrait de code</button>
+                            </h3>
+                            <div class="rf-collapse" id="snippet-473">
+                                <pre class=" language-html"><code>&lt;ul class="rf-btns-group rf-btns-group--right rf-btns-group--equisized rf-btns-group--inline"&gt;
+    &lt;li&gt;
+        &lt;button class="rf-btn" title="Label bouton"&gt;
+            Label bouton
+        &lt;/button&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;button class="rf-btn rf-btn--secondary" title="Label bouton plus"&gt;
+            Label bouton plus
+        &lt;/button&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;button class="rf-btn rf-btn--secondary" title="Label bouton plus long"&gt;
+            Label bouton plus long
+        &lt;/button&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+                            </div>
+                        </section>
+                    </div>
+                    <h4>Groupe de boutons inline alignés au centre (equisized)</h4>
+                    <div class="rf-mb-6v">
+                        <ul class="rf-btns-group rf-btns-group--center rf-btns-group--equisized rf-btns-group--inline">
+                            <li>
+                                <button class="rf-btn" title="Label bouton">
+                                    Label bouton
+                                </button>
+                            </li>
+                            <li>
+                                <button class="rf-btn rf-btn--secondary" title="Label bouton plus">
+                                    Label bouton plus
+                                </button>
+                            </li>
+                            <li>
+                                <button class="rf-btn rf-btn--secondary" title="Label bouton plus long">
+                                    Label bouton plus long
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="rf-mb-12v">
+                        <section class="rf-accordion">
+                            <h3 class="rf-accordion__title">
+                                <button class="rf-accordion__btn" aria-expanded="false" aria-controls="snippet-474">Extrait de code</button>
+                            </h3>
+                            <div class="rf-collapse" id="snippet-474">
+                                <pre class=" language-html"><code>&lt;ul class="rf-btns-group rf-btns-group--center rf-btns-group--equisized rf-btns-group--inline"&gt;
+    &lt;li&gt;
+        &lt;button class="rf-btn" title="Label bouton"&gt;
+            Label bouton
+        &lt;/button&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;button class="rf-btn rf-btn--secondary" title="Label bouton plus"&gt;
+            Label bouton plus
+        &lt;/button&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;button class="rf-btn rf-btn--secondary" title="Label bouton plus long"&gt;
+            Label bouton plus long
+        &lt;/button&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+                            </div>
+                        </section>
+                    </div>
+                    <h4>Groupe de boutons verticaux même taille (equisized)</h4>
+                    <div class="rf-mb-6v">
+                        <ul class="rf-btns-group rf-btns-group--equisized">
+                            <li>
+                                <button class="rf-btn" title="Label bouton">
+                                    Label bouton
+                                </button>
+                            </li>
+                            <li>
+                                <button class="rf-btn rf-btn--secondary" title="Label bouton plus">
+                                    Label bouton plus
+                                </button>
+                            </li>
+                            <li>
+                                <button class="rf-btn rf-btn--secondary" title="Label bouton plus long">
+                                    Label bouton plus long
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="rf-mb-12v">
+                        <section class="rf-accordion">
+                            <h3 class="rf-accordion__title">
+                                <button class="rf-accordion__btn" aria-expanded="false" aria-controls="snippet-475">Extrait de code</button>
+                            </h3>
+                            <div class="rf-collapse" id="snippet-475">
+                                <pre class=" language-html"><code>&lt;ul class="rf-btns-group rf-btns-group--equisized"&gt;
+    &lt;li&gt;
+        &lt;button class="rf-btn" title="Label bouton"&gt;
+            Label bouton
+        &lt;/button&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;button class="rf-btn rf-btn--secondary" title="Label bouton plus"&gt;
+            Label bouton plus
+        &lt;/button&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;button class="rf-btn rf-btn--secondary" title="Label bouton plus long"&gt;
+            Label bouton plus long
+        &lt;/button&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+                            </div>
+                        </section>
+                    </div>
+                    <h4>Groupe de boutons verticaux alignés a droite (equisized)</h4>
+                    <div class="rf-mb-6v">
+                        <ul class="rf-btns-group rf-btns-group--right rf-btns-group--equisized">
+                            <li>
+                                <button class="rf-btn" title="Label bouton">
+                                    Label bouton
+                                </button>
+                            </li>
+                            <li>
+                                <button class="rf-btn rf-btn--secondary" title="Label bouton plus">
+                                    Label bouton plus
+                                </button>
+                            </li>
+                            <li>
+                                <button class="rf-btn rf-btn--secondary" title="Label bouton plus long">
+                                    Label bouton plus long
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="rf-mb-12v">
+                        <section class="rf-accordion">
+                            <h3 class="rf-accordion__title">
+                                <button class="rf-accordion__btn" aria-expanded="false" aria-controls="snippet-476">Extrait de code</button>
+                            </h3>
+                            <div class="rf-collapse" id="snippet-476">
+                                <pre class=" language-html"><code>&lt;ul class="rf-btns-group rf-btns-group--right rf-btns-group--equisized"&gt;
+    &lt;li&gt;
+        &lt;button class="rf-btn" title="Label bouton"&gt;
+            Label bouton
+        &lt;/button&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;button class="rf-btn rf-btn--secondary" title="Label bouton plus"&gt;
+            Label bouton plus
+        &lt;/button&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;button class="rf-btn rf-btn--secondary" title="Label bouton plus long"&gt;
+            Label bouton plus long
+        &lt;/button&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+                            </div>
+                        </section>
+                    </div>
+                    <h4>Groupe de boutons verticaux alignés au centre (equisized)</h4>
+                    <div class="rf-mb-6v">
+                        <ul class="rf-btns-group rf-btns-group--center rf-btns-group--equisized">
+                            <li>
+                                <button class="rf-btn" title="Label bouton">
+                                    Label bouton
+                                </button>
+                            </li>
+                            <li>
+                                <button class="rf-btn rf-btn--secondary" title="Label bouton plus">
+                                    Label bouton plus
+                                </button>
+                            </li>
+                            <li>
+                                <button class="rf-btn rf-btn--secondary" title="Label bouton plus long">
+                                    Label bouton plus long
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="rf-mb-12v">
+                        <section class="rf-accordion">
+                            <h3 class="rf-accordion__title">
+                                <button class="rf-accordion__btn" aria-expanded="false" aria-controls="snippet-477">Extrait de code</button>
+                            </h3>
+                            <div class="rf-collapse" id="snippet-477">
+                                <pre class=" language-html"><code>&lt;ul class="rf-btns-group rf-btns-group--center rf-btns-group--equisized"&gt;
+    &lt;li&gt;
+        &lt;button class="rf-btn" title="Label bouton"&gt;
+            Label bouton
+        &lt;/button&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;button class="rf-btn rf-btn--secondary" title="Label bouton plus"&gt;
+            Label bouton plus
+        &lt;/button&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;button class="rf-btn rf-btn--secondary" title="Label bouton plus long"&gt;
+            Label bouton plus long
+        &lt;/button&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+                            </div>
+                        </section>
+                    </div>
+                    <h4>Groupe de boutons d&#39;icones</h4>
+                    <div class="rf-mb-6v">
+                        <ul class="rf-btns-group">
+                            <li>
+                                <button class="rf-btn rf-fi-checkbox-line" title="Label bouton">
+                                    Label bouton
+                                </button>
+                            </li>
+                            <li>
+                                <button class="rf-btn rf-fi-checkbox-line rf-btn--secondary" title="Label bouton">
+                                    Label bouton
+                                </button>
+                            </li>
+                            <li>
+                                <button class="rf-btn rf-fi-checkbox-line rf-btn--secondary" title="Label bouton">
+                                    Label bouton
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="rf-mb-12v">
+                        <section class="rf-accordion">
+                            <h3 class="rf-accordion__title">
+                                <button class="rf-accordion__btn" aria-expanded="false" aria-controls="snippet-478">Extrait de code</button>
+                            </h3>
+                            <div class="rf-collapse" id="snippet-478">
+                                <pre class=" language-html"><code>&lt;ul class="rf-btns-group"&gt;
+    &lt;li&gt;
+        &lt;button class="rf-btn rf-fi-checkbox-line" title="Label bouton"&gt;
+            Label bouton
+        &lt;/button&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;button class="rf-btn rf-fi-checkbox-line rf-btn--secondary" title="Label bouton"&gt;
+            Label bouton
+        &lt;/button&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;button class="rf-btn rf-fi-checkbox-line rf-btn--secondary" title="Label bouton"&gt;
+            Label bouton
+        &lt;/button&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+                            </div>
+                        </section>
+                    </div>
+                    <h4>Groupe de boutons d&#39;icones inline</h4>
+                    <div class="rf-mb-6v">
+                        <ul class="rf-btns-group rf-btns-group--inline">
+                            <li>
+                                <button class="rf-btn rf-fi-checkbox-line" title="Label bouton">
+                                    Label bouton
+                                </button>
+                            </li>
+                            <li>
+                                <button class="rf-btn rf-fi-checkbox-line rf-btn--secondary" title="Label bouton">
+                                    Label bouton
+                                </button>
+                            </li>
+                            <li>
+                                <button class="rf-btn rf-fi-checkbox-line rf-btn--secondary" title="Label bouton">
+                                    Label bouton
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="rf-mb-12v">
+                        <section class="rf-accordion">
+                            <h3 class="rf-accordion__title">
+                                <button class="rf-accordion__btn" aria-expanded="false" aria-controls="snippet-479">Extrait de code</button>
+                            </h3>
+                            <div class="rf-collapse" id="snippet-479">
+                                <pre class=" language-html"><code>&lt;ul class="rf-btns-group rf-btns-group--inline"&gt;
+    &lt;li&gt;
+        &lt;button class="rf-btn rf-fi-checkbox-line" title="Label bouton"&gt;
+            Label bouton
+        &lt;/button&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;button class="rf-btn rf-fi-checkbox-line rf-btn--secondary" title="Label bouton"&gt;
+            Label bouton
+        &lt;/button&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;button class="rf-btn rf-fi-checkbox-line rf-btn--secondary" title="Label bouton"&gt;
+            Label bouton
+        &lt;/button&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="module" src="../../dist/js/core.module.js"></script>
+        <script type="text/javascript" nomodule src="../../dist/js/core.nomodule.js"></script>
+        <script type="module" src="../../dist/js/accordions.module.js"></script>
+        <script type="text/javascript" nomodule src="../../dist/js/accordions.nomodule.js"></script>
+        <script type="module" src="../../dist/js/buttons.module.js"></script>
+        <script type="text/javascript" nomodule src="../../dist/js/buttons.nomodule.js"></script>
+        <script type="module" src="../../dist/js/schemes.module.js"></script>
+        <script type="text/javascript" nomodule src="../../dist/js/schemes.nomodule.js"></script>
+        <script>
+            const schemeAttr = 'data-rf-theme';
+            const mourningAttr = 'data-rf-mourning';
+
+            class DemoCheckbox {
+                constructor(id) {
+                    this.checkbox = document.getElementById(id);
+                    this.init();
+                    this.checkbox.addEventListener('change', this.change.bind(this));
+                    window.requestAnimationFrame(this.change.bind(this));
+                }
+
+                init() {}
+
+                change() {}
+            }
+
+            class AttributeDemoCheckbox extends DemoCheckbox {
+                constructor(id, attributeName, checkedValue, uncheckedValue) {
+                    super(id);
+                    this.attributeName = attributeName;
+                    this.checkedValue = checkedValue;
+                    this.uncheckedValue = uncheckedValue;
+                }
+
+                init() {
+                    this.observer = new MutationObserver(this.mutate.bind(this));
+                    this.observer.observe(document.documentElement, {
+                        attributes: true
+                    });
+                }
+
+                get state() {
+                    const value = document.documentElement.getAttribute(this.attributeName);
+                    const has = document.documentElement.hasAttribute(this.attributeName);
+
+                    switch (true) {
+                        case this.checkedValue === value:
+                            return true;
+
+                        case this.uncheckedValue === value:
+                            return false;
+
+                        case this.checkedValue === true && has:
+                            return true;
+
+                        case this.uncheckedValue === true && has:
+                            return true;
+                    }
+                    return false;
+                }
+
+                mutate(mutations) {
+                    mutations.forEach((mutation) => {
+                        if (mutation.type === 'attributes' && mutation.attributeName === this.attributeName) this.checkbox.checked = this.state;
+                    });
+                }
+
+                change() {
+                    const value = this.checkbox.checked ? this.checkedValue : this.uncheckedValue;
+
+                    switch (value) {
+                        case null:
+                            document.documentElement.removeAttribute(this.attributeName);
+                            break;
+
+                        case true:
+                            document.documentElement.setAttribute(this.attributeName, '');
+                            break;
+
+                        default:
+                            document.documentElement.setAttribute(this.attributeName, value);
+                    }
+                }
+            }
+
+            new AttributeDemoCheckbox('theme-checkbox', schemeAttr, 'dark', 'light');
+            new AttributeDemoCheckbox('mourning-checkbox', mourningAttr, true, null);
+
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/components/prism-core.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/autoloader/prism-autoloader.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/toolbar/prism-toolbar.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/normalize-whitespace/prism-normalize-whitespace.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+    </body>
+
+</html>

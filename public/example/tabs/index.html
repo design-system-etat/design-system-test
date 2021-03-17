@@ -1,0 +1,898 @@
+<!doctype html>
+<html lang="fr" data-rf-theme>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Onglets - Design System</title>
+        <link rel="icon" href="../../dist/favicons/favicon.svg" type="image/svg+xml">
+        <link rel="apple-touch-icon" href="../../dist/favicons/apple-touch-icon.png"><!-- 180×180 -->
+        <!-- si favicon.ico peut etre placé à la racine du serveur, retirer la ligne ci-dessous -->
+        <link rel="icon" href="../../dist/favicons/favicon.ico"><!-- 32×32 -->
+        <link rel="manifest" href="../../dist/favicons/manifest.webmanifest">
+        <!-- Modifier les chemins relatifs des favicons en fonction de la structure du projet -->
+        <!-- Dans le fichier manifest.webmanifest aussi, modifier les chemins vers les images -->
+        <link href="../../dist/css/core.css" rel="stylesheet">
+        <link href="../../dist/css/accordions.css" rel="stylesheet">
+        <link href="../../dist/css/forms.css" rel="stylesheet">
+        <link href="../../dist/css/links.css" rel="stylesheet">
+        <link href="../../dist/css/schemes.css" rel="stylesheet">
+        <link href="../../dist/css/tabs.css" rel="stylesheet">
+        <link href="../../dist/css/utilities.css" rel="stylesheet">
+        <link href="../../dist/css/checkboxes.css" rel="stylesheet">
+        <style>
+            code[class*="language-"],
+            pre[class*="language-"] {
+                white-space: pre-wrap;
+            }
+
+            .example-controls {
+                z-index: 100000;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                box-shadow: 0 -8px 16px 0 rgba(0, 0, 0, 0.1), 0 -8px 16px -16px rgba(0, 0, 0, 0.32);
+                padding: 4px 32px;
+                background-color: var(--w-g750);
+            }
+
+            .example-controls [class*="-form-group"] {
+                margin-bottom: 0;
+            }
+
+        </style>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/themes/prism.min.css" rel="stylesheet" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/toolbar/prism-toolbar.min.css" rel="stylesheet" />
+    </head>
+
+    <body class="rf-mb-12w" style="margin:0; padding:0;">
+        <div class="example-controls">
+            <div class="rf-form-group">
+                <fieldset class="rf-fieldset rf-fieldset--inline">
+                    <legend class="rf-sr-only">Interface de contrôle des test</legend>
+                    <div class="rf-fieldset__content">
+                        <div class="rf-checkbox-group">
+                            <input type="checkbox" id="theme-checkbox" name="checkboxes-inline-1">
+                            <label class="rf-label" for="theme-checkbox">Thème clair / sombre</label>
+                        </div>
+                        <div class="rf-checkbox-group">
+                            <input type="checkbox" id="mourning-checkbox" name="checkboxes-inline-2">
+                            <label class="rf-label" for="mourning-checkbox">En deuil</label>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+        <div class="rf-container rf-mt-2v">
+            <a class="rf-link rf-fi-arrow-left-line rf-link--icon-left" href="../">Retour</a>
+            <h1>Onglets - Design System</h1>
+            <p>Le composant onglet permet aux utilisateurs de naviguer dans différentes sections de contenu au sein d’une même page.</p>
+        </div>
+        <div class="rf-container">
+            <div class="rf-grid-row rf-grid-row--center">
+                <div class="rf-col-md-8 rf-col-12">
+                    <h4>Onglets 4 éléments</h4>
+                    <div class="rf-mb-6v">
+                        <div class="rf-tabs">
+                            <ul class="rf-tabs__list" role="tablist">
+                                <li>
+                                    <button class="rf-tabs__tab rf-fi-checkbox-line rf-tabs__tab--icon-left" tabindex="0" role="tab" aria-selected="true" aria-controls="tabpanel-369">Label Tab 1</button>
+                                    <div id="tabpanel-369" class="rf-tabs__panel" role="tabpanel" tabindex="0">
+                                        <!-- données de test -->
+                                        <div>
+                                            <h4 class="rf-h4">Contenu 1</h4>
+                                            <img src="../img/image.jpg" class="rf-responsive-img" alt="[text alternatif de l’image | à modifier]">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                            <ul>
+                                                <li>list item</li>
+                                                <li>list item</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <button class="rf-tabs__tab rf-fi-checkbox-line rf-tabs__tab--icon-left" tabindex="-1" role="tab" aria-selected="false" aria-controls="tabpanel-370">Label Tab 2</button>
+                                    <div id="tabpanel-370" class="rf-tabs__panel" role="tabpanel" tabindex="0">
+                                        <!-- données de test -->
+                                        <div>
+                                            <h4 class="rf-h4">Contenu 2</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                            <ul>
+                                                <li>list item<ul>
+                                                        <li>list item niveau 2</li>
+                                                        <li>list item niveau 2</li>
+                                                    </ul>
+                                                </li>
+                                                <li>list item</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="rf-mb-12v">
+                        <section class="rf-accordion">
+                            <h3 class="rf-accordion__title">
+                                <button class="rf-accordion__btn" aria-expanded="false" aria-controls="snippet-373">Extrait de code</button>
+                            </h3>
+                            <div class="rf-collapse" id="snippet-373">
+                                <pre class=" language-html"><code>&lt;div class="rf-tabs"&gt;
+    &lt;ul class="rf-tabs__list" role="tablist"&gt;
+        &lt;li&gt;
+            &lt;button class="rf-tabs__tab rf-fi-checkbox-line rf-tabs__tab--icon-left" tabindex="0" role="tab" aria-selected="true" aria-controls="tabpanel-371"&gt;Label Tab 1&lt;/button&gt;
+            &lt;div id="tabpanel-371" class="rf-tabs__panel" role="tabpanel" tabindex="0"&gt;
+                &lt;!-- données de test --&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;button class="rf-tabs__tab rf-fi-checkbox-line rf-tabs__tab--icon-left" tabindex="-1" role="tab" aria-selected="false" aria-controls="tabpanel-372"&gt;Label Tab 2&lt;/button&gt;
+            &lt;div id="tabpanel-372" class="rf-tabs__panel" role="tabpanel" tabindex="0"&gt;
+                &lt;!-- données de test --&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+</code></pre>
+                            </div>
+                        </section>
+                    </div>
+                    <h4>Onglets 2 éléments</h4>
+                    <div class="rf-mb-6v">
+                        <div class="rf-tabs">
+                            <ul class="rf-tabs__list" role="tablist">
+                                <li>
+                                    <button class="rf-tabs__tab" tabindex="0" role="tab" aria-selected="true" aria-controls="tabpanel-374">Label Tab 1</button>
+                                    <div id="tabpanel-374" class="rf-tabs__panel" role="tabpanel" tabindex="0">
+                                        <!-- données de test -->
+                                        <div>
+                                            <h4 class="rf-h4">Contenu 1</h4>
+                                            <img src="../img/image.jpg" class="rf-responsive-img" alt="[text alternatif de l’image | à modifier]">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                            <ul>
+                                                <li>list item<ul>
+                                                        <li>list item niveau 2</li>
+                                                        <li>list item niveau 2</li>
+                                                    </ul>
+                                                </li>
+                                                <li>list item</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <button class="rf-tabs__tab" tabindex="-1" role="tab" aria-selected="false" aria-controls="tabpanel-375">Label Tab 2</button>
+                                    <div id="tabpanel-375" class="rf-tabs__panel" role="tabpanel" tabindex="0">
+                                        <!-- données de test -->
+                                        <div>
+                                            <h4 class="rf-h4">Contenu 2</h4>
+                                            <img src="../img/image.jpg" class="rf-responsive-img" alt="[text alternatif de l’image | à modifier]">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                            <ul>
+                                                <li>list item</li>
+                                                <li>list item</li>
+                                                <li>list item</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="rf-mb-12v">
+                        <section class="rf-accordion">
+                            <h3 class="rf-accordion__title">
+                                <button class="rf-accordion__btn" aria-expanded="false" aria-controls="snippet-378">Extrait de code</button>
+                            </h3>
+                            <div class="rf-collapse" id="snippet-378">
+                                <pre class=" language-html"><code>&lt;div class="rf-tabs"&gt;
+    &lt;ul class="rf-tabs__list" role="tablist"&gt;
+        &lt;li&gt;
+            &lt;button class="rf-tabs__tab" tabindex="0" role="tab" aria-selected="true" aria-controls="tabpanel-376"&gt;Label Tab 1&lt;/button&gt;
+            &lt;div id="tabpanel-376" class="rf-tabs__panel" role="tabpanel" tabindex="0"&gt;
+                &lt;!-- données de test --&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;button class="rf-tabs__tab" tabindex="-1" role="tab" aria-selected="false" aria-controls="tabpanel-377"&gt;Label Tab 2&lt;/button&gt;
+            &lt;div id="tabpanel-377" class="rf-tabs__panel" role="tabpanel" tabindex="0"&gt;
+                &lt;!-- données de test --&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+</code></pre>
+                            </div>
+                        </section>
+                    </div>
+                    <h4>Onglets dans onglets</h4>
+                    <div class="rf-mb-6v">
+                        <div class="rf-tabs">
+                            <ul class="rf-tabs__list" role="tablist">
+                                <li>
+                                    <button class="rf-tabs__tab" tabindex="0" role="tab" aria-selected="true" aria-controls="tabpanel-398">Main Tab 0</button>
+                                    <div id="tabpanel-398" class="rf-tabs__panel" role="tabpanel" tabindex="0">
+                                        <div class="rf-tabs">
+                                            <ul class="rf-tabs__list" role="tablist">
+                                                <li>
+                                                    <button class="rf-tabs__tab" tabindex="0" role="tab" aria-selected="true" aria-controls="tabpanel-388">Nested Tab s0</button>
+                                                    <div id="tabpanel-388" class="rf-tabs__panel" role="tabpanel" tabindex="0">
+                                                        <div class="rf-tabs">
+                                                            <ul class="rf-tabs__list" role="tablist">
+                                                                <li>
+                                                                    <button class="rf-tabs__tab" tabindex="0" role="tab" aria-selected="true" aria-controls="tabpanel-379">Label Tab 1</button>
+                                                                    <div id="tabpanel-379" class="rf-tabs__panel" role="tabpanel" tabindex="0">
+                                                                        <!-- données de test -->
+                                                                        <div>
+                                                                            <h4 class="rf-h4">Contenu 1</h4>
+                                                                            <img src="../img/image.jpg" class="rf-responsive-img" alt="[text alternatif de l’image | à modifier]">
+                                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                                            <ul>
+                                                                                <li>list item</li>
+                                                                                <li>list item</li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <button class="rf-tabs__tab" tabindex="-1" role="tab" aria-selected="false" aria-controls="tabpanel-380">Label Tab 2</button>
+                                                                    <div id="tabpanel-380" class="rf-tabs__panel" role="tabpanel" tabindex="0">
+                                                                        <!-- données de test -->
+                                                                        <div>
+                                                                            <h4 class="rf-h4">Contenu 2</h4>
+                                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                                            <ul>
+                                                                                <li>list item</li>
+                                                                                <li>list item<ul>
+                                                                                        <li>list item niveau 2</li>
+                                                                                        <li>list item niveau 2</li>
+                                                                                        <li>list item niveau 2</li>
+                                                                                    </ul>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <button class="rf-tabs__tab" tabindex="-1" role="tab" aria-selected="false" aria-controls="tabpanel-389">Nested Tab s1</button>
+                                                    <div id="tabpanel-389" class="rf-tabs__panel" role="tabpanel" tabindex="0">
+                                                        <div class="rf-tabs">
+                                                            <ul class="rf-tabs__list" role="tablist">
+                                                                <li>
+                                                                    <button class="rf-tabs__tab" tabindex="0" role="tab" aria-selected="true" aria-controls="tabpanel-381">Label Tab 1</button>
+                                                                    <div id="tabpanel-381" class="rf-tabs__panel" role="tabpanel" tabindex="0">
+                                                                        <!-- données de test -->
+                                                                        <div>
+                                                                            <h4 class="rf-h4">Contenu 1</h4>
+                                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                                            <ul>
+                                                                                <li>list item</li>
+                                                                                <li>list item</li>
+                                                                                <li>list item<ul>
+                                                                                        <li>list item niveau 2</li>
+                                                                                        <li>list item niveau 2</li>
+                                                                                        <li>list item niveau 2</li>
+                                                                                    </ul>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <button class="rf-tabs__tab" tabindex="-1" role="tab" aria-selected="false" aria-controls="tabpanel-382">Label Tab 2</button>
+                                                                    <div id="tabpanel-382" class="rf-tabs__panel" role="tabpanel" tabindex="0">
+                                                                        <!-- données de test -->
+                                                                        <div>
+                                                                            <h4 class="rf-h4">Contenu 2</h4>
+                                                                            <img src="../img/image.jpg" class="rf-responsive-img" alt="[text alternatif de l’image | à modifier]">
+                                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                                            <ul>
+                                                                                <li>list item<ul>
+                                                                                        <li>list item niveau 2</li>
+                                                                                        <li>list item niveau 2</li>
+                                                                                        <li>list item niveau 2</li>
+                                                                                    </ul>
+                                                                                </li>
+                                                                                <li>list item</li>
+                                                                                <li>list item<ul>
+                                                                                        <li>list item niveau 2</li>
+                                                                                        <li>list item niveau 2</li>
+                                                                                    </ul>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <button class="rf-tabs__tab" tabindex="-1" role="tab" aria-selected="false" aria-controls="tabpanel-383">Label Tab 3</button>
+                                                                    <div id="tabpanel-383" class="rf-tabs__panel" role="tabpanel" tabindex="0">
+                                                                        <!-- données de test -->
+                                                                        <div>
+                                                                            <h4 class="rf-h4">Contenu 3</h4>
+                                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                                            <ul>
+                                                                                <li>list item<ul>
+                                                                                        <li>list item niveau 2</li>
+                                                                                        <li>list item niveau 2</li>
+                                                                                    </ul>
+                                                                                </li>
+                                                                                <li>list item<ul>
+                                                                                        <li>list item niveau 2</li>
+                                                                                        <li>list item niveau 2</li>
+                                                                                    </ul>
+                                                                                </li>
+                                                                                <li>list item</li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <button class="rf-tabs__tab" tabindex="-1" role="tab" aria-selected="false" aria-controls="tabpanel-390">Nested Tab s2</button>
+                                                    <div id="tabpanel-390" class="rf-tabs__panel" role="tabpanel" tabindex="0">
+                                                        <div class="rf-tabs">
+                                                            <ul class="rf-tabs__list" role="tablist">
+                                                                <li>
+                                                                    <button class="rf-tabs__tab" tabindex="0" role="tab" aria-selected="true" aria-controls="tabpanel-384">Label Tab 1</button>
+                                                                    <div id="tabpanel-384" class="rf-tabs__panel" role="tabpanel" tabindex="0">
+                                                                        <!-- données de test -->
+                                                                        <div>
+                                                                            <h4 class="rf-h4">Contenu 1</h4>
+                                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                                            <ul>
+                                                                                <li>list item</li>
+                                                                                <li>list item</li>
+                                                                                <li>list item</li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <button class="rf-tabs__tab" tabindex="-1" role="tab" aria-selected="false" aria-controls="tabpanel-385">Label Tab 2</button>
+                                                                    <div id="tabpanel-385" class="rf-tabs__panel" role="tabpanel" tabindex="0">
+                                                                        <!-- données de test -->
+                                                                        <div>
+                                                                            <h4 class="rf-h4">Contenu 2</h4>
+                                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                                            <ul>
+                                                                                <li>list item<ul>
+                                                                                        <li>list item niveau 2</li>
+                                                                                        <li>list item niveau 2</li>
+                                                                                    </ul>
+                                                                                </li>
+                                                                                <li>list item</li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <button class="rf-tabs__tab" tabindex="-1" role="tab" aria-selected="false" aria-controls="tabpanel-386">Label Tab 3</button>
+                                                                    <div id="tabpanel-386" class="rf-tabs__panel" role="tabpanel" tabindex="0">
+                                                                        <!-- données de test -->
+                                                                        <div>
+                                                                            <h4 class="rf-h4">Contenu 3</h4>
+                                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                                            <ul>
+                                                                                <li>list item</li>
+                                                                                <li>list item</li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <button class="rf-tabs__tab" tabindex="-1" role="tab" aria-selected="false" aria-controls="tabpanel-387">Label Tab 4</button>
+                                                                    <div id="tabpanel-387" class="rf-tabs__panel" role="tabpanel" tabindex="0">
+                                                                        <!-- données de test -->
+                                                                        <div>
+                                                                            <h4 class="rf-h4">Contenu 4</h4>
+                                                                            <img src="../img/image.jpg" class="rf-responsive-img" alt="[text alternatif de l’image | à modifier]">
+                                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                                            <ul>
+                                                                                <li>list item</li>
+                                                                                <li>list item</li>
+                                                                                <li>list item</li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <button class="rf-tabs__tab" tabindex="-1" role="tab" aria-selected="false" aria-controls="tabpanel-399">Main Tab 1</button>
+                                    <div id="tabpanel-399" class="rf-tabs__panel" role="tabpanel" tabindex="0">
+                                        <div class="rf-tabs">
+                                            <ul class="rf-tabs__list" role="tablist">
+                                                <li>
+                                                    <button class="rf-tabs__tab" tabindex="0" role="tab" aria-selected="true" aria-controls="tabpanel-396">Nested Tab s0</button>
+                                                    <div id="tabpanel-396" class="rf-tabs__panel" role="tabpanel" tabindex="0">
+                                                        <div class="rf-tabs">
+                                                            <ul class="rf-tabs__list" role="tablist">
+                                                                <li>
+                                                                    <button class="rf-tabs__tab" tabindex="0" role="tab" aria-selected="true" aria-controls="tabpanel-391">Label Tab 1</button>
+                                                                    <div id="tabpanel-391" class="rf-tabs__panel" role="tabpanel" tabindex="0">
+                                                                        <!-- données de test -->
+                                                                        <div>
+                                                                            <h4 class="rf-h4">Contenu 1</h4>
+                                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                                            <ul>
+                                                                                <li>list item</li>
+                                                                                <li>list item</li>
+                                                                                <li>list item<ul>
+                                                                                        <li>list item niveau 2</li>
+                                                                                        <li>list item niveau 2</li>
+                                                                                        <li>list item niveau 2</li>
+                                                                                    </ul>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <button class="rf-tabs__tab" tabindex="-1" role="tab" aria-selected="false" aria-controls="tabpanel-392">Label Tab 2</button>
+                                                                    <div id="tabpanel-392" class="rf-tabs__panel" role="tabpanel" tabindex="0">
+                                                                        <!-- données de test -->
+                                                                        <div>
+                                                                            <h4 class="rf-h4">Contenu 2</h4>
+                                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                                            <ul>
+                                                                                <li>list item</li>
+                                                                                <li>list item<ul>
+                                                                                        <li>list item niveau 2</li>
+                                                                                        <li>list item niveau 2</li>
+                                                                                    </ul>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <button class="rf-tabs__tab" tabindex="-1" role="tab" aria-selected="false" aria-controls="tabpanel-397">Nested Tab s1</button>
+                                                    <div id="tabpanel-397" class="rf-tabs__panel" role="tabpanel" tabindex="0">
+                                                        <div class="rf-tabs">
+                                                            <ul class="rf-tabs__list" role="tablist">
+                                                                <li>
+                                                                    <button class="rf-tabs__tab" tabindex="0" role="tab" aria-selected="true" aria-controls="tabpanel-393">Label Tab 1</button>
+                                                                    <div id="tabpanel-393" class="rf-tabs__panel" role="tabpanel" tabindex="0">
+                                                                        <!-- données de test -->
+                                                                        <div>
+                                                                            <h4 class="rf-h4">Contenu 1</h4>
+                                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                                            <ul>
+                                                                                <li>list item<ul>
+                                                                                        <li>list item niveau 2</li>
+                                                                                        <li>list item niveau 2</li>
+                                                                                        <li>list item niveau 2</li>
+                                                                                    </ul>
+                                                                                </li>
+                                                                                <li>list item<ul>
+                                                                                        <li>list item niveau 2</li>
+                                                                                        <li>list item niveau 2</li>
+                                                                                        <li>list item niveau 2</li>
+                                                                                    </ul>
+                                                                                </li>
+                                                                                <li>list item</li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <button class="rf-tabs__tab" tabindex="-1" role="tab" aria-selected="false" aria-controls="tabpanel-394">Label Tab 2</button>
+                                                                    <div id="tabpanel-394" class="rf-tabs__panel" role="tabpanel" tabindex="0">
+                                                                        <!-- données de test -->
+                                                                        <div>
+                                                                            <h4 class="rf-h4">Contenu 2</h4>
+                                                                            <img src="../img/image.jpg" class="rf-responsive-img" alt="[text alternatif de l’image | à modifier]">
+                                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                                            <ul>
+                                                                                <li>list item</li>
+                                                                                <li>list item</li>
+                                                                                <li>list item</li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <button class="rf-tabs__tab" tabindex="-1" role="tab" aria-selected="false" aria-controls="tabpanel-395">Label Tab 3</button>
+                                                                    <div id="tabpanel-395" class="rf-tabs__panel" role="tabpanel" tabindex="0">
+                                                                        <!-- données de test -->
+                                                                        <div>
+                                                                            <h4 class="rf-h4">Contenu 3</h4>
+                                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                                            <ul>
+                                                                                <li>list item<ul>
+                                                                                        <li>list item niveau 2</li>
+                                                                                        <li>list item niveau 2</li>
+                                                                                    </ul>
+                                                                                </li>
+                                                                                <li>list item</li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="rf-mb-12v">
+                        <section class="rf-accordion">
+                            <h3 class="rf-accordion__title">
+                                <button class="rf-accordion__btn" aria-expanded="false" aria-controls="snippet-421">Extrait de code</button>
+                            </h3>
+                            <div class="rf-collapse" id="snippet-421">
+                                <pre class=" language-html"><code>&lt;div class="rf-tabs"&gt;
+    &lt;ul class="rf-tabs__list" role="tablist"&gt;
+        &lt;li&gt;
+            &lt;button class="rf-tabs__tab" tabindex="0" role="tab" aria-selected="true" aria-controls="tabpanel-419"&gt;Main Tab 0&lt;/button&gt;
+            &lt;div id="tabpanel-419" class="rf-tabs__panel" role="tabpanel" tabindex="0"&gt;
+                &lt;div class="rf-tabs"&gt;
+                    &lt;ul class="rf-tabs__list" role="tablist"&gt;
+                        &lt;li&gt;
+                            &lt;button class="rf-tabs__tab" tabindex="0" role="tab" aria-selected="true" aria-controls="tabpanel-409"&gt;Nested Tab s0&lt;/button&gt;
+                            &lt;div id="tabpanel-409" class="rf-tabs__panel" role="tabpanel" tabindex="0"&gt;
+                                &lt;div class="rf-tabs"&gt;
+                                    &lt;ul class="rf-tabs__list" role="tablist"&gt;
+                                        &lt;li&gt;
+                                            &lt;button class="rf-tabs__tab" tabindex="0" role="tab" aria-selected="true" aria-controls="tabpanel-400"&gt;Label Tab 1&lt;/button&gt;
+                                            &lt;div id="tabpanel-400" class="rf-tabs__panel" role="tabpanel" tabindex="0"&gt;
+                                                &lt;!-- données de test --&gt;
+                                            &lt;/div&gt;
+                                        &lt;/li&gt;
+                                        &lt;li&gt;
+                                            &lt;button class="rf-tabs__tab" tabindex="-1" role="tab" aria-selected="false" aria-controls="tabpanel-401"&gt;Label Tab 2&lt;/button&gt;
+                                            &lt;div id="tabpanel-401" class="rf-tabs__panel" role="tabpanel" tabindex="0"&gt;
+                                                &lt;!-- données de test --&gt;
+                                            &lt;/div&gt;
+                                        &lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;button class="rf-tabs__tab" tabindex="-1" role="tab" aria-selected="false" aria-controls="tabpanel-410"&gt;Nested Tab s1&lt;/button&gt;
+                            &lt;div id="tabpanel-410" class="rf-tabs__panel" role="tabpanel" tabindex="0"&gt;
+                                &lt;div class="rf-tabs"&gt;
+                                    &lt;ul class="rf-tabs__list" role="tablist"&gt;
+                                        &lt;li&gt;
+                                            &lt;button class="rf-tabs__tab" tabindex="0" role="tab" aria-selected="true" aria-controls="tabpanel-402"&gt;Label Tab 1&lt;/button&gt;
+                                            &lt;div id="tabpanel-402" class="rf-tabs__panel" role="tabpanel" tabindex="0"&gt;
+                                                &lt;!-- données de test --&gt;
+                                            &lt;/div&gt;
+                                        &lt;/li&gt;
+                                        &lt;li&gt;
+                                            &lt;button class="rf-tabs__tab" tabindex="-1" role="tab" aria-selected="false" aria-controls="tabpanel-403"&gt;Label Tab 2&lt;/button&gt;
+                                            &lt;div id="tabpanel-403" class="rf-tabs__panel" role="tabpanel" tabindex="0"&gt;
+                                                &lt;!-- données de test --&gt;
+                                            &lt;/div&gt;
+                                        &lt;/li&gt;
+                                        &lt;li&gt;
+                                            &lt;button class="rf-tabs__tab" tabindex="-1" role="tab" aria-selected="false" aria-controls="tabpanel-404"&gt;Label Tab 3&lt;/button&gt;
+                                            &lt;div id="tabpanel-404" class="rf-tabs__panel" role="tabpanel" tabindex="0"&gt;
+                                                &lt;!-- données de test --&gt;
+                                            &lt;/div&gt;
+                                        &lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;button class="rf-tabs__tab" tabindex="-1" role="tab" aria-selected="false" aria-controls="tabpanel-411"&gt;Nested Tab s2&lt;/button&gt;
+                            &lt;div id="tabpanel-411" class="rf-tabs__panel" role="tabpanel" tabindex="0"&gt;
+                                &lt;div class="rf-tabs"&gt;
+                                    &lt;ul class="rf-tabs__list" role="tablist"&gt;
+                                        &lt;li&gt;
+                                            &lt;button class="rf-tabs__tab" tabindex="0" role="tab" aria-selected="true" aria-controls="tabpanel-405"&gt;Label Tab 1&lt;/button&gt;
+                                            &lt;div id="tabpanel-405" class="rf-tabs__panel" role="tabpanel" tabindex="0"&gt;
+                                                &lt;!-- données de test --&gt;
+                                            &lt;/div&gt;
+                                        &lt;/li&gt;
+                                        &lt;li&gt;
+                                            &lt;button class="rf-tabs__tab" tabindex="-1" role="tab" aria-selected="false" aria-controls="tabpanel-406"&gt;Label Tab 2&lt;/button&gt;
+                                            &lt;div id="tabpanel-406" class="rf-tabs__panel" role="tabpanel" tabindex="0"&gt;
+                                                &lt;!-- données de test --&gt;
+                                            &lt;/div&gt;
+                                        &lt;/li&gt;
+                                        &lt;li&gt;
+                                            &lt;button class="rf-tabs__tab" tabindex="-1" role="tab" aria-selected="false" aria-controls="tabpanel-407"&gt;Label Tab 3&lt;/button&gt;
+                                            &lt;div id="tabpanel-407" class="rf-tabs__panel" role="tabpanel" tabindex="0"&gt;
+                                                &lt;!-- données de test --&gt;
+                                            &lt;/div&gt;
+                                        &lt;/li&gt;
+                                        &lt;li&gt;
+                                            &lt;button class="rf-tabs__tab" tabindex="-1" role="tab" aria-selected="false" aria-controls="tabpanel-408"&gt;Label Tab 4&lt;/button&gt;
+                                            &lt;div id="tabpanel-408" class="rf-tabs__panel" role="tabpanel" tabindex="0"&gt;
+                                                &lt;!-- données de test --&gt;
+                                            &lt;/div&gt;
+                                        &lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;button class="rf-tabs__tab" tabindex="-1" role="tab" aria-selected="false" aria-controls="tabpanel-420"&gt;Main Tab 1&lt;/button&gt;
+            &lt;div id="tabpanel-420" class="rf-tabs__panel" role="tabpanel" tabindex="0"&gt;
+                &lt;div class="rf-tabs"&gt;
+                    &lt;ul class="rf-tabs__list" role="tablist"&gt;
+                        &lt;li&gt;
+                            &lt;button class="rf-tabs__tab" tabindex="0" role="tab" aria-selected="true" aria-controls="tabpanel-417"&gt;Nested Tab s0&lt;/button&gt;
+                            &lt;div id="tabpanel-417" class="rf-tabs__panel" role="tabpanel" tabindex="0"&gt;
+                                &lt;div class="rf-tabs"&gt;
+                                    &lt;ul class="rf-tabs__list" role="tablist"&gt;
+                                        &lt;li&gt;
+                                            &lt;button class="rf-tabs__tab" tabindex="0" role="tab" aria-selected="true" aria-controls="tabpanel-412"&gt;Label Tab 1&lt;/button&gt;
+                                            &lt;div id="tabpanel-412" class="rf-tabs__panel" role="tabpanel" tabindex="0"&gt;
+                                                &lt;!-- données de test --&gt;
+                                            &lt;/div&gt;
+                                        &lt;/li&gt;
+                                        &lt;li&gt;
+                                            &lt;button class="rf-tabs__tab" tabindex="-1" role="tab" aria-selected="false" aria-controls="tabpanel-413"&gt;Label Tab 2&lt;/button&gt;
+                                            &lt;div id="tabpanel-413" class="rf-tabs__panel" role="tabpanel" tabindex="0"&gt;
+                                                &lt;!-- données de test --&gt;
+                                            &lt;/div&gt;
+                                        &lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;button class="rf-tabs__tab" tabindex="-1" role="tab" aria-selected="false" aria-controls="tabpanel-418"&gt;Nested Tab s1&lt;/button&gt;
+                            &lt;div id="tabpanel-418" class="rf-tabs__panel" role="tabpanel" tabindex="0"&gt;
+                                &lt;div class="rf-tabs"&gt;
+                                    &lt;ul class="rf-tabs__list" role="tablist"&gt;
+                                        &lt;li&gt;
+                                            &lt;button class="rf-tabs__tab" tabindex="0" role="tab" aria-selected="true" aria-controls="tabpanel-414"&gt;Label Tab 1&lt;/button&gt;
+                                            &lt;div id="tabpanel-414" class="rf-tabs__panel" role="tabpanel" tabindex="0"&gt;
+                                                &lt;!-- données de test --&gt;
+                                            &lt;/div&gt;
+                                        &lt;/li&gt;
+                                        &lt;li&gt;
+                                            &lt;button class="rf-tabs__tab" tabindex="-1" role="tab" aria-selected="false" aria-controls="tabpanel-415"&gt;Label Tab 2&lt;/button&gt;
+                                            &lt;div id="tabpanel-415" class="rf-tabs__panel" role="tabpanel" tabindex="0"&gt;
+                                                &lt;!-- données de test --&gt;
+                                            &lt;/div&gt;
+                                        &lt;/li&gt;
+                                        &lt;li&gt;
+                                            &lt;button class="rf-tabs__tab" tabindex="-1" role="tab" aria-selected="false" aria-controls="tabpanel-416"&gt;Label Tab 3&lt;/button&gt;
+                                            &lt;div id="tabpanel-416" class="rf-tabs__panel" role="tabpanel" tabindex="0"&gt;
+                                                &lt;!-- données de test --&gt;
+                                            &lt;/div&gt;
+                                        &lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+</code></pre>
+                            </div>
+                        </section>
+                    </div>
+                    <h4>Accordéon dans onglets</h4>
+                    <div class="rf-mb-6v">
+                        <div class="rf-tabs">
+                            <ul class="rf-tabs__list" role="tablist">
+                                <li>
+                                    <button class="rf-tabs__tab" tabindex="0" role="tab" aria-selected="true" aria-controls="tabpanel-424">Label Tab 1</button>
+                                    <div id="tabpanel-424" class="rf-tabs__panel" role="tabpanel" tabindex="0">
+                                        <section class="rf-accordion">
+                                            <h3 class="rf-accordion__title">
+                                                <button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-422">Intitulé accordéon</button>
+                                            </h3>
+                                            <div class="rf-collapse" id="accordion-422">
+                                                <!-- données de test -->
+                                                <div>
+                                                    <h4 class="rf-h4">Contenu </h4>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                    <ul>
+                                                        <li>list item</li>
+                                                        <li>list item</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </li>
+                                <li>
+                                    <button class="rf-tabs__tab" tabindex="-1" role="tab" aria-selected="false" aria-controls="tabpanel-425">Label Tab 2</button>
+                                    <div id="tabpanel-425" class="rf-tabs__panel" role="tabpanel" tabindex="0">
+                                        <section class="rf-accordion">
+                                            <h3 class="rf-accordion__title">
+                                                <button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-423">Intitulé accordéon</button>
+                                            </h3>
+                                            <div class="rf-collapse" id="accordion-423">
+                                                <!-- données de test -->
+                                                <div>
+                                                    <h4 class="rf-h4">Contenu </h4>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing, <a href="test" alt="" target="_blank">link test</a> incididunt, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est. Ut aliquam purus sit amet luctus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut.</p>
+                                                    <ul>
+                                                        <li>list item</li>
+                                                        <li>list item</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="rf-mb-12v">
+                        <section class="rf-accordion">
+                            <h3 class="rf-accordion__title">
+                                <button class="rf-accordion__btn" aria-expanded="false" aria-controls="snippet-430">Extrait de code</button>
+                            </h3>
+                            <div class="rf-collapse" id="snippet-430">
+                                <pre class=" language-html"><code>&lt;div class="rf-tabs"&gt;
+    &lt;ul class="rf-tabs__list" role="tablist"&gt;
+        &lt;li&gt;
+            &lt;button class="rf-tabs__tab" tabindex="0" role="tab" aria-selected="true" aria-controls="tabpanel-428"&gt;Label Tab 1&lt;/button&gt;
+            &lt;div id="tabpanel-428" class="rf-tabs__panel" role="tabpanel" tabindex="0"&gt;
+                &lt;section class="rf-accordion"&gt;
+                    &lt;h3 class="rf-accordion__title"&gt;
+                        &lt;button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-426"&gt;Intitulé accordéon&lt;/button&gt;
+                    &lt;/h3&gt;
+                    &lt;div class="rf-collapse" id="accordion-426"&gt;
+                        &lt;!-- données de test --&gt;
+                    &lt;/div&gt;
+                &lt;/section&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;button class="rf-tabs__tab" tabindex="-1" role="tab" aria-selected="false" aria-controls="tabpanel-429"&gt;Label Tab 2&lt;/button&gt;
+            &lt;div id="tabpanel-429" class="rf-tabs__panel" role="tabpanel" tabindex="0"&gt;
+                &lt;section class="rf-accordion"&gt;
+                    &lt;h3 class="rf-accordion__title"&gt;
+                        &lt;button class="rf-accordion__btn" aria-expanded="false" aria-controls="accordion-427"&gt;Intitulé accordéon&lt;/button&gt;
+                    &lt;/h3&gt;
+                    &lt;div class="rf-collapse" id="accordion-427"&gt;
+                        &lt;!-- données de test --&gt;
+                    &lt;/div&gt;
+                &lt;/section&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+</code></pre>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="module" src="../../dist/js/core.module.js"></script>
+        <script type="text/javascript" nomodule src="../../dist/js/core.nomodule.js"></script>
+        <script type="module" src="../../dist/js/accordions.module.js"></script>
+        <script type="text/javascript" nomodule src="../../dist/js/accordions.nomodule.js"></script>
+        <script type="module" src="../../dist/js/schemes.module.js"></script>
+        <script type="text/javascript" nomodule src="../../dist/js/schemes.nomodule.js"></script>
+        <script type="module" src="../../dist/js/tabs.module.js"></script>
+        <script type="text/javascript" nomodule src="../../dist/js/tabs.nomodule.js"></script>
+        <script>
+            const schemeAttr = 'data-rf-theme';
+            const mourningAttr = 'data-rf-mourning';
+
+            class DemoCheckbox {
+                constructor(id) {
+                    this.checkbox = document.getElementById(id);
+                    this.init();
+                    this.checkbox.addEventListener('change', this.change.bind(this));
+                    window.requestAnimationFrame(this.change.bind(this));
+                }
+
+                init() {}
+
+                change() {}
+            }
+
+            class AttributeDemoCheckbox extends DemoCheckbox {
+                constructor(id, attributeName, checkedValue, uncheckedValue) {
+                    super(id);
+                    this.attributeName = attributeName;
+                    this.checkedValue = checkedValue;
+                    this.uncheckedValue = uncheckedValue;
+                }
+
+                init() {
+                    this.observer = new MutationObserver(this.mutate.bind(this));
+                    this.observer.observe(document.documentElement, {
+                        attributes: true
+                    });
+                }
+
+                get state() {
+                    const value = document.documentElement.getAttribute(this.attributeName);
+                    const has = document.documentElement.hasAttribute(this.attributeName);
+
+                    switch (true) {
+                        case this.checkedValue === value:
+                            return true;
+
+                        case this.uncheckedValue === value:
+                            return false;
+
+                        case this.checkedValue === true && has:
+                            return true;
+
+                        case this.uncheckedValue === true && has:
+                            return true;
+                    }
+                    return false;
+                }
+
+                mutate(mutations) {
+                    mutations.forEach((mutation) => {
+                        if (mutation.type === 'attributes' && mutation.attributeName === this.attributeName) this.checkbox.checked = this.state;
+                    });
+                }
+
+                change() {
+                    const value = this.checkbox.checked ? this.checkedValue : this.uncheckedValue;
+
+                    switch (value) {
+                        case null:
+                            document.documentElement.removeAttribute(this.attributeName);
+                            break;
+
+                        case true:
+                            document.documentElement.setAttribute(this.attributeName, '');
+                            break;
+
+                        default:
+                            document.documentElement.setAttribute(this.attributeName, value);
+                    }
+                }
+            }
+
+            new AttributeDemoCheckbox('theme-checkbox', schemeAttr, 'dark', 'light');
+            new AttributeDemoCheckbox('mourning-checkbox', mourningAttr, true, null);
+
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/components/prism-core.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/autoloader/prism-autoloader.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/toolbar/prism-toolbar.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/normalize-whitespace/prism-normalize-whitespace.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+    </body>
+
+</html>

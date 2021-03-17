@@ -1,0 +1,10 @@
+////
+/// Buttons Module
+/// @group buttons
+////
+
+#{ns(btn)} {
+  @include build-btn();
+}
+
+@import 'modules/buttons-group.scss';

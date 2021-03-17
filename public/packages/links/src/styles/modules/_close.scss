@@ -1,0 +1,6 @@
+#{ns(link--close)} {
+  @include _extend-link(sm, right, link, true, true);
+  @include before {
+    @include font-icon-content(close-line);
+  }
+}
